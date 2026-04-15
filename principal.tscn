@@ -1,7 +1,82 @@
 [gd_scene format=3 uid="uid://durdqx3pjg1tv"]
 
 [ext_resource type="PackedScene" uid="uid://dfvgt4oib3gqh" path="res://cenário.tscn" id="1_tr6oq"]
+[ext_resource type="PackedScene" uid="uid://b5k5tl31c4nuq" path="res://fazendeira.tscn" id="2_m7tbw"]
+[ext_resource type="Texture2D" uid="uid://cmlyu338s4hd0" path="res://Imagens/FarmingCrops16x16/Crop_Spritesheet.png" id="3_dvu2j"]
 
-[node name="Principal" type="Node2D" unique_id=1637507309]
+[sub_resource type="AtlasTexture" id="AtlasTexture_8hij4"]
+atlas = ExtResource("3_dvu2j")
+region = Rect2(80, 32, 16, 16)
 
-[node name="Cenário_grama" parent="." unique_id=1849325919 instance=ExtResource("1_tr6oq")]
+[sub_resource type="AtlasTexture" id="AtlasTexture_fdpry"]
+atlas = ExtResource("3_dvu2j")
+region = Rect2(64, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_182pw"]
+atlas = ExtResource("3_dvu2j")
+region = Rect2(48, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d0g1q"]
+atlas = ExtResource("3_dvu2j")
+region = Rect2(32, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mfsq6"]
+atlas = ExtResource("3_dvu2j")
+region = Rect2(16, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b1k4h"]
+atlas = ExtResource("3_dvu2j")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yant3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8hij4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fdpry")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_182pw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d0g1q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mfsq6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b1k4h")
+}],
+"loop": true,
+"name": &"tomate",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jrnu8"]
+size = Vector2(14, 15)
+
+[node name="Principal" type="Node2D" unique_id=1553167698]
+
+[node name="Cenário_grama" parent="." unique_id=316417546 instance=ExtResource("1_tr6oq")]
+position = Vector2(-468, -240)
+
+[node name="Fazendeira" parent="." unique_id=1071126882 instance=ExtResource("2_m7tbw")]
+position = Vector2(-1, 14)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=607525721]
+position = Vector2(66, -17)
+zoom = Vector2(2, 2)
+
+[node name="Tomate" type="Area2D" parent="." unique_id=1108814822]
+position = Vector2(28, 10)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Tomate" unique_id=1018323991]
+sprite_frames = SubResource("SpriteFrames_yant3")
+animation = &"tomate"
+autoplay = "tomate"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tomate" unique_id=1950936756]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_jrnu8")

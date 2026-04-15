@@ -1,0 +1,53 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1776252084
+animated_sprite_2d.gd::GDScript::-1::1776031667::0::1::::<>AnimatedSprite2D<>::
+cenário.gd::GDScript::-1::1776031515::0::1::::<>TileMapLayer<>::
+cenário.tscn::PackedScene::7553957979315855919::1776223984::0::1::::<><>::uid://x5w6dlxq876h::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/summer tilemap.png<>uid://bqhouudj0jwxf::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/items&objects/summer and spring items.png<>uid://cbqnhkcj4hc0b::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/items&objects/autumn items.png
+fazendeira.gd::GDScript::-1::1776221848::0::1::::<>CharacterBody2D<>::
+fazendeira.tscn::PackedScene::4514585832438381748::1776223984::0::1::::<><>::res://fazendeira.gd<>uid://bkvuelys7ckds::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/main character/walk and idle.png
+icon.svg::CompressedTexture2D::2565338501644993437::1775219374::1776214154::1::::<><>::
+principal.tscn::PackedScene::8598345321325146659::1776223983::0::1::::<><>::uid://dfvgt4oib3gqh::::res://cenário.tscn<>uid://b5k5tl31c4nuq::::res://fazendeira.tscn<>uid://cmlyu338s4hd0::::res://Imagens/FarmingCrops16x16/Crop_Spritesheet.png
+::res://Imagens/::1775219110
+::res://Imagens/FarmingCrops16x16/::1776214154
+Crop_Spritesheet.png::CompressedTexture2D::5639310085474640067::1775219090::1776214154::1::::<><>::
+README.txt::TextFile::-1::1775219090::0::1::::<><>::
+::res://Imagens/Tiny Wonder Forest 1.0/::1775219097
+::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/::1775219097
+::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/::1775219097
+::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/main character/::1776214155
+attack and die.png::CompressedTexture2D::8150890348089062903::1775219083::1776214154::1::::<><>::
+cat kigurumi attack and die.png::CompressedTexture2D::3752162050275554773::1775219083::1776214154::1::::<><>::
+cat kigurumi walk and idle.png::CompressedTexture2D::3941635661044065375::1775219083::1776214155::1::::<><>::
+portrait cat kigurumi.png::CompressedTexture2D::1672213351482896947::1775219083::1776214155::1::::<><>::
+portrait female.png::CompressedTexture2D::30264312461973733::1775219083::1776214155::1::::<><>::
+portrait male.png::CompressedTexture2D::5427314597634187589::1775219083::1776214155::1::::<><>::
+portrait only cat kigurumi.png::CompressedTexture2D::6019914228470092218::1775219083::1776214155::1::::<><>::
+sword.png::CompressedTexture2D::6757905778527186489::1775219083::1776214155::1::::<><>::
+walk and idle.png::CompressedTexture2D::3132883151632477296::1775219083::1776214155::1::::<><>::
+::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/main character old/::1776214155
+attack and die.png::CompressedTexture2D::4321054997502351841::1775219083::1776214155::1::::<><>::
+cat kigurumi attack and die.png::CompressedTexture2D::8869475948121556326::1775219083::1776214155::1::::<><>::
+cat kigurumi walk and idle.png::CompressedTexture2D::7506669834588201101::1775219083::1776214155::1::::<><>::
+portrait cat kigurumi.png::CompressedTexture2D::140490306829139218::1775219083::1776214155::1::::<><>::
+portrait female.png::CompressedTexture2D::6093708141046762769::1775219083::1776214155::1::::<><>::
+portrait male.png::CompressedTexture2D::8379549014400391222::1775219083::1776214155::1::::<><>::
+portrait only cat kigurumi.png::CompressedTexture2D::9146069295507539102::1775219083::1776214155::1::::<><>::
+sword.png::CompressedTexture2D::869308822573968307::1775219083::1776214154::1::::<><>::
+walk and idle.png::CompressedTexture2D::4481302650129647079::1775219083::1776214154::1::::<><>::
+::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/mushrooms/::1776214154
+blue mushroom sheet.png::CompressedTexture2D::1161850822479250073::1775219083::1776214154::1::::<><>::
+brown mushroom sheet.png::CompressedTexture2D::6517390174365391576::1775219083::1776214154::1::::<><>::
+::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/items&objects/::1776214154
+autumn items.png::CompressedTexture2D::4876862605323550339::1775219083::1776214154::1::::<><>::
+furniture.png::CompressedTexture2D::6848396212768305346::1775219083::1776214154::1::::<><>::
+objects.png::CompressedTexture2D::4507336752317087371::1775219083::1776214154::1::::<><>::
+summer and spring items.png::CompressedTexture2D::3524779635500989347::1775219083::1776214154::1::::<><>::
+winter items.png::CompressedTexture2D::4471335419482308417::1775219083::1776214154::1::::<><>::
+::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/::1776214154
+autumn tilemap.png::CompressedTexture2D::998103159695796857::1775219083::1776214154::1::::<><>::
+bridges.png::CompressedTexture2D::7120995077529359600::1775219083::1776214154::1::::<><>::
+inside.png::CompressedTexture2D::4598686808967522852::1775219083::1776214154::1::::<><>::
+spring tilemap.png::CompressedTexture2D::5682326244782732002::1775219084::1776214154::1::::<><>::
+summer tilemap.png::CompressedTexture2D::1677666045379082317::1775219084::1776214154::1::::<><>::
+winter outside.png::CompressedTexture2D::479181551531774179::1775219084::1776214154::1::::<><>::
+::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/animated tiles/::1775219097
