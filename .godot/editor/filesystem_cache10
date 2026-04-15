@@ -1,21 +1,21 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1776258531
+::res://::1776264136
 animated_sprite_2d.gd::GDScript::7604862310097168335::1776258508::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
 cenário.gd::GDScript::7038636978173642001::1776258508::0::1::::<>TileMapLayer<><>0<>0<><>::
 cenário.tscn::PackedScene::7553957979315855919::1776258508::0::1::::<><><>0<>0<><>::uid://x5w6dlxq876h::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/summer tilemap.png<>uid://bqhouudj0jwxf::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/items&objects/summer and spring items.png<>uid://cbqnhkcj4hc0b::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/items&objects/autumn items.png
-fazendeira.gd::GDScript::3518318570782818295::1776258508::0::1::::<>CharacterBody2D<><>0<>0<><>::
-fazendeira.tscn::PackedScene::4514585832438381748::1776258508::0::1::::<><><>0<>0<><>::res://fazendeira.gd<>uid://bkvuelys7ckds::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/main character/walk and idle.png
+fazendeira.gd::GDScript::3518318570782818295::1776263986::0::1::::<>CharacterBody2D<><>0<>0<><>::
+fazendeira.tscn::PackedScene::4514585832438381748::1776263884::0::1::::<><><>0<>0<><>::uid://bqekgs56axy5d::::res://fazendeira.gd<>uid://bkvuelys7ckds::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/main character/walk and idle.png
 icon.svg::CompressedTexture2D::2565338501644993437::1775219374::1776258531::1::::<><><>0<>0<>eb0b3b3879fdb1e3f0d065e61ea8aaf7<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-principal.tscn::PackedScene::8598345321325146659::1776258508::0::1::::<><><>0<>0<><>::uid://dfvgt4oib3gqh::::res://cenário.tscn<>uid://b5k5tl31c4nuq::::res://fazendeira.tscn<>uid://cmlyu338s4hd0::::res://Imagens/FarmingCrops16x16/Crop_Spritesheet.png
+principal.tscn::PackedScene::8598345321325146659::1776259543::0::1::::<><><>0<>0<><>::uid://dfvgt4oib3gqh::::res://cenário.tscn<>uid://b5k5tl31c4nuq::::res://fazendeira.tscn<>uid://cmlyu338s4hd0::::res://Imagens/FarmingCrops16x16/Crop_Spritesheet.png
 README.md::TextFile::-1::1775240939::0::1::::<><><>0<>0<><>::
 ::res://Imagens/::1775223917
-::res://Imagens/FarmingCrops16x16/::1776258508
+::res://Imagens/FarmingCrops16x16/::1776258531
 Crop_Spritesheet.png::CompressedTexture2D::5639310085474640067::1775219090::1776258531::1::::<><><>0<>0<>df227858eeaf017c53e9c8dc75ed4f70<>res://.godot/imported/Crop_Spritesheet.png-be0d9c6adc289d78314f13ad918e2e67.ctex::
 README.txt::TextFile::-1::1775219090::0::1::::<><><>0<>0<><>::
 ::res://Imagens/Tiny Wonder Forest 1.0/::1775223917
 ::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/::1775223918
 ::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/::1775223918
-::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/main character/::1776258508
+::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/main character/::1776258531
 attack and die.png::CompressedTexture2D::8150890348089062903::1775219083::1776258531::1::::<><><>0<>0<>2d537a5bdd05001409ef3bdf3731f1b3<>res://.godot/imported/attack and die.png-6fd973dd3cb5b75dfead53379c39c855.ctex::
 cat kigurumi attack and die.png::CompressedTexture2D::3752162050275554773::1775219083::1776258531::1::::<><><>0<>0<>befaf0c48e30db415c8689c7665af3d5<>res://.godot/imported/cat kigurumi attack and die.png-50632c3cdd4f21b46a60b89622b982c6.ctex::
 cat kigurumi walk and idle.png::CompressedTexture2D::3941635661044065375::1775219083::1776258531::1::::<><><>0<>0<>7ff2814112d27d60c046174e72c011f7<>res://.godot/imported/cat kigurumi walk and idle.png-50d2f330650593a52671ca03df50ef6a.ctex::
@@ -25,7 +25,7 @@ portrait male.png::CompressedTexture2D::5427314597634187589::1775219083::1776258
 portrait only cat kigurumi.png::CompressedTexture2D::6019914228470092218::1775219083::1776258531::1::::<><><>0<>0<>a74a36a23375010a854eddd51c24c132<>res://.godot/imported/portrait only cat kigurumi.png-0e114e34516ea3d9b5c59bd963795956.ctex::
 sword.png::CompressedTexture2D::6757905778527186489::1775219083::1776258531::1::::<><><>0<>0<>8e03692d71745afd3f60574d22c6fe8d<>res://.godot/imported/sword.png-bd653718e088d9d69b5fc78181cf5dc1.ctex::
 walk and idle.png::CompressedTexture2D::3132883151632477296::1775219083::1776258531::1::::<><><>0<>0<>8d8efcc28c39fd6e0ccb805241a61a0e<>res://.godot/imported/walk and idle.png-29fd662a309c3762866773728615e440.ctex::
-::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/main character old/::1776258508
+::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/main character old/::1776258531
 attack and die.png::CompressedTexture2D::4321054997502351841::1775219083::1776258531::1::::<><><>0<>0<>d128b9629415952b70ed8a086d988121<>res://.godot/imported/attack and die.png-1deacbe11ae89c2f1d529e9df837fed2.ctex::
 cat kigurumi attack and die.png::CompressedTexture2D::8869475948121556326::1775219083::1776258531::1::::<><><>0<>0<>11135d1926b358ae45b20e709b1594c2<>res://.godot/imported/cat kigurumi attack and die.png-9f512dff59a9c849b546994a5e5acdde.ctex::
 cat kigurumi walk and idle.png::CompressedTexture2D::7506669834588201101::1775219083::1776258531::1::::<><><>0<>0<>083f065239ce5d11d8ef696f979f58ab<>res://.godot/imported/cat kigurumi walk and idle.png-970cc6b9911f414fd899fec89c2db645.ctex::
@@ -35,16 +35,16 @@ portrait male.png::CompressedTexture2D::8379549014400391222::1775219083::1776258
 portrait only cat kigurumi.png::CompressedTexture2D::9146069295507539102::1775219083::1776258531::1::::<><><>0<>0<>93e0c5eea843b3a3929bfc88afa02711<>res://.godot/imported/portrait only cat kigurumi.png-c5da0d1a0baa47f776beced985b8e4f9.ctex::
 sword.png::CompressedTexture2D::869308822573968307::1775219083::1776258531::1::::<><><>0<>0<>a3632c731808907c02274195ef7faf43<>res://.godot/imported/sword.png-1fd59667ab586bb13e39960209ae5cda.ctex::
 walk and idle.png::CompressedTexture2D::4481302650129647079::1775219083::1776258531::1::::<><><>0<>0<>653a065598a5146669fbc3eb510aa768<>res://.godot/imported/walk and idle.png-c7165ddc1f4bca6d771b6538c8d3fbbe.ctex::
-::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/mushrooms/::1776258508
+::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/mushrooms/::1776258531
 blue mushroom sheet.png::CompressedTexture2D::1161850822479250073::1775219083::1776258531::1::::<><><>0<>0<>4730dffa12c05a2523d770483224e2a8<>res://.godot/imported/blue mushroom sheet.png-a451f93295092c75761c391338fa2aa4.ctex::
 brown mushroom sheet.png::CompressedTexture2D::6517390174365391576::1775219083::1776258531::1::::<><><>0<>0<>1250f4200f1814beb27c4136b9fc7965<>res://.godot/imported/brown mushroom sheet.png-5de2f61ea8aea087177d7eacc1423903.ctex::
-::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/items&objects/::1776258508
+::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/items&objects/::1776258531
 autumn items.png::CompressedTexture2D::4876862605323550339::1775219083::1776258531::1::::<><><>0<>0<>9f5c16739d11987986a9baf5f5ab24a5<>res://.godot/imported/autumn items.png-72483f1d9ecdca844c9c2b62e4e9562a.ctex::
 furniture.png::CompressedTexture2D::6848396212768305346::1775219083::1776258531::1::::<><><>0<>0<>69bf6961903bde1a284f2b44b0d45394<>res://.godot/imported/furniture.png-d8584d6eb5d7766b1b70a8daea7f29f6.ctex::
 objects.png::CompressedTexture2D::4507336752317087371::1775219083::1776258531::1::::<><><>0<>0<>ca022bff4c294c2c5e72f8cc3b03ddb7<>res://.godot/imported/objects.png-a2eb2bf5ddc18ec64757172e571953b9.ctex::
 summer and spring items.png::CompressedTexture2D::3524779635500989347::1775219083::1776258531::1::::<><><>0<>0<>09dfcb836cffc4d1fc42ee506cd36cc5<>res://.godot/imported/summer and spring items.png-c223656f3a56648edeb348d27ee7f588.ctex::
 winter items.png::CompressedTexture2D::4471335419482308417::1775219083::1776258531::1::::<><><>0<>0<>51d57853e20af33a7507de7ef1f91078<>res://.godot/imported/winter items.png-a848006e0dd0aebebcebfb7ec0801a43.ctex::
-::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/::1776258508
+::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/::1776258531
 autumn tilemap.png::CompressedTexture2D::998103159695796857::1775219083::1776258531::1::::<><><>0<>0<>23753e77561aec147d08407e3e0c5cbf<>res://.godot/imported/autumn tilemap.png-b6558400d4ec774a8f38689aee6a0654.ctex::
 bridges.png::CompressedTexture2D::7120995077529359600::1775219083::1776258531::1::::<><><>0<>0<>b5e2567fd90d9babafa329381bb50a11<>res://.godot/imported/bridges.png-68dc271719e94f68b6f0f6a12cae8532.ctex::
 inside.png::CompressedTexture2D::4598686808967522852::1775219083::1776258531::1::::<><><>0<>0<>d600b0c602855402f1db1399483dbe94<>res://.godot/imported/inside.png-898daaa1762049411f45559ba2005c84.ctex::

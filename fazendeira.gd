@@ -4,13 +4,13 @@ const SPEED = 100.0
 const JUMP_VELOCITY = -100.0
 
 
-func _physics_process(delta: float) -> void:
+func _physics_process(delta) -> void:
 	
 	#movimentar para os 4 lados
 	var direction = Input.get_vector("Esquerda", "Direita", "UP","Down")
 	
 	if Input.is_action_pressed("Direita") || Input.is_action_pressed("Esquerda"):
-		pass
+		print(delta)
 		
 	elif Input.is_action_pressed("UP") || Input.is_action_pressed("Down"):
 		pass
@@ -31,3 +31,5 @@ func _physics_process(delta: float) -> void:
 		
 	if Input.is_action_just_pressed("ui_right"):
 		$AnimatedSprite2D.play("andando_frente")
+		
+		
