@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://durdqx3pjg1tv"]
+
+[ext_resource type="PackedScene" uid="uid://dfvgt4oib3gqh" path="res://cenário.tscn" id="1_tr6oq"]
+[ext_resource type="PackedScene" uid="uid://b5k5tl31c4nuq" path="res://fazendeira.tscn" id="2_m7tbw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m7tbw"]
+
+[node name="Principal" type="Node2D"]
+
+[node name="Cenário_grama" parent="." instance=ExtResource("1_tr6oq")]
+position = Vector2(-469, -240)
+
+[node name="Fazendeira" parent="." instance=ExtResource("2_m7tbw")]
+position = Vector2(-22, 39)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(108, 92)
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(0, -2)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
+sprite_frames = SubResource("SpriteFrames_m7tbw")

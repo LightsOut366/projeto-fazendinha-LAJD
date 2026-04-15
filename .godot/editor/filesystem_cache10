@@ -1,5 +1,9 @@
 63f7b34db8d8cdea90c76aacccf841ec
+<<<<<<< Updated upstream
 ::res://::1775222628
+=======
+::res://::1776028004
+>>>>>>> Stashed changes
 cenário.tscn::PackedScene::7553957979315855919::1775222394::0::1::::<><><>0<>0<><>::uid://x5w6dlxq876h::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/summer tilemap.png<>uid://bqhouudj0jwxf::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/items&objects/summer and spring items.png<>uid://cbqnhkcj4hc0b::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/items&objects/autumn items.png
 icon.svg::CompressedTexture2D::2565338501644993437::1775219374::1775219394::1::::<><><>0<>0<>eb0b3b3879fdb1e3f0d065e61ea8aaf7<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 principal.tscn::PackedScene::8598345321325146659::1775222196::0::1::::<><><>0<>0<><>::uid://dfvgt4oib3gqh::::res://cenário.tscn
