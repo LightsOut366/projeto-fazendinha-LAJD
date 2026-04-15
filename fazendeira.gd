@@ -10,10 +10,10 @@ func _physics_process(delta: float) -> void:
 	var direction = Input.get_vector("Esquerda", "Direita", "UP","Down")
 	
 	if Input.is_action_pressed("Direita") || Input.is_action_pressed("Esquerda"):
-		direction.y=0
+		pass
 		
 	elif Input.is_action_pressed("UP") || Input.is_action_pressed("Down"):
-		direction.x=0
+		pass
 	
 	else:
 		direction = Vector2.ZERO

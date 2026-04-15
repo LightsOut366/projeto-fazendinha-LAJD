@@ -1,6 +1,6 @@
-[gd_scene load_steps=25 format=3 uid="uid://b5k5tl31c4nuq"]
+[gd_scene format=3 uid="uid://b5k5tl31c4nuq"]
 
-[ext_resource type="Script" path="res://fazendeira.gd" id="1_mnb8e"]
+[ext_resource type="Script" uid="uid://bqekgs56axy5d" path="res://fazendeira.gd" id="1_mnb8e"]
 [ext_resource type="Texture2D" uid="uid://bkvuelys7ckds" path="res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/main character/walk and idle.png" id="1_pyhwh"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_upgy8"]
@@ -164,14 +164,13 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pyhwh"]
 size = Vector2(14, 19)
 
-[node name="Fazendeira" type="CharacterBody2D"]
+[node name="Fazendeira" type="CharacterBody2D" unique_id=132874714]
 script = ExtResource("1_mnb8e")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=921107600]
 sprite_frames = SubResource("SpriteFrames_26ehx")
-animation = &"andando_frente"
-frame_progress = 0.869765
+animation = &"parado"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2070106716]
 position = Vector2(1, 1.5)
 shape = SubResource("RectangleShape2D_pyhwh")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://durdqx3pjg1tv"]
+[gd_scene format=3 uid="uid://durdqx3pjg1tv"]
 
 [ext_resource type="PackedScene" uid="uid://dfvgt4oib3gqh" path="res://cenário.tscn" id="1_tr6oq"]
 [ext_resource type="PackedScene" uid="uid://b5k5tl31c4nuq" path="res://fazendeira.tscn" id="2_m7tbw"]
@@ -57,26 +57,26 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jrnu8"]
 size = Vector2(14, 15)
 
-[node name="Principal" type="Node2D"]
+[node name="Principal" type="Node2D" unique_id=1553167698]
 
-[node name="Cenário_grama" parent="." instance=ExtResource("1_tr6oq")]
+[node name="Cenário_grama" parent="." unique_id=316417546 instance=ExtResource("1_tr6oq")]
 position = Vector2(-468, -240)
 
-[node name="Fazendeira" parent="." instance=ExtResource("2_m7tbw")]
-position = Vector2(-2, 19)
+[node name="Fazendeira" parent="." unique_id=1071126882 instance=ExtResource("2_m7tbw")]
+position = Vector2(-1, 14)
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=607525721]
 position = Vector2(66, -17)
 zoom = Vector2(2, 2)
 
-[node name="Tomate" type="Area2D" parent="."]
+[node name="Tomate" type="Area2D" parent="." unique_id=1108814822]
 position = Vector2(28, 10)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Tomate"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Tomate" unique_id=1018323991]
 sprite_frames = SubResource("SpriteFrames_yant3")
 animation = &"tomate"
 autoplay = "tomate"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tomate"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tomate" unique_id=1950936756]
 position = Vector2(0, 1.5)
 shape = SubResource("RectangleShape2D_jrnu8")
