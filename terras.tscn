@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://bpmywif85fdnw"]
+
+[ext_resource type="PackedScene" uid="uid://durdqx3pjg1tv" path="res://principal.tscn" id="1_lyxgi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lyxgi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ksfu0"]
+
+[node name="Principal" unique_id=1553167698 instance=ExtResource("1_lyxgi")]
+
+[node name="Fazendeira" parent="." index="1" unique_id=1071126882]
+position = Vector2(29, 98)
+
+[node name="Tomate" parent="." index="3" unique_id=1108814822]
+position = Vector2(261, 37)
+
+[node name="baldinhos" type="Node" parent="." index="4" unique_id=75637598]
+
+[node name="água" type="Area2D" parent="baldinhos" index="0" unique_id=1045586987]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/água" index="0" unique_id=202327947]
+position = Vector2(464, 175)
+shape = SubResource("RectangleShape2D_lyxgi")
+
+[node name="sementes" type="Area2D" parent="baldinhos" index="1" unique_id=707027224]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/sementes" index="0" unique_id=328611495]
+position = Vector2(464, 143)
+shape = SubResource("RectangleShape2D_ksfu0")
+
+[node name="terra" type="Node" parent="." index="5" unique_id=1499392702]
