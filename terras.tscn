@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cmlyu338s4hd0" path="res://Imagens/FarmingCrops16x16/Crop_Spritesheet.png" id="2_ksfu0"]
 [ext_resource type="PackedScene" uid="uid://dfvgt4oib3gqh" path="res://cenário.tscn" id="3_j3426"]
 [ext_resource type="PackedScene" uid="uid://b5k5tl31c4nuq" path="res://fazendeira.tscn" id="4_cnnf7"]
+[ext_resource type="PackedScene" uid="uid://bdb0me46lbnmp" path="res://interface.tscn" id="7_fbvrd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ksfu0"]
 
@@ -356,6 +357,8 @@ shape = SubResource("RectangleShape2D_s62yw")
 [node name="Fazendeira" parent="." unique_id=132874714 instance=ExtResource("4_cnnf7")]
 z_index = 1
 position = Vector2(83, 92)
+
+[node name="HUD" parent="." unique_id=921128581 instance=ExtResource("7_fbvrd")]
 
 [connection signal="body_entered" from="baldinhos/sementes" to="baldinhos/sementes" method="_on_body_entered"]
 [connection signal="body_exited" from="baldinhos/sementes" to="baldinhos/sementes" method="_on_body_exited"]

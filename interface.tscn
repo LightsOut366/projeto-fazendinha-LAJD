@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://bdb0me46lbnmp"]
+
+[ext_resource type="Script" uid="uid://cbp1xdv8dj7a" path="res://interface.gd" id="1_kyn48"]
+[ext_resource type="FontFile" uid="uid://dpua8ddxtg5hy" path="res://Fontes/DigitalDisco.ttf" id="1_rh14k"]
+
+[sub_resource type="Theme" id="Theme_rh14k"]
+/fonts/fonte_principal = ExtResource("1_rh14k")
+CheckBox/fonts/font = ExtResource("1_rh14k")
+Label/fonts/font = ExtResource("1_rh14k")
+
+[node name="HUD" type="CanvasLayer" unique_id=921128581]
+script = ExtResource("1_kyn48")
+
+[node name="Label" type="Label" parent="." unique_id=1399553048]
+offset_left = 20.0
+offset_top = 474.0
+offset_right = 200.0
+offset_bottom = 552.0
+theme_override_fonts/font = ExtResource("1_rh14k")
+theme_override_font_sizes/font_size = 64
+text = "Texto!"
+
+[node name="dinheiro" type="Label" parent="." unique_id=951781735]
+offset_left = 680.0
+offset_top = 24.0
+offset_right = 928.0
+offset_bottom = 72.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("1_rh14k")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 2
+
+[node name="sementes" type="Label" parent="." unique_id=1358325114]
+offset_left = 752.0
+offset_top = 128.0
+offset_right = 892.0
+offset_bottom = 176.0
+theme = SubResource("Theme_rh14k")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("1_rh14k")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 2
+
+[node name="colhido" type="Label" parent="." unique_id=792762449]
+offset_left = 768.0
+offset_top = 600.0
+offset_right = 972.0
+offset_bottom = 648.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("1_rh14k")
+theme_override_font_sizes/font_size = 48
+text = " "
+horizontal_alignment = 2
+
+[node name="textos" type="Label" parent="." unique_id=1143991699]
+offset_left = 899.0
+offset_top = 24.0
+offset_right = 1148.0
+offset_bottom = 696.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = 4
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("1_rh14k")
+theme_override_font_sizes/font_size = 48
+text = " = Dinheiro
+
+= Sementes
+
+
+
+
+
+
+
+
+= Frutas
+"
+horizontal_alignment = 2

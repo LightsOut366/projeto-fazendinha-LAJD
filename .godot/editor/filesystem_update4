@@ -1,3 +1,9 @@
 res://cenário.tscn
 res://Dados.gd
 res://fazendeira.gd
+res://interface.tscn
+res://principal.tscn
+res://interface.gd
+res://cofre.gd
+res://terras.tscn
+res://semente.gd
