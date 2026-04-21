@@ -355,6 +355,7 @@ shape = SubResource("RectangleShape2D_s62yw")
 
 [node name="Fazendeira" parent="." unique_id=132874714 instance=ExtResource("4_cnnf7")]
 z_index = 1
+position = Vector2(83, 92)
 
 [connection signal="body_entered" from="baldinhos/sementes" to="baldinhos/sementes" method="_on_body_entered"]
 [connection signal="body_exited" from="baldinhos/sementes" to="baldinhos/sementes" method="_on_body_exited"]

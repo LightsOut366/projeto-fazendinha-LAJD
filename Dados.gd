@@ -1,7 +1,7 @@
 extends Node
-var semente = 0
-var dinheiro = 5
-var colhido = 0
+@export var semente = 0
+@export var dinheiro = 5
+@export var colhido = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

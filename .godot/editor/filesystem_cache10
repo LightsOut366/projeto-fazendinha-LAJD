@@ -1,30 +1,30 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1776734259
-cenário.gd::GDScript::7038636978173642001::1776505649::0::1::::<>TileMapLayer<><>0<>0<><>::
-cenário.tscn::PackedScene::7553957979315855919::1776727702::0::1::::<><><>0<>0<><>::uid://x5w6dlxq876h::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/summer tilemap.png<>uid://bqhouudj0jwxf::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/items&objects/summer and spring items.png<>uid://cbqnhkcj4hc0b::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/items&objects/autumn items.png<>uid://ohqu342661h2::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/autumn tilemap.png
-Dados.gd::GDScript::3681582330517951062::1776732583::0::1::::<>Node<><>0<>0<><>::
-fazendeira.gd::GDScript::3518318570782818295::1776733349::0::1::::<>CharacterBody2D<><>0<>0<><>::
-fazendeira.tscn::PackedScene::4514585832438381748::1776734248::0::1::::<><><>0<>0<><>::uid://bqekgs56axy5d::::res://fazendeira.gd<>uid://bkvuelys7ckds::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/main character/walk and idle.png
-icon.svg::CompressedTexture2D::2565338501644993437::1776505649::1776722389::1::::<><><>0<>0<>eb0b3b3879fdb1e3f0d065e61ea8aaf7<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-principal.tscn::PackedScene::8598345321325146659::1776731553::0::1::::<><><>0<>0<><>::uid://dfvgt4oib3gqh::::res://cenário.tscn<>uid://bpmywif85fdnw::::res://terras.tscn
-README.md::TextFile::-1::1776724142::0::1::::<><><>0<>0<><>::
-cofre.gd::GDScript::4990433477851147164::1776734385::0::1::::<>Area2D<><>0<>0<><>::
-terra.gd::GDScript::146900105180726972::1776733368::0::1::::<>Area2D<><>0<>0<><>::
-terras.tscn::PackedScene::3465522796055089732::1776734418::0::1::::<><><>0<>0<><>::uid://cdfonkg407c7::::res://terra.gd<>uid://cr0j3e582w6qh::::res://tomate.gd<>uid://cddnyfcnx6ldc::::res://cofre.gd<>uid://cmlyu338s4hd0::::res://Imagens/FarmingCrops16x16/Crop_Spritesheet.png<>uid://dfvgt4oib3gqh::::res://cenário.tscn<>uid://b5k5tl31c4nuq::::res://fazendeira.tscn
-tomate.gd::GDScript::6018257866222366499::1776733909::0::1::::<>Area2D<><>0<>0<><>::
-::res://Imagens/::1776505649
-::res://Imagens/FarmingCrops16x16/::1776724370
-Crop_Spritesheet.png::CompressedTexture2D::5639310085474640067::1776505649::1776506635::1::::<><><>0<>0<>df227858eeaf017c53e9c8dc75ed4f70<>res://.godot/imported/Crop_Spritesheet.png-be0d9c6adc289d78314f13ad918e2e67.ctex::
-::res://Imagens/Tiny Wonder Forest 1.0/::1776505649
-::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/::1776505649
-::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/::1776724382
-::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/main character/::1776724371
-walk and idle.png::CompressedTexture2D::3132883151632477296::1776505649::1776506635::1::::<><><>0<>0<>8d8efcc28c39fd6e0ccb805241a61a0e<>res://.godot/imported/walk and idle.png-29fd662a309c3762866773728615e440.ctex::
-::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/items&objects/::1776724371
-autumn items.png::CompressedTexture2D::4876862605323550339::1776724142::1776724147::1::::<><><>0<>0<>9f5c16739d11987986a9baf5f5ab24a5<>res://.godot/imported/autumn items.png-72483f1d9ecdca844c9c2b62e4e9562a.ctex::
-summer and spring items.png::CompressedTexture2D::3524779635500989347::1776505649::1776506635::1::::<><><>0<>0<>09dfcb836cffc4d1fc42ee506cd36cc5<>res://.godot/imported/summer and spring items.png-c223656f3a56648edeb348d27ee7f588.ctex::
-::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/::1776724331
-autumn tilemap.png::CompressedTexture2D::998103159695796857::1776724142::1776724147::1::::<><><>0<>0<>23753e77561aec147d08407e3e0c5cbf<>res://.godot/imported/autumn tilemap.png-b6558400d4ec774a8f38689aee6a0654.ctex::
-spring tilemap.png::CompressedTexture2D::5682326244782732002::1776505649::1776506635::1::::<><><>0<>0<>8a15ada194da26441f2848509e656ce5<>res://.godot/imported/spring tilemap.png-a5646341df12d4849aa411629238083b.ctex::
-summer tilemap.png::CompressedTexture2D::1677666045379082317::1776505649::1776506635::1::::<><><>0<>0<>ad6343f0d4f01bacb13a379bd83b2858<>res://.godot/imported/summer tilemap.png-e3f48bd185b872d0f7f472b6b61e6edc.ctex::
-::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/animated tiles/::1776505649
+::res://::1776772723
+cenário.gd::GDScript::7038636978173642001::1776258508::0::1::::<>TileMapLayer<><>0<>0<><>::
+cenário.tscn::PackedScene::7553957979315855919::1776772686::0::1::::<><><>0<>0<><>::uid://x5w6dlxq876h::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/summer tilemap.png<>uid://bqhouudj0jwxf::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/items&objects/summer and spring items.png<>uid://cbqnhkcj4hc0b::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/items&objects/autumn items.png<>uid://ohqu342661h2::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/autumn tilemap.png
+cofre.gd::GDScript::4990433477851147164::1776772686::0::1::::<>Area2D<><>0<>0<><>::
+Dados.gd::GDScript::3681582330517951062::1776772686::0::1::::<>Node<><>0<>0<><>::
+fazendeira.gd::GDScript::3518318570782818295::1776772686::0::1::::<>CharacterBody2D<><>0<>0<><>::
+fazendeira.tscn::PackedScene::4514585832438381748::1776772686::0::1::::<><><>0<>0<><>::uid://bqekgs56axy5d::::res://fazendeira.gd<>uid://bkvuelys7ckds::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/main character/walk and idle.png
+icon.svg::CompressedTexture2D::2565338501644993437::1775219374::1776772724::1::::<><><>0<>0<>eb0b3b3879fdb1e3f0d065e61ea8aaf7<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+principal.tscn::PackedScene::8598345321325146659::1776772686::0::1::::<><><>0<>0<><>::uid://dfvgt4oib3gqh::::res://cenário.tscn<>uid://bpmywif85fdnw::::res://terras.tscn
+README.md::TextFile::-1::1775240939::0::1::::<><><>0<>0<><>::
+semente.gd::GDScript::146900105180726972::1776772686::0::1::::<>Area2D<><>0<>0<><>::
+terras.tscn::PackedScene::3465522796055089732::1776772686::0::1::::<><><>0<>0<><>::uid://cdfonkg407c7::::res://semente.gd<>uid://cr0j3e582w6qh::::res://tomate.gd<>uid://cddnyfcnx6ldc::::res://cofre.gd<>uid://cmlyu338s4hd0::::res://Imagens/FarmingCrops16x16/Crop_Spritesheet.png<>uid://dfvgt4oib3gqh::::res://cenário.tscn<>uid://b5k5tl31c4nuq::::res://fazendeira.tscn
+tomate.gd::GDScript::6018257866222366499::1776772686::0::1::::<>Area2D<><>0<>0<><>::
+::res://Imagens/::1775223917
+::res://Imagens/FarmingCrops16x16/::1776772686
+Crop_Spritesheet.png::CompressedTexture2D::5639310085474640067::1775219090::1776258531::1::::<><><>0<>0<>df227858eeaf017c53e9c8dc75ed4f70<>res://.godot/imported/Crop_Spritesheet.png-be0d9c6adc289d78314f13ad918e2e67.ctex::
+::res://Imagens/Tiny Wonder Forest 1.0/::1775223917
+::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/::1775223918
+::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/::1776772686
+::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/main character/::1776772686
+walk and idle.png::CompressedTexture2D::3132883151632477296::1775219083::1776258531::1::::<><><>0<>0<>8d8efcc28c39fd6e0ccb805241a61a0e<>res://.godot/imported/walk and idle.png-29fd662a309c3762866773728615e440.ctex::
+::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/items&objects/::1776772686
+autumn items.png::CompressedTexture2D::4876862605323550339::1775219083::1776258531::1::::<><><>0<>0<>9f5c16739d11987986a9baf5f5ab24a5<>res://.godot/imported/autumn items.png-72483f1d9ecdca844c9c2b62e4e9562a.ctex::
+summer and spring items.png::CompressedTexture2D::3524779635500989347::1775219083::1776258531::1::::<><><>0<>0<>09dfcb836cffc4d1fc42ee506cd36cc5<>res://.godot/imported/summer and spring items.png-c223656f3a56648edeb348d27ee7f588.ctex::
+::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/::1776772686
+autumn tilemap.png::CompressedTexture2D::998103159695796857::1775219083::1776258531::1::::<><><>0<>0<>23753e77561aec147d08407e3e0c5cbf<>res://.godot/imported/autumn tilemap.png-b6558400d4ec774a8f38689aee6a0654.ctex::
+spring tilemap.png::CompressedTexture2D::5682326244782732002::1775219084::1776258531::1::::<><><>0<>0<>8a15ada194da26441f2848509e656ce5<>res://.godot/imported/spring tilemap.png-a5646341df12d4849aa411629238083b.ctex::
+summer tilemap.png::CompressedTexture2D::1677666045379082317::1775219084::1776258531::1::::<><><>0<>0<>ad6343f0d4f01bacb13a379bd83b2858<>res://.godot/imported/summer tilemap.png-e3f48bd185b872d0f7f472b6b61e6edc.ctex::
+::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/animated tiles/::1775223918
