@@ -1,0 +1,20 @@
+extends Area2D
+var entrou = false
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	if entrou == true and Input.is_action_just_pressed("ui_accept") and Dados.colhido>=1:
+		Dados.colhido-=1
+		Dados.dinheiro+=3
+
+
+func _on_body_entered(body: Node2D) -> void:
+	entrou= true
+
+
+func _on_body_exited(body: Node2D) -> void:
+	entrou = false

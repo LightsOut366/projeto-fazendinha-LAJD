@@ -1,31 +1,402 @@
 [gd_scene format=3 uid="uid://bpmywif85fdnw"]
 
-[ext_resource type="PackedScene" uid="uid://durdqx3pjg1tv" path="res://principal.tscn" id="1_lyxgi"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lyxgi"]
+[ext_resource type="Script" uid="uid://cdfonkg407c7" path="res://semente.gd" id="1_ckude"]
+[ext_resource type="Script" uid="uid://cr0j3e582w6qh" path="res://tomate.gd" id="1_j3426"]
+[ext_resource type="Script" uid="uid://cddnyfcnx6ldc" path="res://cofre.gd" id="2_e51im"]
+[ext_resource type="Texture2D" uid="uid://cmlyu338s4hd0" path="res://Imagens/FarmingCrops16x16/Crop_Spritesheet.png" id="2_ksfu0"]
+[ext_resource type="PackedScene" uid="uid://dfvgt4oib3gqh" path="res://cenário.tscn" id="3_j3426"]
+[ext_resource type="PackedScene" uid="uid://b5k5tl31c4nuq" path="res://fazendeira.tscn" id="4_cnnf7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ksfu0"]
 
-[node name="Principal" unique_id=1553167698 instance=ExtResource("1_lyxgi")]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lyxgi"]
 
-[node name="Fazendeira" parent="." index="1" unique_id=1071126882]
-position = Vector2(29, 98)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fbvrd"]
 
-[node name="Tomate" parent="." index="3" unique_id=1108814822]
-position = Vector2(261, 37)
+[sub_resource type="AtlasTexture" id="AtlasTexture_j3426"]
+atlas = ExtResource("2_ksfu0")
+region = Rect2(80, 32, 16, 16)
 
-[node name="baldinhos" type="Node" parent="." index="4" unique_id=75637598]
+[sub_resource type="AtlasTexture" id="AtlasTexture_cnnf7"]
+atlas = ExtResource("2_ksfu0")
+region = Rect2(64, 32, 16, 16)
 
-[node name="água" type="Area2D" parent="baldinhos" index="0" unique_id=1045586987]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ckude"]
+atlas = ExtResource("2_ksfu0")
+region = Rect2(48, 32, 16, 16)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/água" index="0" unique_id=202327947]
-position = Vector2(464, 175)
-shape = SubResource("RectangleShape2D_lyxgi")
+[sub_resource type="AtlasTexture" id="AtlasTexture_e51im"]
+atlas = ExtResource("2_ksfu0")
+region = Rect2(32, 32, 16, 16)
 
-[node name="sementes" type="Area2D" parent="baldinhos" index="1" unique_id=707027224]
+[sub_resource type="AtlasTexture" id="AtlasTexture_fbvrd"]
+atlas = ExtResource("2_ksfu0")
+region = Rect2(16, 32, 16, 16)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/sementes" index="0" unique_id=328611495]
+[sub_resource type="AtlasTexture" id="AtlasTexture_f6gmt"]
+atlas = ExtResource("2_ksfu0")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sv4aw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j3426")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cnnf7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ckude")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e51im")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fbvrd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f6gmt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s62yw"]
+
+[node name="terras" type="Node2D" unique_id=1466305864]
+
+[node name="baldinhos" type="Node" parent="." unique_id=612115542]
+
+[node name="sementes" type="Area2D" parent="baldinhos" unique_id=2010240149]
+script = ExtResource("1_ckude")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/sementes" unique_id=570279042]
 position = Vector2(464, 143)
 shape = SubResource("RectangleShape2D_ksfu0")
 
-[node name="terra" type="Node" parent="." index="5" unique_id=1499392702]
+[node name="água" type="Area2D" parent="baldinhos" unique_id=1825911967]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/água" unique_id=76417031]
+position = Vector2(464, 175)
+shape = SubResource("RectangleShape2D_lyxgi")
+
+[node name="cofre" type="Area2D" parent="baldinhos" unique_id=1440779917]
+script = ExtResource("2_e51im")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/cofre" unique_id=509423539]
+position = Vector2(401, 49)
+shape = SubResource("RectangleShape2D_fbvrd")
+
+[node name="tomates" type="Node" parent="." unique_id=2092986633]
+
+[node name="tomate" type="Area2D" parent="tomates" unique_id=114578769]
+position = Vector2(221, 144)
+script = ExtResource("1_j3426")
+
+[node name="animacao_tomate" type="AnimatedSprite2D" parent="tomates/tomate" unique_id=349789311]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_sv4aw")
+frame = 5
+frame_progress = 1.0
+
+[node name="colisao_tomate" type="CollisionShape2D" parent="tomates/tomate" unique_id=654241887]
+shape = SubResource("RectangleShape2D_s62yw")
+
+[node name="tomate2" type="Area2D" parent="tomates" unique_id=2136481159]
+position = Vector2(253, 144)
+script = ExtResource("1_j3426")
+
+[node name="animacao_tomate" type="AnimatedSprite2D" parent="tomates/tomate2" unique_id=1787963336]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_sv4aw")
+frame = 5
+frame_progress = 1.0
+
+[node name="colisao_tomate" type="CollisionShape2D" parent="tomates/tomate2" unique_id=703761105]
+shape = SubResource("RectangleShape2D_s62yw")
+
+[node name="tomate3" type="Area2D" parent="tomates" unique_id=980570949]
+position = Vector2(285, 144)
+script = ExtResource("1_j3426")
+
+[node name="animacao_tomate" type="AnimatedSprite2D" parent="tomates/tomate3" unique_id=1388977032]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_sv4aw")
+frame = 5
+frame_progress = 1.0
+
+[node name="colisao_tomate" type="CollisionShape2D" parent="tomates/tomate3" unique_id=1067144671]
+shape = SubResource("RectangleShape2D_s62yw")
+
+[node name="tomate4" type="Area2D" parent="tomates" unique_id=1521580807]
+position = Vector2(316, 144)
+script = ExtResource("1_j3426")
+
+[node name="animacao_tomate" type="AnimatedSprite2D" parent="tomates/tomate4" unique_id=1781847875]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_sv4aw")
+frame = 5
+frame_progress = 1.0
+
+[node name="colisao_tomate" type="CollisionShape2D" parent="tomates/tomate4" unique_id=420118377]
+shape = SubResource("RectangleShape2D_s62yw")
+
+[node name="tomate5" type="Area2D" parent="tomates" unique_id=1585728906]
+position = Vector2(349, 144)
+script = ExtResource("1_j3426")
+
+[node name="animacao_tomate" type="AnimatedSprite2D" parent="tomates/tomate5" unique_id=1930591998]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_sv4aw")
+frame = 5
+frame_progress = 1.0
+
+[node name="colisao_tomate" type="CollisionShape2D" parent="tomates/tomate5" unique_id=1742623921]
+shape = SubResource("RectangleShape2D_s62yw")
+
+[node name="tomate6" type="Area2D" parent="tomates" unique_id=1611715018]
+position = Vector2(220, 176)
+script = ExtResource("1_j3426")
+
+[node name="animacao_tomate" type="AnimatedSprite2D" parent="tomates/tomate6" unique_id=1602902885]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_sv4aw")
+frame = 5
+frame_progress = 1.0
+
+[node name="colisao_tomate" type="CollisionShape2D" parent="tomates/tomate6" unique_id=509057041]
+shape = SubResource("RectangleShape2D_s62yw")
+
+[node name="tomate7" type="Area2D" parent="tomates" unique_id=1313918204]
+position = Vector2(252, 176)
+script = ExtResource("1_j3426")
+
+[node name="animacao_tomate" type="AnimatedSprite2D" parent="tomates/tomate7" unique_id=821222798]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_sv4aw")
+frame = 5
+frame_progress = 1.0
+
+[node name="colisao_tomate" type="CollisionShape2D" parent="tomates/tomate7" unique_id=1347718060]
+shape = SubResource("RectangleShape2D_s62yw")
+
+[node name="tomate8" type="Area2D" parent="tomates" unique_id=1910773202]
+position = Vector2(285, 176)
+script = ExtResource("1_j3426")
+
+[node name="animacao_tomate" type="AnimatedSprite2D" parent="tomates/tomate8" unique_id=1857474166]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_sv4aw")
+frame = 5
+frame_progress = 1.0
+
+[node name="colisao_tomate" type="CollisionShape2D" parent="tomates/tomate8" unique_id=1939507934]
+shape = SubResource("RectangleShape2D_s62yw")
+
+[node name="tomate9" type="Area2D" parent="tomates" unique_id=294644449]
+position = Vector2(317, 176)
+script = ExtResource("1_j3426")
+
+[node name="animacao_tomate" type="AnimatedSprite2D" parent="tomates/tomate9" unique_id=1900899583]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_sv4aw")
+frame = 5
+frame_progress = 1.0
+
+[node name="colisao_tomate" type="CollisionShape2D" parent="tomates/tomate9" unique_id=36339884]
+shape = SubResource("RectangleShape2D_s62yw")
+
+[node name="tomate10" type="Area2D" parent="tomates" unique_id=601925136]
+position = Vector2(349, 176)
+script = ExtResource("1_j3426")
+
+[node name="animacao_tomate" type="AnimatedSprite2D" parent="tomates/tomate10" unique_id=1719715858]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_sv4aw")
+frame = 5
+frame_progress = 1.0
+
+[node name="colisao_tomate" type="CollisionShape2D" parent="tomates/tomate10" unique_id=59163589]
+shape = SubResource("RectangleShape2D_s62yw")
+
+[node name="tomate11" type="Area2D" parent="tomates" unique_id=45812723]
+position = Vector2(221, 208)
+script = ExtResource("1_j3426")
+
+[node name="animacao_tomate" type="AnimatedSprite2D" parent="tomates/tomate11" unique_id=1181449246]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_sv4aw")
+frame = 5
+frame_progress = 1.0
+
+[node name="colisao_tomate" type="CollisionShape2D" parent="tomates/tomate11" unique_id=1164109994]
+shape = SubResource("RectangleShape2D_s62yw")
+
+[node name="tomate12" type="Area2D" parent="tomates" unique_id=1270763607]
+position = Vector2(253, 208)
+script = ExtResource("1_j3426")
+
+[node name="animacao_tomate" type="AnimatedSprite2D" parent="tomates/tomate12" unique_id=1751423164]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_sv4aw")
+frame = 5
+frame_progress = 1.0
+
+[node name="colisao_tomate" type="CollisionShape2D" parent="tomates/tomate12" unique_id=1896163148]
+shape = SubResource("RectangleShape2D_s62yw")
+
+[node name="tomate13" type="Area2D" parent="tomates" unique_id=2120821785]
+position = Vector2(285, 208)
+script = ExtResource("1_j3426")
+
+[node name="animacao_tomate" type="AnimatedSprite2D" parent="tomates/tomate13" unique_id=406265602]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_sv4aw")
+frame = 5
+frame_progress = 1.0
+
+[node name="colisao_tomate" type="CollisionShape2D" parent="tomates/tomate13" unique_id=1308379877]
+shape = SubResource("RectangleShape2D_s62yw")
+
+[node name="tomate14" type="Area2D" parent="tomates" unique_id=1374065286]
+position = Vector2(318, 208)
+script = ExtResource("1_j3426")
+
+[node name="animacao_tomate" type="AnimatedSprite2D" parent="tomates/tomate14" unique_id=157734607]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_sv4aw")
+frame = 5
+frame_progress = 1.0
+
+[node name="colisao_tomate" type="CollisionShape2D" parent="tomates/tomate14" unique_id=369368074]
+shape = SubResource("RectangleShape2D_s62yw")
+
+[node name="tomate15" type="Area2D" parent="tomates" unique_id=1776723379]
+position = Vector2(350, 208)
+script = ExtResource("1_j3426")
+
+[node name="animacao_tomate" type="AnimatedSprite2D" parent="tomates/tomate15" unique_id=2137689499]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_sv4aw")
+frame = 5
+frame_progress = 1.0
+
+[node name="colisao_tomate" type="CollisionShape2D" parent="tomates/tomate15" unique_id=358658669]
+shape = SubResource("RectangleShape2D_s62yw")
+
+[node name="tomate16" type="Area2D" parent="tomates" unique_id=1473212103]
+position = Vector2(221, 240)
+script = ExtResource("1_j3426")
+
+[node name="animacao_tomate" type="AnimatedSprite2D" parent="tomates/tomate16" unique_id=302622745]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_sv4aw")
+frame = 5
+frame_progress = 1.0
+
+[node name="colisao_tomate" type="CollisionShape2D" parent="tomates/tomate16" unique_id=955456950]
+shape = SubResource("RectangleShape2D_s62yw")
+
+[node name="tomate17" type="Area2D" parent="tomates" unique_id=155308773]
+position = Vector2(253, 240)
+script = ExtResource("1_j3426")
+
+[node name="animacao_tomate" type="AnimatedSprite2D" parent="tomates/tomate17" unique_id=409565268]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_sv4aw")
+frame = 5
+frame_progress = 1.0
+
+[node name="colisao_tomate" type="CollisionShape2D" parent="tomates/tomate17" unique_id=1494630140]
+shape = SubResource("RectangleShape2D_s62yw")
+
+[node name="tomate18" type="Area2D" parent="tomates" unique_id=1839198873]
+position = Vector2(286, 240)
+script = ExtResource("1_j3426")
+
+[node name="animacao_tomate" type="AnimatedSprite2D" parent="tomates/tomate18" unique_id=2009606087]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_sv4aw")
+frame = 5
+frame_progress = 1.0
+
+[node name="colisao_tomate" type="CollisionShape2D" parent="tomates/tomate18" unique_id=1020512559]
+shape = SubResource("RectangleShape2D_s62yw")
+
+[node name="tomate19" type="Area2D" parent="tomates" unique_id=1269991357]
+position = Vector2(318, 240)
+script = ExtResource("1_j3426")
+
+[node name="animacao_tomate" type="AnimatedSprite2D" parent="tomates/tomate19" unique_id=285135825]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_sv4aw")
+frame = 5
+frame_progress = 1.0
+
+[node name="colisao_tomate" type="CollisionShape2D" parent="tomates/tomate19" unique_id=611517564]
+shape = SubResource("RectangleShape2D_s62yw")
+
+[node name="tomate20" type="Area2D" parent="tomates" unique_id=1065144314]
+position = Vector2(350, 240)
+script = ExtResource("1_j3426")
+
+[node name="animacao_tomate" type="AnimatedSprite2D" parent="tomates/tomate20" unique_id=1871247505]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_sv4aw")
+frame = 5
+frame_progress = 1.0
+
+[node name="colisao_tomate" type="CollisionShape2D" parent="tomates/tomate20" unique_id=282139304]
+shape = SubResource("RectangleShape2D_s62yw")
+
+[node name="Cenário_grama2" parent="." unique_id=985514933 instance=ExtResource("3_j3426")]
+
+[node name="Fazendeira" parent="." unique_id=132874714 instance=ExtResource("4_cnnf7")]
+z_index = 1
+
+[connection signal="body_entered" from="baldinhos/sementes" to="baldinhos/sementes" method="_on_body_entered"]
+[connection signal="body_exited" from="baldinhos/sementes" to="baldinhos/sementes" method="_on_body_exited"]
+[connection signal="body_entered" from="baldinhos/cofre" to="baldinhos/cofre" method="_on_body_entered"]
+[connection signal="body_exited" from="baldinhos/cofre" to="baldinhos/cofre" method="_on_body_exited"]
+[connection signal="body_entered" from="tomates/tomate" to="tomates/tomate" method="_on_body_entered"]
+[connection signal="body_exited" from="tomates/tomate" to="tomates/tomate" method="_on_body_exited"]
+[connection signal="body_entered" from="tomates/tomate2" to="tomates/tomate2" method="_on_body_entered"]
+[connection signal="body_exited" from="tomates/tomate2" to="tomates/tomate2" method="_on_body_exited"]
+[connection signal="body_entered" from="tomates/tomate3" to="tomates/tomate3" method="_on_body_entered"]
+[connection signal="body_exited" from="tomates/tomate3" to="tomates/tomate3" method="_on_body_exited"]
+[connection signal="body_entered" from="tomates/tomate4" to="tomates/tomate4" method="_on_body_entered"]
+[connection signal="body_exited" from="tomates/tomate4" to="tomates/tomate4" method="_on_body_exited"]
+[connection signal="body_entered" from="tomates/tomate5" to="tomates/tomate5" method="_on_body_entered"]
+[connection signal="body_exited" from="tomates/tomate5" to="tomates/tomate5" method="_on_body_exited"]
+[connection signal="body_entered" from="tomates/tomate6" to="tomates/tomate6" method="_on_body_entered"]
+[connection signal="body_exited" from="tomates/tomate6" to="tomates/tomate6" method="_on_body_exited"]
+[connection signal="body_entered" from="tomates/tomate7" to="tomates/tomate7" method="_on_body_entered"]
+[connection signal="body_exited" from="tomates/tomate7" to="tomates/tomate7" method="_on_body_exited"]
+[connection signal="body_entered" from="tomates/tomate8" to="tomates/tomate8" method="_on_body_entered"]
+[connection signal="body_exited" from="tomates/tomate8" to="tomates/tomate8" method="_on_body_exited"]
+[connection signal="body_entered" from="tomates/tomate9" to="tomates/tomate9" method="_on_body_entered"]
+[connection signal="body_exited" from="tomates/tomate9" to="tomates/tomate9" method="_on_body_exited"]
+[connection signal="body_entered" from="tomates/tomate10" to="tomates/tomate10" method="_on_body_entered"]
+[connection signal="body_exited" from="tomates/tomate10" to="tomates/tomate10" method="_on_body_exited"]
+[connection signal="body_entered" from="tomates/tomate11" to="tomates/tomate11" method="_on_body_entered"]
+[connection signal="body_exited" from="tomates/tomate11" to="tomates/tomate11" method="_on_body_exited"]
+[connection signal="body_entered" from="tomates/tomate12" to="tomates/tomate12" method="_on_body_entered"]
+[connection signal="body_exited" from="tomates/tomate12" to="tomates/tomate12" method="_on_body_exited"]
+[connection signal="body_entered" from="tomates/tomate13" to="tomates/tomate13" method="_on_body_entered"]
+[connection signal="body_exited" from="tomates/tomate13" to="tomates/tomate13" method="_on_body_exited"]
+[connection signal="body_entered" from="tomates/tomate14" to="tomates/tomate14" method="_on_body_entered"]
+[connection signal="body_exited" from="tomates/tomate14" to="tomates/tomate14" method="_on_body_exited"]
+[connection signal="body_entered" from="tomates/tomate15" to="tomates/tomate15" method="_on_body_entered"]
+[connection signal="body_exited" from="tomates/tomate15" to="tomates/tomate15" method="_on_body_exited"]
+[connection signal="body_entered" from="tomates/tomate16" to="tomates/tomate16" method="_on_body_entered"]
+[connection signal="body_exited" from="tomates/tomate16" to="tomates/tomate16" method="_on_body_exited"]
+[connection signal="body_entered" from="tomates/tomate17" to="tomates/tomate17" method="_on_body_entered"]
+[connection signal="body_exited" from="tomates/tomate17" to="tomates/tomate17" method="_on_body_exited"]
+[connection signal="body_entered" from="tomates/tomate18" to="tomates/tomate18" method="_on_body_entered"]
+[connection signal="body_exited" from="tomates/tomate18" to="tomates/tomate18" method="_on_body_exited"]
+[connection signal="body_entered" from="tomates/tomate19" to="tomates/tomate19" method="_on_body_entered"]
+[connection signal="body_exited" from="tomates/tomate19" to="tomates/tomate19" method="_on_body_exited"]
+[connection signal="body_entered" from="tomates/tomate20" to="tomates/tomate20" method="_on_body_entered"]
+[connection signal="body_exited" from="tomates/tomate20" to="tomates/tomate20" method="_on_body_exited"]

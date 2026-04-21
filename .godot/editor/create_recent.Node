@@ -1,8 +1,9 @@
-Node
 CollisionShape2D
 Area2D
-TileMapLayer
+Node2D
 AnimatedSprite2D
+Node
+TileMapLayer
 AnimatableBody2D
 StaticBody2D
 Camera2D

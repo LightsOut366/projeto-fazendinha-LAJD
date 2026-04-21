@@ -147,30 +147,31 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_mnb8e")
 }, {
-"duration": 2.0,
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_02pv2")
 }, {
-"duration": 2.0,
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_cx2qk")
 }, {
-"duration": 2.0,
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_bcirl")
 }],
 "loop": true,
 "name": &"parado",
-"speed": 5.0
+"speed": 2.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pyhwh"]
 size = Vector2(14, 19)
 
 [node name="Fazendeira" type="CharacterBody2D" unique_id=132874714]
-scale = Vector2(2, 2)
+scale = Vector2(1.5, 1.5)
 script = ExtResource("1_mnb8e")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=921107600]
 sprite_frames = SubResource("SpriteFrames_26ehx")
 animation = &"parado"
+autoplay = "parado"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2070106716]
 position = Vector2(1, 1.5)

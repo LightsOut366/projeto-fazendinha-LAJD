@@ -19,6 +19,10 @@ run/main_scene="res://principal.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Dados="*uid://bspnegkh6ei3o"
+
 [input]
 
 Esquerda={
