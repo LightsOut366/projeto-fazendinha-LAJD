@@ -30,6 +30,7 @@ func _process(delta: float) -> void:
 		hide()
 		ja_tem_planta= false
 		Dados.colhido+=1
+		maduro=false
 		
 func _on_body_entered(body: Node2D) -> void:
 	entrou = true
