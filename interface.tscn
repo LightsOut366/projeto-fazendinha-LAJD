@@ -30,6 +30,7 @@ theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("1_rh14k")
 theme_override_font_sizes/font_size = 48
+text = "aa"
 horizontal_alignment = 2
 
 [node name="sementes" type="Label" parent="." unique_id=1358325114]
@@ -43,6 +44,7 @@ theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("1_rh14k")
 theme_override_font_sizes/font_size = 48
+text = "aa"
 horizontal_alignment = 2
 
 [node name="colhido" type="Label" parent="." unique_id=792762449]
@@ -55,7 +57,7 @@ theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("1_rh14k")
 theme_override_font_sizes/font_size = 48
-text = " "
+text = " aa"
 horizontal_alignment = 2
 
 [node name="textos" type="Label" parent="." unique_id=1143991699]

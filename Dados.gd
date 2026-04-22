@@ -1,9 +1,8 @@
 extends Node
 
-# @export deixa voce editar a variavel no inspetor do node ligado com esse script
-@export var semente = 0
-@export var dinheiro = 5
-@export var colhido = 0
+var semente = 0
+var dinheiro = 5
+var colhido = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

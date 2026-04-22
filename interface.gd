@@ -1,12 +1,6 @@
 extends CanvasLayer
 
-
-
-func modificar_dinheiro(Dados):
+func _process(delta: float) -> void:
 	$dinheiro.text = str(Dados.dinheiro)
-
-func modificar_sementes(Dados):
-	$sementes.text = str(Dados.sementes)
-
-func modificar_colhidos(Dados):
+	$sementes.text = str(Dados.semente)
 	$colhido.text = str(Dados.colhido)
