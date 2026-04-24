@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://8eawdyy5pax"]
+
+[ext_resource type="Script" uid="uid://cr0j3e582w6qh" path="res://tomate.gd" id="1_imq1r"]
+[ext_resource type="Texture2D" uid="uid://cmlyu338s4hd0" path="res://Imagens/FarmingCrops16x16/Crop_Spritesheet.png" id="1_j0j7t"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_imq1r"]
+atlas = ExtResource("1_j0j7t")
+region = Rect2(80, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qujxq"]
+atlas = ExtResource("1_j0j7t")
+region = Rect2(64, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i61qf"]
+atlas = ExtResource("1_j0j7t")
+region = Rect2(48, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6dwjm"]
+atlas = ExtResource("1_j0j7t")
+region = Rect2(32, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1gk01"]
+atlas = ExtResource("1_j0j7t")
+region = Rect2(16, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jhr0x"]
+atlas = ExtResource("1_j0j7t")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c6xya"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_imq1r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qujxq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i61qf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6dwjm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1gk01")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jhr0x")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f5she"]
+
+[node name="planta" type="Area2D" unique_id=2032955067]
+scale = Vector2(2, 2)
+script = ExtResource("1_imq1r")
+
+[node name="animacao_tomate" type="AnimatedSprite2D" parent="." unique_id=1720908559]
+sprite_frames = SubResource("SpriteFrames_c6xya")
+
+[node name="colisao_tomate" type="CollisionShape2D" parent="." unique_id=447315365]
+shape = SubResource("RectangleShape2D_f5she")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

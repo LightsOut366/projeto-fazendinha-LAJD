@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 100.0
+@export var SPEED = 200.0
 var tam_tela
 
 

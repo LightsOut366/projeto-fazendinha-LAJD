@@ -1,8 +1,6 @@
-res://fazendeira.tscn
-res://Dados.gd
-res://interface.gd
-res://principal.tscn
-res://interface.tscn
 res://terras.tscn
-res://fazendeira.gd
 res://cenário.tscn
+res://fazendeira.tscn
+res://fazendeira.gd
+res://tomate.tscn
+res://tomate.gd
