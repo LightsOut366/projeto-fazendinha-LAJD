@@ -47,7 +47,6 @@ func _process(delta: float) -> void:
 		$animacao_tomate.frame=5
 		maduro=true
 	
-	
 	if maduro==true and entrou==true and Input.is_action_just_pressed("interagir-plantar"):
 		hide()
 		ja_tem_planta= false
