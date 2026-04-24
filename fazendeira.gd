@@ -18,10 +18,12 @@ func _physics_process(delta) -> void:
 	if Input.is_action_pressed("Esquerda"):
 		direction.x -= 1
 		$AnimatedSprite2D.play("andando_tras")
-	if Input.is_action_pressed("Down"):
+	if Input.is_action_pressed("Baixo"):
 		direction.y += 1
-	if Input.is_action_pressed("UP"):
+		# $AnimatedSprite2d.play()
+	if Input.is_action_pressed("Cima"):
 		direction.y -= 1
+		# $AnimatedSprite2d.play()
 	
 	
 	if direction.length() == 0:
@@ -32,3 +34,8 @@ func _physics_process(delta) -> void:
 	
 	position += direction * delta # move o personagem sem atrelar ao fps
 	position = position.clamp(Vector2.ZERO, tam_tela) # nao deixa ele sair da tela
+	
+	if Input.is_action_pressed("regar"):
+		pass
+		# botar aqui as animaçoes dela regando
+	

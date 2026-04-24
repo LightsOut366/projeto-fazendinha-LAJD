@@ -756,7 +756,7 @@ tile_set = SubResource("TileSet_fiswl")
 [node name="árvore" type="TileMapLayer" parent="." unique_id=1301790090]
 texture_filter = 1
 scale = Vector2(2, 2)
-tile_map_data = PackedByteArray("AAAOAAQAAAABAAwAAAAOAAUAAAAAAA0AAAAMAAEAAAABAAsAAAA=")
+tile_map_data = PackedByteArray("AAAOAAQAAAABAAwAAAAMAAEAAAABAAsAAAAOAAYAAAAAAA0AAAA=")
 tile_set = SubResource("TileSet_ybnua")
 
 [node name="casinha" type="TileMapLayer" parent="." unique_id=1232414070]

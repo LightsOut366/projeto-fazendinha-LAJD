@@ -4,3 +4,9 @@ res://fazendeira.tscn
 res://fazendeira.gd
 res://tomate.tscn
 res://tomate.gd
+res://interface.tscn
+res://semente.gd
+res://Dados.gd
+res://agua.gd
+res://cofre.gd
+res://interface.gd

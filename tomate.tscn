@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cr0j3e582w6qh" path="res://tomate.gd" id="1_imq1r"]
 [ext_resource type="Texture2D" uid="uid://cmlyu338s4hd0" path="res://Imagens/FarmingCrops16x16/Crop_Spritesheet.png" id="1_j0j7t"]
+[ext_resource type="Texture2D" uid="uid://bcsw0rmvtdien" path="res://icon.svg" id="3_qujxq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_imq1r"]
 atlas = ExtResource("1_j0j7t")
@@ -64,6 +65,12 @@ sprite_frames = SubResource("SpriteFrames_c6xya")
 
 [node name="colisao_tomate" type="CollisionShape2D" parent="." unique_id=447315365]
 shape = SubResource("RectangleShape2D_f5she")
+
+[node name="planta_seca" type="Sprite2D" parent="." unique_id=1431798492]
+visible = false
+position = Vector2(-7, -7)
+scale = Vector2(0.046534516, 0.043726597)
+texture = ExtResource("3_qujxq")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]

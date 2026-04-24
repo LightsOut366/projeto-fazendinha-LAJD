@@ -12,13 +12,15 @@ Label/fonts/font = ExtResource("1_rh14k")
 script = ExtResource("1_kyn48")
 
 [node name="Label" type="Label" parent="." unique_id=1399553048]
-offset_left = 20.0
-offset_top = 474.0
-offset_right = 200.0
-offset_bottom = 552.0
+offset_left = 16.0
+offset_top = 544.0
+offset_right = 312.0
+offset_bottom = 643.0
 theme_override_fonts/font = ExtResource("1_rh14k")
-theme_override_font_sizes/font_size = 64
-text = "Texto!"
+theme_override_font_sizes/font_size = 30
+text = "setinhas = movimento
+z = interagir / plantar
+x = regar"
 
 [node name="dinheiro" type="Label" parent="." unique_id=951781735]
 offset_left = 680.0
@@ -60,6 +62,20 @@ theme_override_font_sizes/font_size = 48
 text = " aa"
 horizontal_alignment = 2
 
+[node name="agua" type="Label" parent="." unique_id=1263762226]
+offset_left = 856.0
+offset_top = 544.0
+offset_right = 996.0
+offset_bottom = 592.0
+theme = SubResource("Theme_rh14k")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("1_rh14k")
+theme_override_font_sizes/font_size = 48
+text = "aa"
+horizontal_alignment = 2
+
 [node name="textos" type="Label" parent="." unique_id=1143991699]
 offset_left = 899.0
 offset_top = 24.0
@@ -81,7 +97,7 @@ text = " = Dinheiro
 
 
 
-
+= água
 = Frutas
 "
 horizontal_alignment = 2
