@@ -13,9 +13,9 @@ script = ExtResource("1_kyn48")
 
 [node name="Label" type="Label" parent="." unique_id=1399553048]
 offset_left = 16.0
-offset_top = 544.0
+offset_top = 464.0
 offset_right = 312.0
-offset_bottom = 643.0
+offset_bottom = 631.0
 theme_override_fonts/font = ExtResource("1_rh14k")
 theme_override_font_sizes/font_size = 30
 text = "setinhas = movimento
@@ -23,9 +23,9 @@ z = interagir / plantar
 x = regar"
 
 [node name="dinheiro" type="Label" parent="." unique_id=951781735]
-offset_left = 680.0
+offset_left = 672.0
 offset_top = 24.0
-offset_right = 928.0
+offset_right = 920.0
 offset_bottom = 72.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
@@ -36,10 +36,10 @@ text = "aa"
 horizontal_alignment = 2
 
 [node name="sementes" type="Label" parent="." unique_id=1358325114]
-offset_left = 752.0
-offset_top = 128.0
-offset_right = 892.0
-offset_bottom = 176.0
+offset_left = 744.0
+offset_top = 72.0
+offset_right = 884.0
+offset_bottom = 120.0
 theme = SubResource("Theme_rh14k")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
@@ -50,10 +50,10 @@ text = "aa"
 horizontal_alignment = 2
 
 [node name="colhido" type="Label" parent="." unique_id=792762449]
-offset_left = 768.0
-offset_top = 600.0
-offset_right = 972.0
-offset_bottom = 648.0
+offset_left = 760.0
+offset_top = 592.0
+offset_right = 964.0
+offset_bottom = 640.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 10
@@ -63,9 +63,9 @@ text = " aa"
 horizontal_alignment = 2
 
 [node name="agua" type="Label" parent="." unique_id=1263762226]
-offset_left = 856.0
+offset_left = 843.0
 offset_top = 544.0
-offset_right = 996.0
+offset_right = 983.0
 offset_bottom = 592.0
 theme = SubResource("Theme_rh14k")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -77,10 +77,10 @@ text = "aa"
 horizontal_alignment = 2
 
 [node name="textos" type="Label" parent="." unique_id=1143991699]
-offset_left = 899.0
+offset_left = 896.0
 offset_top = 24.0
-offset_right = 1148.0
-offset_bottom = 696.0
+offset_right = 1145.0
+offset_bottom = 1320.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/line_spacing = 4
@@ -88,7 +88,6 @@ theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("1_rh14k")
 theme_override_font_sizes/font_size = 48
 text = " = Dinheiro
-
 = Sementes
 
 
@@ -97,7 +96,8 @@ text = " = Dinheiro
 
 
 
-= água
+
+= Água
 = Frutas
 "
 horizontal_alignment = 2
