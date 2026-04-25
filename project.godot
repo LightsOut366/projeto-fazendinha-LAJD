@@ -23,6 +23,11 @@ config/icon="res://icon.svg"
 
 Dados="*uid://bspnegkh6ei3o"
 
+[display]
+
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
 [input]
 
 Esquerda={
