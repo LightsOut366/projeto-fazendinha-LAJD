@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://bpmywif85fdnw"]
 
-[ext_resource type="Script" uid="uid://cdfonkg407c7" path="res://semente.gd" id="1_ckude"]
-[ext_resource type="PackedScene" uid="uid://8eawdyy5pax" path="res://tomate.tscn" id="1_e51im"]
-[ext_resource type="Script" uid="uid://cddnyfcnx6ldc" path="res://cofre.gd" id="2_e51im"]
-[ext_resource type="Script" uid="uid://bvqm4a8df13ww" path="res://agua.gd" id="2_fbvrd"]
-[ext_resource type="PackedScene" uid="uid://dfvgt4oib3gqh" path="res://cenário.tscn" id="3_j3426"]
+[ext_resource type="Script" uid="uid://cdfonkg407c7" path="res://cenas_fazenda/semente.gd" id="1_ckude"]
+[ext_resource type="PackedScene" uid="uid://8eawdyy5pax" path="res://cenas_fazenda/tomate.tscn" id="1_e51im"]
+[ext_resource type="Script" uid="uid://cddnyfcnx6ldc" path="res://cenas_fazenda/cofre.gd" id="2_e51im"]
+[ext_resource type="Script" uid="uid://bvqm4a8df13ww" path="res://cenas_fazenda/agua.gd" id="2_fbvrd"]
+[ext_resource type="PackedScene" uid="uid://dfvgt4oib3gqh" path="res://cenas_fazenda/cenário.tscn" id="3_j3426"]
 [ext_resource type="PackedScene" uid="uid://b5k5tl31c4nuq" path="res://fazendeira.tscn" id="4_cnnf7"]
 [ext_resource type="PackedScene" uid="uid://bdb0me46lbnmp" path="res://interface.tscn" id="7_fbvrd"]
 
@@ -49,7 +49,7 @@ shape = SubResource("RectangleShape2D_fbvrd")
 
 [node name="Fazendeira" parent="." unique_id=132874714 instance=ExtResource("4_cnnf7")]
 z_index = 1
-position = Vector2(168.00006, 197)
+position = Vector2(846, 341)
 
 [node name="plantas" type="Node" parent="." unique_id=758186968]
 
