@@ -77,7 +77,7 @@ text = "aa"
 horizontal_alignment = 2
 
 [node name="textos" type="Label" parent="." unique_id=1143991699]
-offset_left = 899.0
+offset_left = 832.0
 offset_top = 24.0
 offset_right = 1148.0
 offset_bottom = 696.0
@@ -97,7 +97,7 @@ text = " = Dinheiro
 
 
 
-= água
+= Água
 = Frutas
 "
 horizontal_alignment = 2
