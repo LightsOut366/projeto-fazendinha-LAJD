@@ -1,26 +1,26 @@
 [gd_scene format=3 uid="uid://bdb0me46lbnmp"]
 
-[ext_resource type="Script" uid="uid://cbp1xdv8dj7a" path="res://interface.gd" id="1_kyn48"]
-[ext_resource type="FontFile" uid="uid://dpua8ddxtg5hy" path="res://Fontes/DigitalDisco.ttf" id="1_rh14k"]
+[ext_resource type="Script" uid="uid://cbp1xdv8dj7a" path="res://scripts/interface.gd" id="1_psy7u"]
+[ext_resource type="FontFile" uid="uid://dpua8ddxtg5hy" path="res://Fontes/DigitalDisco.ttf" id="2_fh05e"]
 
 [sub_resource type="Theme" id="Theme_rh14k"]
-/fonts/fonte_principal = ExtResource("1_rh14k")
-CheckBox/fonts/font = ExtResource("1_rh14k")
-Label/fonts/font = ExtResource("1_rh14k")
+/fonts/fonte_principal = ExtResource("2_fh05e")
+CheckBox/fonts/font = ExtResource("2_fh05e")
+Label/fonts/font = ExtResource("2_fh05e")
 
 [node name="HUD" type="CanvasLayer" unique_id=921128581]
-script = ExtResource("1_kyn48")
+script = ExtResource("1_psy7u")
 
 [node name="Label" type="Label" parent="." unique_id=1399553048]
+visible = false
 offset_left = 16.0
 offset_top = 464.0
 offset_right = 312.0
 offset_bottom = 631.0
-theme_override_fonts/font = ExtResource("1_rh14k")
+theme_override_fonts/font = ExtResource("2_fh05e")
 theme_override_font_sizes/font_size = 30
 text = "setinhas = movimento
-z = interagir / plantar
-x = regar"
+z = interagir / plantar"
 
 [node name="dinheiro" type="Label" parent="." unique_id=951781735]
 offset_left = 672.0
@@ -30,7 +30,7 @@ offset_bottom = 72.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 10
-theme_override_fonts/font = ExtResource("1_rh14k")
+theme_override_fonts/font = ExtResource("2_fh05e")
 theme_override_font_sizes/font_size = 48
 text = "aa"
 horizontal_alignment = 2
@@ -44,7 +44,7 @@ theme = SubResource("Theme_rh14k")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 10
-theme_override_fonts/font = ExtResource("1_rh14k")
+theme_override_fonts/font = ExtResource("2_fh05e")
 theme_override_font_sizes/font_size = 48
 text = "aa"
 horizontal_alignment = 2
@@ -57,7 +57,7 @@ offset_bottom = 640.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 10
-theme_override_fonts/font = ExtResource("1_rh14k")
+theme_override_fonts/font = ExtResource("2_fh05e")
 theme_override_font_sizes/font_size = 48
 text = " aa"
 horizontal_alignment = 2
@@ -71,7 +71,7 @@ theme = SubResource("Theme_rh14k")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 10
-theme_override_fonts/font = ExtResource("1_rh14k")
+theme_override_fonts/font = ExtResource("2_fh05e")
 theme_override_font_sizes/font_size = 48
 text = "aa"
 horizontal_alignment = 2
@@ -80,12 +80,12 @@ horizontal_alignment = 2
 offset_left = 896.0
 offset_top = 24.0
 offset_right = 1145.0
-offset_bottom = 1320.0
+offset_bottom = 644.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/line_spacing = 4
 theme_override_constants/outline_size = 10
-theme_override_fonts/font = ExtResource("1_rh14k")
+theme_override_fonts/font = ExtResource("2_fh05e")
 theme_override_font_sizes/font_size = 48
 text = " = Dinheiro
 = Sementes
@@ -98,6 +98,24 @@ text = " = Dinheiro
 
 
 = Água
-= Frutas
-"
+= Frutas"
 horizontal_alignment = 2
+
+[node name="Timer" type="Timer" parent="." unique_id=780287095]
+process_callback = 0
+autostart = true
+
+[node name="tempo" type="Label" parent="." unique_id=1150079204]
+offset_left = 56.0
+offset_top = 8.0
+offset_right = 304.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_fh05e")
+theme_override_font_sizes/font_size = 48
+text = "aa"
+horizontal_alignment = 2
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

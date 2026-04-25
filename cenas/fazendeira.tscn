@@ -1,86 +1,86 @@
 [gd_scene format=3 uid="uid://b5k5tl31c4nuq"]
 
-[ext_resource type="Script" uid="uid://bqekgs56axy5d" path="res://fazendeira.gd" id="1_mnb8e"]
-[ext_resource type="Texture2D" uid="uid://bkvuelys7ckds" path="res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/main character/walk and idle.png" id="1_pyhwh"]
+[ext_resource type="Script" uid="uid://bqekgs56axy5d" path="res://scripts/fazendeira.gd" id="1_4r6ho"]
+[ext_resource type="Texture2D" uid="uid://bkvuelys7ckds" path="res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/main character/walk and idle.png" id="2_0xmux"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_upgy8"]
-atlas = ExtResource("1_pyhwh")
+atlas = ExtResource("2_0xmux")
 region = Rect2(0, 48, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7ss7d"]
-atlas = ExtResource("1_pyhwh")
+atlas = ExtResource("2_0xmux")
 region = Rect2(24, 48, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hkif4"]
-atlas = ExtResource("1_pyhwh")
+atlas = ExtResource("2_0xmux")
 region = Rect2(48, 48, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4mlj7"]
-atlas = ExtResource("1_pyhwh")
+atlas = ExtResource("2_0xmux")
 region = Rect2(72, 48, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gm2e0"]
-atlas = ExtResource("1_pyhwh")
+atlas = ExtResource("2_0xmux")
 region = Rect2(96, 48, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8vxoe"]
-atlas = ExtResource("1_pyhwh")
+atlas = ExtResource("2_0xmux")
 region = Rect2(120, 48, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_r6rc3"]
-atlas = ExtResource("1_pyhwh")
+atlas = ExtResource("2_0xmux")
 region = Rect2(144, 48, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4aiwk"]
-atlas = ExtResource("1_pyhwh")
+atlas = ExtResource("2_0xmux")
 region = Rect2(168, 48, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3wblb"]
-atlas = ExtResource("1_pyhwh")
+atlas = ExtResource("2_0xmux")
 region = Rect2(0, 24, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vwx73"]
-atlas = ExtResource("1_pyhwh")
+atlas = ExtResource("2_0xmux")
 region = Rect2(24, 24, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7nv6g"]
-atlas = ExtResource("1_pyhwh")
+atlas = ExtResource("2_0xmux")
 region = Rect2(48, 24, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fkij6"]
-atlas = ExtResource("1_pyhwh")
+atlas = ExtResource("2_0xmux")
 region = Rect2(72, 24, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x6441"]
-atlas = ExtResource("1_pyhwh")
+atlas = ExtResource("2_0xmux")
 region = Rect2(96, 24, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wddbf"]
-atlas = ExtResource("1_pyhwh")
+atlas = ExtResource("2_0xmux")
 region = Rect2(120, 24, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_l2ume"]
-atlas = ExtResource("1_pyhwh")
+atlas = ExtResource("2_0xmux")
 region = Rect2(144, 24, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vqabi"]
-atlas = ExtResource("1_pyhwh")
+atlas = ExtResource("2_0xmux")
 region = Rect2(168, 24, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mnb8e"]
-atlas = ExtResource("1_pyhwh")
+atlas = ExtResource("2_0xmux")
 region = Rect2(0, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_02pv2"]
-atlas = ExtResource("1_pyhwh")
+atlas = ExtResource("2_0xmux")
 region = Rect2(24, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cx2qk"]
-atlas = ExtResource("1_pyhwh")
+atlas = ExtResource("2_0xmux")
 region = Rect2(48, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bcirl"]
-atlas = ExtResource("1_pyhwh")
+atlas = ExtResource("2_0xmux")
 region = Rect2(72, 0, 24, 24)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_26ehx"]
@@ -166,7 +166,7 @@ size = Vector2(14, 19)
 
 [node name="Fazendeira" type="CharacterBody2D" unique_id=132874714]
 scale = Vector2(3, 3)
-script = ExtResource("1_mnb8e")
+script = ExtResource("1_4r6ho")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=921107600]
 sprite_frames = SubResource("SpriteFrames_26ehx")
