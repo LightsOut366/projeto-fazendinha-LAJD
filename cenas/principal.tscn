@@ -3,6 +3,27 @@
 [ext_resource type="PackedScene" uid="uid://dfvgt4oib3gqh" path="res://cenas/cenário.tscn" id="1_tr6oq"]
 [ext_resource type="PackedScene" uid="uid://bpmywif85fdnw" path="res://cenas/terras.tscn" id="3_rrtif"]
 
+[sub_resource type="Animation" id="Animation_j2ut6"]
+resource_name = "noite"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.40000004, 4.9333334),
+"transitions": PackedFloat32Array(1, 0.36602098),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(1, 1, 1, 0.8117647)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_42xuo"]
+_data = {
+&"noite": SubResource("Animation_j2ut6")
+}
+
 [node name="Principal" type="Node2D" unique_id=1553167698]
 
 [node name="Cenário_grama" parent="." unique_id=316417546 instance=ExtResource("1_tr6oq")]
@@ -13,3 +34,13 @@ anchor_mode = 0
 zoom = Vector2(2, 2)
 
 [node name="terras" parent="." unique_id=1466305864 instance=ExtResource("3_rrtif")]
+
+[node name="animacao_noite" type="AnimationPlayer" parent="." unique_id=243892733]
+libraries/ = SubResource("AnimationLibrary_42xuo")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1086958256]
+self_modulate = Color(0.075, 0.075, 0.075, 0.06088233)
+z_index = 2
+offset_right = 1170.0
+offset_bottom = 690.0
+color = Color(0.05949999, 0, 0.21, 1)

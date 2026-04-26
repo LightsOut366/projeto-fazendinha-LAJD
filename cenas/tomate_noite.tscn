@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://bwgtybutscy4q"]
+
+[ext_resource type="Script" uid="uid://cr0j3e582w6qh" path="res://scripts/tomate.gd" id="1_c6ujg"]
+[ext_resource type="Texture2D" uid="uid://cmlyu338s4hd0" path="res://Imagens/FarmingCrops16x16/Crop_Spritesheet.png" id="2_ixs02"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kxrrc"]
+atlas = ExtResource("2_ixs02")
+region = Rect2(176, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7nqhh"]
+atlas = ExtResource("2_ixs02")
+region = Rect2(160, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tsere"]
+atlas = ExtResource("2_ixs02")
+region = Rect2(144, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b54qx"]
+atlas = ExtResource("2_ixs02")
+region = Rect2(128, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pq0hn"]
+atlas = ExtResource("2_ixs02")
+region = Rect2(112, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ccecy"]
+atlas = ExtResource("2_ixs02")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c6xya"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kxrrc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7nqhh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tsere")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b54qx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pq0hn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ccecy")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f5she"]
+
+[node name="planta" type="Area2D" unique_id=2032955067]
+scale = Vector2(2, 2)
+script = ExtResource("1_c6ujg")
+
+[node name="animacao_tomate_noite" type="AnimatedSprite2D" parent="." unique_id=1720908559]
+sprite_frames = SubResource("SpriteFrames_c6xya")
+autoplay = "default"
+frame = 5
+frame_progress = 1.0
+
+[node name="colisao_tomate_noite" type="CollisionShape2D" parent="." unique_id=447315365]
+shape = SubResource("RectangleShape2D_f5she")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

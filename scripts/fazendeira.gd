@@ -6,6 +6,7 @@ var tam_tela
 
 func _ready():
 	tam_tela = get_viewport_rect().size
+	
 
 func _physics_process(delta) -> void:
 	
@@ -38,4 +39,5 @@ func _physics_process(delta) -> void:
 	if Input.is_action_pressed("interagir"):
 		pass
 		# botar aqui as animaçoes dela regando
+
 	

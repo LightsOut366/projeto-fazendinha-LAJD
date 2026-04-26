@@ -5,4 +5,5 @@ var dinheiro = 5
 var colhido = 0
 var agua = 0
 var semente_secando = 5
-var tempo = 200
+var tempo = 20
+var ja_tem_planta = false
