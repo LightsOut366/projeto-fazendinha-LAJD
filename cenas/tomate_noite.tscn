@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://bwgtybutscy4q"]
+[gd_scene format=3 uid="uid://cs8xfbi0we5tr"]
 
-[ext_resource type="Script" uid="uid://cr0j3e582w6qh" path="res://scripts/tomate.gd" id="1_c6ujg"]
+[ext_resource type="Script" uid="uid://w38pr5fwrmf" path="res://cenas/tomate_noite.gd" id="1_s10wb"]
 [ext_resource type="Texture2D" uid="uid://cmlyu338s4hd0" path="res://Imagens/FarmingCrops16x16/Crop_Spritesheet.png" id="2_ixs02"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kxrrc"]
@@ -55,9 +55,9 @@ animations = [{
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f5she"]
 
-[node name="planta" type="Area2D" unique_id=2032955067]
+[node name="tomate_noite" type="Area2D" unique_id=2032955067]
 scale = Vector2(2, 2)
-script = ExtResource("1_c6ujg")
+script = ExtResource("1_s10wb")
 
 [node name="animacao_tomate_noite" type="AnimatedSprite2D" parent="." unique_id=1720908559]
 sprite_frames = SubResource("SpriteFrames_c6xya")

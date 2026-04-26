@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cr0j3e582w6qh" path="res://scripts/tomate.gd" id="1_imq1r"]
 [ext_resource type="Texture2D" uid="uid://cmlyu338s4hd0" path="res://Imagens/FarmingCrops16x16/Crop_Spritesheet.png" id="1_j0j7t"]
 [ext_resource type="Texture2D" uid="uid://bcsw0rmvtdien" path="res://Imagens/icon.svg" id="3_qujxq"]
+[ext_resource type="Script" uid="uid://cgluh5vh4fllq" path="res://scripts/noite.gd" id="3_vmmmx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_imq1r"]
 atlas = ExtResource("1_j0j7t")
@@ -587,6 +588,7 @@ script = ExtResource("1_imq1r")
 
 [node name="animacao_tomate" type="AnimatedSprite2D" parent="." unique_id=1720908559]
 sprite_frames = SubResource("SpriteFrames_c6xya")
+script = ExtResource("3_vmmmx")
 
 [node name="colisao_tomate" type="CollisionShape2D" parent="." unique_id=447315365]
 shape = SubResource("RectangleShape2D_f5she")

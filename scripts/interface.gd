@@ -12,4 +12,5 @@ func _process(delta: float) -> void:
 	$tempo.text = str(Dados.tempo)
 
 func _on_timer_timeout() -> void:
-	Dados.tempo -= 1
+	if Dados.tempo >0:
+		Dados.tempo -= 1

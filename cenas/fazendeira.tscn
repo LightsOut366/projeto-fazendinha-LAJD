@@ -162,7 +162,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pyhwh"]
-size = Vector2(14, 19)
+size = Vector2(14, 12)
 
 [node name="Fazendeira" type="CharacterBody2D" unique_id=132874714]
 scale = Vector2(3, 3)
@@ -174,5 +174,5 @@ animation = &"parado"
 autoplay = "parado"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2070106716]
-position = Vector2(1, 1.5)
+position = Vector2(1, 5)
 shape = SubResource("RectangleShape2D_pyhwh")

@@ -1,6 +1,6 @@
+Area2D
 ColorRect
 CollisionShape2D
-Area2D
 CanvasModulate
 AnimationPlayer
 AnimationTree
@@ -12,4 +12,3 @@ Sprite2D
 AnimatedSprite2D
 CanvasLayer
 Node2D
-TileMapLayer

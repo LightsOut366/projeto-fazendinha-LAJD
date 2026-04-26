@@ -3,7 +3,7 @@ extends Area2D
 var entrou = false
 var precisa_regar = false
 var maduro = false
-
+var ja_tem_planta = false
 
 
 # Called when the node enters the scene tree for the first time.
@@ -15,7 +15,7 @@ func _process(delta: float) -> void:
 	$planta_seca_label.text = str(Dados.semente_secando)
 	
 	#plantar
-	if Dados.semente >=1 and Input.is_action_just_pressed("interagir") and entrou== true and Dados.ja_tem_planta == false:
+	if Dados.semente >=1 and Input.is_action_just_pressed("interagir") and entrou== true and ja_tem_planta == false:
 		Dados.semente_secando=5
 		$planta_seca_label.hide()
 		$planta_seca.hide()
@@ -23,7 +23,7 @@ func _process(delta: float) -> void:
 		#plantar
 		Dados.semente -=1
 		show() 
-		Dados.ja_tem_planta = true
+		ja_tem_planta = true
 		$animacao_tomate.frame=0
 		await get_tree().create_timer(3.0).timeout
 		$animacao_tomate.frame=1
@@ -33,7 +33,8 @@ func _process(delta: float) -> void:
 		precisa_regar = true
 		$planta_seca.show()
 		await get_tree().create_timer(2.0).timeout
-		$planta_seca_label.show()
+		if precisa_regar == true:
+			$planta_seca_label.show()
 		await get_tree().create_timer(1.0).timeout
 		Dados.semente_secando=4
 		await get_tree().create_timer(1.0).timeout
@@ -50,7 +51,7 @@ func _process(delta: float) -> void:
 			$planta_seca.hide()
 			$planta_seca_label.hide()
 			precisa_regar = false
-			Dados.ja_tem_planta = false
+			ja_tem_planta = false
 	
 	#regar
 	if precisa_regar == true and entrou == true and Input.is_action_just_pressed("interagir") and Dados.agua >= 1:
@@ -70,10 +71,16 @@ func _process(delta: float) -> void:
 	#colher
 	if maduro==true and entrou==true and Input.is_action_just_pressed("interagir"):
 		hide()
-		Dados.ja_tem_planta= false
+		ja_tem_planta= false
 		Dados.colhido+=1
 		maduro=false
 		
+	if Dados.tempo <=0 and Dados.dinheiro <=10 and ja_tem_planta== true:
+		while $animacao_tomate.frame>0:
+			await get_tree().create_timer(1.0).timeout
+			$animacao_tomate.frame-=1
+	if Dados.tempo==0:
+		get_tree().change_scene_to_file("res://cenas/tomate_noite.tscn")
 func _on_body_entered(body: Node2D) -> void:
 	entrou = true
 
