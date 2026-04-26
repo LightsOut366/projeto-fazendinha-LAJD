@@ -36,10 +36,10 @@ text = "aa"
 horizontal_alignment = 2
 
 [node name="sementes" type="Label" parent="." unique_id=1358325114]
-offset_left = 744.0
-offset_top = 72.0
-offset_right = 884.0
-offset_bottom = 120.0
+offset_left = 736.0
+offset_top = 128.0
+offset_right = 876.0
+offset_bottom = 176.0
 theme = SubResource("Theme_rh14k")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)

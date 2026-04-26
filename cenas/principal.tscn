@@ -12,4 +12,11 @@ tile_map_data = PackedByteArray("AAAVAAAAAAADAAEAAAAVAAEAAAADAAEAAAAVAAIAAAADAAE
 anchor_mode = 0
 zoom = Vector2(2, 2)
 
+[node name="casinha2" type="StaticBody2D" parent="." unique_id=550142363]
+scale = Vector2(2, 1.9200001)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="casinha2" unique_id=180422255]
+position = Vector2(98, 73.4375)
+polygon = PackedVector2Array(0, -56.25, -38.5, -28.645836, -37.5, 0, -29.5, 7.291664, -28, 31.770828, 25.5, 31.770828, 27.5, 5.2083282, 37, -1.0416718, 38, -28.645836)
+
 [node name="terras" parent="." unique_id=1466305864 instance=ExtResource("3_rrtif")]

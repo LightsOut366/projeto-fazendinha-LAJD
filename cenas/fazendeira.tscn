@@ -166,6 +166,8 @@ size = Vector2(14, 19)
 
 [node name="Fazendeira" type="CharacterBody2D" unique_id=132874714]
 scale = Vector2(3, 3)
+collision_layer = 2
+motion_mode = 1
 script = ExtResource("1_4r6ho")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=921107600]

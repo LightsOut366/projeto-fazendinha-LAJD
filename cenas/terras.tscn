@@ -1,55 +1,78 @@
 [gd_scene format=3 uid="uid://bpmywif85fdnw"]
 
-[ext_resource type="Script" uid="uid://cdfonkg407c7" path="res://scripts/semente.gd" id="1_ckude"]
+[ext_resource type="Script" uid="uid://c4an64ysecx10" path="res://cenas/area_2d.gd" id="1_52ux4"]
 [ext_resource type="PackedScene" uid="uid://8eawdyy5pax" path="res://cenas/tomate.tscn" id="1_e51im"]
-[ext_resource type="Script" uid="uid://cddnyfcnx6ldc" path="res://scripts/cofre.gd" id="2_e51im"]
-[ext_resource type="Script" uid="uid://bvqm4a8df13ww" path="res://scripts/agua.gd" id="2_fbvrd"]
 [ext_resource type="PackedScene" uid="uid://dfvgt4oib3gqh" path="res://cenas/cenário.tscn" id="3_j3426"]
 [ext_resource type="PackedScene" uid="uid://b5k5tl31c4nuq" path="res://cenas/fazendeira.tscn" id="4_cnnf7"]
 [ext_resource type="PackedScene" uid="uid://bdb0me46lbnmp" path="res://cenas/interface.tscn" id="7_fbvrd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ksfu0"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_52ux4"]
+radius = 19.525623
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lyxgi"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_fbvrd"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_emmdm"]
+radius = 19.659603
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_c4phu"]
+radius = 21.023796
 
 [node name="terras" type="Node2D" unique_id=1466305864]
 
 [node name="baldinhos" type="Node" parent="." unique_id=612115542]
 
-[node name="sementes" type="Area2D" parent="baldinhos" unique_id=2010240149]
-position = Vector2(0, -12.3)
+[node name="sementes" type="StaticBody2D" parent="baldinhos" unique_id=445015476]
+position = Vector2(5, -12)
 scale = Vector2(2, 2)
-script = ExtResource("1_ckude")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/sementes" unique_id=570279042]
 position = Vector2(464, 143)
 shape = SubResource("RectangleShape2D_ksfu0")
 
-[node name="água" type="Area2D" parent="baldinhos" unique_id=1825911967]
+[node name="Area2D" type="Area2D" parent="baldinhos/sementes" unique_id=877916701]
+script = ExtResource("1_52ux4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/sementes/Area2D" unique_id=112473978]
+position = Vector2(463, 142)
+shape = SubResource("CircleShape2D_52ux4")
+
+[node name="água" type="StaticBody2D" parent="baldinhos" unique_id=993080071]
 position = Vector2(0, -15)
 scale = Vector2(2, 2)
-script = ExtResource("2_fbvrd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/água" unique_id=76417031]
 position = Vector2(464, 206)
 shape = SubResource("RectangleShape2D_lyxgi")
 
-[node name="cofre" type="Area2D" parent="baldinhos" unique_id=1440779917]
+[node name="Area2D" type="Area2D" parent="baldinhos/água" unique_id=970835026]
+script = ExtResource("1_52ux4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/água/Area2D" unique_id=715613856]
+position = Vector2(464, 206)
+shape = SubResource("CircleShape2D_emmdm")
+
+[node name="cofre" type="StaticBody2D" parent="baldinhos" unique_id=1147553213]
 position = Vector2(-2, -4)
 scale = Vector2(2, 2)
-script = ExtResource("2_e51im")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/cofre" unique_id=509423539]
-position = Vector2(401, 49)
-shape = SubResource("RectangleShape2D_fbvrd")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="baldinhos/cofre" unique_id=598702136]
+position = Vector2(401, 50)
+polygon = PackedVector2Array(-10, 10, -10.5, -14.5, 11.5, -15, 12, 10.5)
 
-[node name="Cenário_grama2" parent="." unique_id=985514933 instance=ExtResource("3_j3426")]
+[node name="Area2D" type="Area2D" parent="baldinhos/cofre" unique_id=473955802]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/cofre/Area2D" unique_id=445869824]
+position = Vector2(402, 49)
+shape = SubResource("CircleShape2D_c4phu")
 
 [node name="Fazendeira" parent="." unique_id=132874714 instance=ExtResource("4_cnnf7")]
 z_index = 1
 position = Vector2(846, 341)
+
+[node name="Cenário_grama2" parent="." unique_id=985514933 instance=ExtResource("3_j3426")]
+position = Vector2(1, -1)
 
 [node name="plantas" type="Node" parent="." unique_id=758186968]
 
@@ -114,10 +137,3 @@ position = Vector2(634, 460)
 position = Vector2(697, 461)
 
 [node name="HUD" parent="." unique_id=921128581 instance=ExtResource("7_fbvrd")]
-
-[connection signal="body_entered" from="baldinhos/sementes" to="baldinhos/sementes" method="_on_body_entered"]
-[connection signal="body_exited" from="baldinhos/sementes" to="baldinhos/sementes" method="_on_body_exited"]
-[connection signal="body_entered" from="baldinhos/água" to="baldinhos/água" method="_on_body_entered"]
-[connection signal="body_exited" from="baldinhos/água" to="baldinhos/água" method="_on_body_exited"]
-[connection signal="body_entered" from="baldinhos/cofre" to="baldinhos/cofre" method="_on_body_entered"]
-[connection signal="body_exited" from="baldinhos/cofre" to="baldinhos/cofre" method="_on_body_exited"]
