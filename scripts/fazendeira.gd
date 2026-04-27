@@ -14,16 +14,16 @@ func _physics_process(delta) -> void:
 	
 	if Input.is_action_pressed("Direita"):
 		direction.x += 1
-		$AnimatedSprite2D.play("andando_frente")
+		$AnimatedSprite2D.play("andando_direita")
 	if Input.is_action_pressed("Esquerda"):
 		direction.x -= 1
-		$AnimatedSprite2D.play("andando_tras")
+		$AnimatedSprite2D.play("andando_esquerda")
 	if Input.is_action_pressed("Baixo"):
 		direction.y += 1
-		# $AnimatedSprite2d.play()
+		$AnimatedSprite2D.play("andando_baixo")
 	if Input.is_action_pressed("Cima"):
 		direction.y -= 1
-		# $AnimatedSprite2d.play()
+		$AnimatedSprite2D.play("andando_cima")
 	
 	
 	if direction.length() == 0:

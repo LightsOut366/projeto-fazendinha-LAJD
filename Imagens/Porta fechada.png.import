@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgwwoqa0apbod"
-path="res://.godot/imported/Amanhecer na colheita_20260422_101859_0000.png-7ede1d7ed1f856a669d727cedb52b03d.ctex"
+uid="uid://rlg0jwih2fo6"
+path="res://.godot/imported/Porta fechada.png-fa2c91810df242a2a891ac9851c4f9a2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Imagens/Amanhecer na colheita_20260422_101859_0000.png"
-dest_files=["res://.godot/imported/Amanhecer na colheita_20260422_101859_0000.png-7ede1d7ed1f856a669d727cedb52b03d.ctex"]
+source_file="res://Imagens/Porta fechada.png"
+dest_files=["res://.godot/imported/Porta fechada.png-fa2c91810df242a2a891ac9851c4f9a2.ctex"]
 
 [params]
 

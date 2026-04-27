@@ -1,9 +1,2 @@
-res://cenas/interface.tscn
 res://cenas/terras.tscn
-res://cenas/principal.tscn
-res://cenas/fazendeira.tscn
-res://scripts/fazendeira.gd
-res://scripts/agua.gd
-res://scripts/cofre.gd
-res://scripts/semente.gd
-res://cenas/area_2d.gd
+res://cenas/cenário.tscn

@@ -1,44 +1,48 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1777200292
-README.md::TextFile::-1::1776223349::0::1::::<><><>0<>0<><>::
-::res://cenas/::1777200231
-cenário.tscn::PackedScene::7553957979315855919::1777200225::0::1::::<><><>0<>0<><>::uid://x5w6dlxq876h::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/summer tilemap.png<>uid://bqhouudj0jwxf::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/items&objects/summer and spring items.png<>uid://cbqnhkcj4hc0b::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/items&objects/autumn items.png<>uid://ohqu342661h2::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/autumn tilemap.png
-fazendeira.tscn::PackedScene::4514585832438381748::1777200225::0::1::::<><><>0<>0<><>::uid://bqekgs56axy5d::::res://scripts/fazendeira.gd<>uid://bkvuelys7ckds::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/main character/walk and idle.png
-interface.tscn::PackedScene::2600591203023259571::1777200225::0::1::::<><><>0<>0<><>::uid://cbp1xdv8dj7a::::res://scripts/interface.gd<>uid://dpua8ddxtg5hy::::res://Fontes/DigitalDisco.ttf
-principal.tscn::PackedScene::8598345321325146659::1777200225::0::1::::<><><>0<>0<><>::uid://dfvgt4oib3gqh::::res://cenas/cenário.tscn<>uid://bpmywif85fdnw::::res://cenas/terras.tscn
-terras.tscn::PackedScene::3465522796055089732::1777200225::0::1::::<><><>0<>0<><>::uid://cdfonkg407c7::::res://scripts/semente.gd<>uid://8eawdyy5pax::::res://cenas/tomate.tscn<>uid://cddnyfcnx6ldc::::res://scripts/cofre.gd<>uid://bvqm4a8df13ww::::res://scripts/agua.gd<>uid://dfvgt4oib3gqh::::res://cenas/cenário.tscn<>uid://b5k5tl31c4nuq::::res://cenas/fazendeira.tscn<>uid://bdb0me46lbnmp::::res://cenas/interface.tscn
-tomate.tscn::PackedScene::68368495126873603::1777200225::0::1::::<><><>0<>0<><>::uid://cr0j3e582w6qh::::res://scripts/tomate.gd<>uid://cmlyu338s4hd0::::res://Imagens/FarmingCrops16x16/Crop_Spritesheet.png<>uid://bcsw0rmvtdien::::res://Imagens/icon.svg
-::res://cenas_fazenda/::1777200225
-::res://Fontes/::1777200218
-creditos (incluir em algum lugar caso agt publique o jogo).txt::TextFile::-1::1777200218::0::1::::<><><>0<>0<><>::
-DigitalDisco.ttf::FontFile::8253441355204985598::1777200218::1777200294::1::::<><><>0<>0<>bcba03e67ad0356eda5e26b5de09cb02<>res://.godot/imported/DigitalDisco.ttf-13d6440e941e628eca25aadf904b2c9b.fontdata::
-::res://Imagens/::1777200225
-Amanhecer na colheita.png::CompressedTexture2D::2605018318894179675::1777200225::1777200294::1::::<><><>0<>0<>00a4186aa1eedfe5de267cf8993deeda<>res://.godot/imported/Amanhecer na colheita.png-c7e3d6749e40f20a5ce6f073b8cd4590.ctex::
-Amanhecer na colheita_20260422_101859_0000.png::CompressedTexture2D::2854331672576220283::1777200225::1777200299::1::::<><><>0<>0<>d8ab607960e36537d7790f9c93e33ddd<>res://.godot/imported/Amanhecer na colheita_20260422_101859_0000.png-7ede1d7ed1f856a669d727cedb52b03d.ctex::
-icon.svg::CompressedTexture2D::2565338501644993437::1777200225::1777200294::1::::<><><>0<>0<>75508103cca06a6205d59f7c294d66ac<>res://.godot/imported/icon.svg-f18ef69a11610d75fda942ae5afe3de5.ctex::
-::res://Imagens/FarmingCrops16x16/::1777200217
-Crop_Spritesheet.png::CompressedTexture2D::5639310085474640067::1776257765::1777200294::1::::<><><>0<>0<>df227858eeaf017c53e9c8dc75ed4f70<>res://.godot/imported/Crop_Spritesheet.png-be0d9c6adc289d78314f13ad918e2e67.ctex::
-::res://Imagens/Tiny Wonder Forest 1.0/::1776223371
-::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/::1776223371
-::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/::1776223371
-::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/main character/::1777200217
-walk and idle.png::CompressedTexture2D::3132883151632477296::1776257766::1777200294::1::::<><><>0<>0<>8d8efcc28c39fd6e0ccb805241a61a0e<>res://.godot/imported/walk and idle.png-29fd662a309c3762866773728615e440.ctex::
-::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/main character old/::1777200217
-::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/mushrooms/::1777200217
-::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/items&objects/::1777200217
-autumn items.png::CompressedTexture2D::4876862605323550339::1776257766::1777200294::1::::<><><>0<>0<>9f5c16739d11987986a9baf5f5ab24a5<>res://.godot/imported/autumn items.png-72483f1d9ecdca844c9c2b62e4e9562a.ctex::
-summer and spring items.png::CompressedTexture2D::3524779635500989347::1776257766::1777200294::1::::<><><>0<>0<>09dfcb836cffc4d1fc42ee506cd36cc5<>res://.godot/imported/summer and spring items.png-c223656f3a56648edeb348d27ee7f588.ctex::
-::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/::1777200217
-autumn tilemap.png::CompressedTexture2D::998103159695796857::1776257766::1777200294::1::::<><><>0<>0<>23753e77561aec147d08407e3e0c5cbf<>res://.godot/imported/autumn tilemap.png-b6558400d4ec774a8f38689aee6a0654.ctex::
-spring tilemap.png::CompressedTexture2D::5682326244782732002::1776257766::1777200294::1::::<><><>0<>0<>8a15ada194da26441f2848509e656ce5<>res://.godot/imported/spring tilemap.png-a5646341df12d4849aa411629238083b.ctex::
-summer tilemap.png::CompressedTexture2D::1677666045379082317::1776257766::1777200294::1::::<><><>0<>0<>ad6343f0d4f01bacb13a379bd83b2858<>res://.godot/imported/summer tilemap.png-e3f48bd185b872d0f7f472b6b61e6edc.ctex::
-::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/animated tiles/::1776258235
-::res://scripts/::1777200231
-agua.gd::GDScript::3894196887215765810::1777200225::0::1::::<>Area2D<><>0<>0<><>::
-cofre.gd::GDScript::4990433477851147164::1777200225::0::1::::<>Area2D<><>0<>0<><>::
-Dados.gd::GDScript::3681582330517951062::1777200225::0::1::::<>Node<><>0<>0<><>::
-export_presets.cfg::TextFile::-1::1777200225::0::1::::<><><>0<>0<><>::
-fazendeira.gd::GDScript::3518318570782818295::1777200225::0::1::::<>CharacterBody2D<><>0<>0<><>::
-interface.gd::GDScript::143400464232987756::1777200225::0::1::::<>CanvasLayer<><>0<>0<><>::
-semente.gd::GDScript::146900105180726972::1777200225::0::1::::<>Area2D<><>0<>0<><>::
-tomate.gd::GDScript::6018257866222366499::1777200225::0::1::::<>Area2D<><>0<>0<><>::
+::res://::1777292573
+README.md::TextFile::-1::1777248580::0::1::::<><><>0<>0<><>::
+::res://cenas/::1777258289
+area_2d.gd::GDScript::6809164074481906297::1777248687::0::1::::<>Area2D<><>0<>0<><>::
+cenário.tscn::PackedScene::7553957979315855919::1777257406::0::1::::<><><>0<>0<><>::uid://x5w6dlxq876h::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/summer tilemap.png<>uid://dis1fs54455fm::::res://Imagens/Cesta de sementes_.png<>uid://cefpch7m80sby::::res://Imagens/Poço_.png<>uid://ceiu5utu7hwrk::::res://Imagens/Casa sem porta.png<>uid://bpdks42dv0w0j::::res://Imagens/Carrinho de vendas sem plantas.png<>uid://ohqu342661h2::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/autumn tilemap.png<>uid://dsl303emcpi3a::::res://Imagens/Carrinho de vendas com plantas.png
+fazendeira.tscn::PackedScene::4514585832438381748::1777257650::0::1::::<><><>0<>0<><>::uid://bqekgs56axy5d::::res://scripts/fazendeira.gd<>uid://dtyfntrmrbg86::::res://Imagens/donacoelha.png
+interface.tscn::PackedScene::2600591203023259571::1777258172::0::1::::<><><>0<>0<><>::uid://cbp1xdv8dj7a::::res://scripts/interface.gd<>uid://dpua8ddxtg5hy::::res://Fontes/DigitalDisco.ttf
+principal.tscn::PackedScene::8598345321325146659::1777256050::0::1::::<><><>0<>0<><>::uid://dfvgt4oib3gqh::::res://cenas/cenário.tscn<>uid://bpmywif85fdnw::::res://cenas/terras.tscn
+terras.tscn::PackedScene::3465522796055089732::1777258289::0::1::::<><><>0<>0<><>::uid://c4an64ysecx10::::res://cenas/area_2d.gd<>uid://8eawdyy5pax::::res://cenas/tomate.tscn<>uid://dfvgt4oib3gqh::::res://cenas/cenário.tscn<>uid://b5k5tl31c4nuq::::res://cenas/fazendeira.tscn<>uid://bdb0me46lbnmp::::res://cenas/interface.tscn
+tomate.tscn::PackedScene::68368495126873603::1777258113::0::1::::<><><>0<>0<><>::uid://cr0j3e582w6qh::::res://scripts/tomate.gd<>uid://cmlyu338s4hd0::::res://Imagens/FarmingCrops16x16/Crop_Spritesheet.png<>uid://bcsw0rmvtdien::::res://Imagens/icon.svg
+::res://Fontes/::1777251013
+creditos (incluir em algum lugar caso agt publique o jogo).txt::TextFile::-1::1777248687::0::1::::<><><>0<>0<><>::
+DigitalDisco.ttf::FontFile::8253441355204985598::1777248687::1777251013::1::::<><><>0<>0<>bcba03e67ad0356eda5e26b5de09cb02<>res://.godot/imported/DigitalDisco.ttf-13d6440e941e628eca25aadf904b2c9b.fontdata::
+::res://Imagens/::1777251992
+Carrinho de vendas com plantas.png::CompressedTexture2D::8447115589885146224::1777230858::1777251992::1::::<><><>0<>0<>dba4e9cfc41e6e6c662b92c5450f585d<>res://.godot/imported/Carrinho de vendas com plantas.png-d61485a5b951dbb9e595c5781a17345b.ctex::
+Carrinho de vendas sem plantas.png::CompressedTexture2D::3446087350795970539::1777230870::1777251992::1::::<><><>0<>0<>3b0a4d5acf8c5630504cf2b42a52d923<>res://.godot/imported/Carrinho de vendas sem plantas.png-dea62ea5ee36b7471890c5179f134b2d.ctex::
+Casa sem porta.png::CompressedTexture2D::5071380758413345180::1777230878::1777251992::1::::<><><>0<>0<>4fc724209113391ee1369f5104ba8271<>res://.godot/imported/Casa sem porta.png-f4a65b7da62ec60e9663c01122b0276a.ctex::
+Cesta de sementes_.png::CompressedTexture2D::7759520163660120846::1777230822::1777251992::1::::<><><>0<>0<>b7b0b15b670020c918b9e740c9e9578c<>res://.godot/imported/Cesta de sementes_.png-b5bbbfe3305fb368b32cef0e0147a58d.ctex::
+donacoelha.png::CompressedTexture2D::8542722971357267057::1777243155::1777251992::1::::<><><>0<>0<>1d6b070ac065a762c947889b09123439<>res://.godot/imported/donacoelha.png-4869d73c0b844d7db8591ce58ee3220d.ctex::
+icon.svg::CompressedTexture2D::2565338501644993437::1777248687::1777251014::1::::<><><>0<>0<>75508103cca06a6205d59f7c294d66ac<>res://.godot/imported/icon.svg-f18ef69a11610d75fda942ae5afe3de5.ctex::
+Porta aberta.png::CompressedTexture2D::4264866210959639792::1777230840::1777251992::1::::<><><>0<>0<>77dddc2c9404286a9d5ab0f331ebb194<>res://.godot/imported/Porta aberta.png-281e1c52962059752529375ff07fa1ff.ctex::
+Porta fechada.png::CompressedTexture2D::1216327951015182935::1777230832::1777251992::1::::<><><>0<>0<>4828ce664445f540fb48dd9c63787f42<>res://.godot/imported/Porta fechada.png-fa2c91810df242a2a891ac9851c4f9a2.ctex::
+Poço_.png::CompressedTexture2D::5064833374875457242::1777230812::1777251992::1::::<><><>0<>0<>9f2d89da85243ce886b1ee5214e0e90e<>res://.godot/imported/Poço_.png-9f6b40e1b2b1294292226f6f49990342.ctex::
+::res://Imagens/FarmingCrops16x16/::1777251014
+Crop_Spritesheet.png::CompressedTexture2D::5639310085474640067::1777248580::1777251014::1::::<><><>0<>0<>df227858eeaf017c53e9c8dc75ed4f70<>res://.godot/imported/Crop_Spritesheet.png-be0d9c6adc289d78314f13ad918e2e67.ctex::
+::res://Imagens/Tiny Wonder Forest 1.0/::1777248580
+::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/::1777248580
+::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/::1777248687
+::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/main character/::1777251014
+walk and idle.png::CompressedTexture2D::3132883151632477296::1777248580::1777251014::1::::<><><>0<>0<>8d8efcc28c39fd6e0ccb805241a61a0e<>res://.godot/imported/walk and idle.png-29fd662a309c3762866773728615e440.ctex::
+::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/items&objects/::1777251014
+autumn items.png::CompressedTexture2D::4876862605323550339::1777248580::1777251014::1::::<><><>0<>0<>9f5c16739d11987986a9baf5f5ab24a5<>res://.godot/imported/autumn items.png-72483f1d9ecdca844c9c2b62e4e9562a.ctex::
+summer and spring items.png::CompressedTexture2D::3524779635500989347::1777248580::1777251014::1::::<><><>0<>0<>09dfcb836cffc4d1fc42ee506cd36cc5<>res://.godot/imported/summer and spring items.png-c223656f3a56648edeb348d27ee7f588.ctex::
+::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/::1777251014
+autumn tilemap.png::CompressedTexture2D::998103159695796857::1777248580::1777251014::1::::<><><>0<>0<>23753e77561aec147d08407e3e0c5cbf<>res://.godot/imported/autumn tilemap.png-b6558400d4ec774a8f38689aee6a0654.ctex::
+spring tilemap.png::CompressedTexture2D::5682326244782732002::1777248580::1777251014::1::::<><><>0<>0<>8a15ada194da26441f2848509e656ce5<>res://.godot/imported/spring tilemap.png-a5646341df12d4849aa411629238083b.ctex::
+summer tilemap.png::CompressedTexture2D::1677666045379082317::1777248580::1777251014::1::::<><><>0<>0<>ad6343f0d4f01bacb13a379bd83b2858<>res://.godot/imported/summer tilemap.png-e3f48bd185b872d0f7f472b6b61e6edc.ctex::
+::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/animated tiles/::1777248580
+::res://scripts/::1777253250
+agua.gd::GDScript::3894196887215765810::1777248687::0::1::::<>RefCounted<><>0<>0<><>::
+cofre.gd::GDScript::4990433477851147164::1777248687::0::1::::<>Area2D<><>0<>0<><>::
+Dados.gd::GDScript::3681582330517951062::1777248687::0::1::::<>Node<><>0<>0<><>::
+export_presets.cfg::TextFile::-1::1777248687::0::1::::<><><>0<>0<><>::
+fazendeira.gd::GDScript::3518318570782818295::1777253250::0::1::::<>CharacterBody2D<><>0<>0<><>::
+interface.gd::GDScript::143400464232987756::1777248687::0::1::::<>CanvasLayer<><>0<>0<><>::
+semente.gd::GDScript::146900105180726972::1777248687::0::1::::<>RefCounted<><>0<>0<><>::
+tomate.gd::GDScript::6018257866222366499::1777248687::0::1::::<>Area2D<><>0<>0<><>::

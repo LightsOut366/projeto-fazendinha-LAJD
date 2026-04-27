@@ -7,14 +7,13 @@
 [ext_resource type="PackedScene" uid="uid://bdb0me46lbnmp" path="res://cenas/interface.tscn" id="7_fbvrd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ksfu0"]
+size = Vector2(17, 9)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_52ux4"]
 radius = 19.525623
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lyxgi"]
-
 [sub_resource type="CircleShape2D" id="CircleShape2D_emmdm"]
-radius = 19.659603
+radius = 21.523243
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_c4phu"]
 radius = 21.023796
@@ -24,47 +23,52 @@ radius = 21.023796
 [node name="baldinhos" type="Node" parent="." unique_id=612115542]
 
 [node name="sementes" type="StaticBody2D" parent="baldinhos" unique_id=445015476]
-position = Vector2(5, -12)
+position = Vector2(3, -25)
 scale = Vector2(2, 2)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/sementes" unique_id=570279042]
-position = Vector2(464, 143)
+position = Vector2(453, 145)
 shape = SubResource("RectangleShape2D_ksfu0")
 
 [node name="Area2D" type="Area2D" parent="baldinhos/sementes" unique_id=877916701]
 script = ExtResource("1_52ux4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/sementes/Area2D" unique_id=112473978]
-position = Vector2(463, 142)
+position = Vector2(453, 146.5)
 shape = SubResource("CircleShape2D_52ux4")
 
 [node name="água" type="StaticBody2D" parent="baldinhos" unique_id=993080071]
 position = Vector2(0, -15)
 scale = Vector2(2, 2)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/água" unique_id=76417031]
-position = Vector2(464, 206)
-shape = SubResource("RectangleShape2D_lyxgi")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="baldinhos/água" unique_id=299935772]
+position = Vector2(464.99997, 219.5)
+scale = Vector2(1.3541666, 1.6948531)
+polygon = PackedVector2Array(-18.092285, -15.340569, -5.9076843, -17.40564, 7.384613, -15.635574, 12.923096, -10.915405, 8.49231, -6.1952286, -18.461517, -6.1952286, -24.738434, -10.030373)
 
 [node name="Area2D" type="Area2D" parent="baldinhos/água" unique_id=970835026]
+position = Vector2(-0.5, -7)
 script = ExtResource("1_52ux4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/água/Area2D" unique_id=715613856]
-position = Vector2(464, 206)
+position = Vector2(457.99997, 219)
+scale = Vector2(1.3999804, 1.2)
 shape = SubResource("CircleShape2D_emmdm")
 
 [node name="cofre" type="StaticBody2D" parent="baldinhos" unique_id=1147553213]
-position = Vector2(-2, -4)
+position = Vector2(-1, -23)
 scale = Vector2(2, 2)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="baldinhos/cofre" unique_id=598702136]
-position = Vector2(401, 50)
-polygon = PackedVector2Array(-10, 10, -10.5, -14.5, 11.5, -15, 12, 10.5)
+position = Vector2(406.5, 68.00001)
+scale = Vector2(1.3541666, 1.6948531)
+polygon = PackedVector2Array(-24.738464, 7.0802574, -26.296173, -21.38145, 16.534607, -20.791428, 15.50769, 6.4902344)
 
 [node name="Area2D" type="Area2D" parent="baldinhos/cofre" unique_id=473955802]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/cofre/Area2D" unique_id=445869824]
-position = Vector2(402, 49)
+position = Vector2(401, 87.5)
+scale = Vector2(1.4656647, 0.9889985)
 shape = SubResource("CircleShape2D_c4phu")
 
 [node name="Fazendeira" parent="." unique_id=132874714 instance=ExtResource("4_cnnf7")]
