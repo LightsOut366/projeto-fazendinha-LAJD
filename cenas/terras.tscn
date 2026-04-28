@@ -10,13 +10,13 @@
 size = Vector2(17, 9)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_52ux4"]
-radius = 19.525623
+radius = 22.388613
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_emmdm"]
-radius = 21.523243
+radius = 28.599169
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_c4phu"]
-radius = 21.023796
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l2hx4"]
+size = Vector2(61.405598, 84.42885)
 
 [node name="terras" type="Node2D" unique_id=1466305864]
 
@@ -42,9 +42,9 @@ position = Vector2(0, -15)
 scale = Vector2(2, 2)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="baldinhos/água" unique_id=299935772]
-position = Vector2(464.99997, 219.5)
-scale = Vector2(1.3541666, 1.6948531)
-polygon = PackedVector2Array(-18.092285, -15.340569, -5.9076843, -17.40564, 7.384613, -15.635574, 12.923096, -10.915405, 8.49231, -6.1952286, -18.461517, -6.1952286, -24.738434, -10.030373)
+position = Vector2(464.43457, 218.8581)
+scale = Vector2(1.3769535, 1.6692843)
+polygon = PackedVector2Array(-18.461517, -15.93058, -5.9076843, -17.40564, 7.384613, -15.635574, 12.923096, -10.915405, 13.292328, 5.6052094, -5.538452, 8.2603, -25.107666, 4.1301575, -24.738434, -10.030373)
 
 [node name="Area2D" type="Area2D" parent="baldinhos/água" unique_id=970835026]
 position = Vector2(-0.5, -7)
@@ -62,21 +62,21 @@ scale = Vector2(2, 2)
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="baldinhos/cofre" unique_id=598702136]
 position = Vector2(406.5, 68.00001)
 scale = Vector2(1.3541666, 1.6948531)
-polygon = PackedVector2Array(-24.738464, 7.0802574, -26.296173, -21.38145, 16.534607, -20.791428, 15.50769, 6.4902344)
+polygon = PackedVector2Array(-26.215393, 19.175701, -25.476929, 0.5900192, -30.646149, -6.1952286, -26.296173, -21.38145, 16.534607, -20.791428, 20.307678, -3.245121, 32.86154, -0.59002304, 32.123077, 7.0802574, 18.092316, 7.96529, 15.138458, 17.405636, -10.33847, 17.995655, -19.569244, 23.010841)
 
 [node name="Area2D" type="Area2D" parent="baldinhos/cofre" unique_id=473955802]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/cofre/Area2D" unique_id=445869824]
-position = Vector2(401, 87.5)
+position = Vector2(403.00003, 72.25)
 scale = Vector2(1.4656647, 0.9889985)
-shape = SubResource("CircleShape2D_c4phu")
+shape = SubResource("RectangleShape2D_l2hx4")
 
 [node name="Fazendeira" parent="." unique_id=132874714 instance=ExtResource("4_cnnf7")]
 z_index = 1
 position = Vector2(846, 341)
 
 [node name="Cenário_grama2" parent="." unique_id=985514933 instance=ExtResource("3_j3426")]
-position = Vector2(1, -1)
+position = Vector2(1, -2)
 
 [node name="plantas" type="Node" parent="." unique_id=758186968]
 

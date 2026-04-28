@@ -17,6 +17,6 @@ scale = Vector2(2, 1.9200001)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="casinha2" unique_id=180422255]
 position = Vector2(98, 73.4375)
-polygon = PackedVector2Array(7, -36.979168, -34.5, -17.187504, -33, 17.1875, -31.5, 38.02083, -34.5, 43.229164, 45, 43.229164, 43.5, 37.499992, 45.5, 17.1875, 45, -18.750004)
+polygon = PackedVector2Array(16.5, -33.333336, -24, -10.937504, -25.5, 17.1875, -25.5, 30.729164, -23, 40.624992, -25.5, 60.416656, 68.5, 59.89583, 67.5, 42.187492, 67.5, 29.687492, 66.5, -13.541668, 31, -31.770836)
 
 [node name="terras" parent="." unique_id=1466305864 instance=ExtResource("3_rrtif")]
