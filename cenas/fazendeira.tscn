@@ -162,7 +162,8 @@ size = Vector2(14, 19)
 
 [node name="Fazendeira" type="CharacterBody2D" unique_id=132874714]
 scale = Vector2(3, 3)
-collision_layer = 2
+collision_layer = 3
+collision_mask = 3
 motion_mode = 1
 script = ExtResource("1_4r6ho")
 
@@ -175,5 +176,6 @@ frame = 2
 frame_progress = 0.74256486
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2070106716]
+visible = false
 position = Vector2(1, 1.5)
 shape = SubResource("RectangleShape2D_pyhwh")

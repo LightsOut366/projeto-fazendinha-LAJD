@@ -1,53 +1,53 @@
 [gd_scene format=4 uid="uid://8eawdyy5pax"]
 
 [ext_resource type="Script" uid="uid://cr0j3e582w6qh" path="res://scripts/tomate.gd" id="1_imq1r"]
-[ext_resource type="Texture2D" uid="uid://cmlyu338s4hd0" path="res://Imagens/FarmingCrops16x16/Crop_Spritesheet.png" id="1_j0j7t"]
+[ext_resource type="Texture2D" uid="uid://o2knc6ninnac" path="res://Imagens/spritesheet.png" id="2_r87to"]
 [ext_resource type="Texture2D" uid="uid://bcsw0rmvtdien" path="res://Imagens/icon.svg" id="3_qujxq"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_imq1r"]
-atlas = ExtResource("1_j0j7t")
-region = Rect2(80, 32, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_vmmmx"]
+atlas = ExtResource("2_r87to")
+region = Rect2(0, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_qujxq"]
-atlas = ExtResource("1_j0j7t")
-region = Rect2(64, 32, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_8wacn"]
+atlas = ExtResource("2_r87to")
+region = Rect2(64, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_i61qf"]
-atlas = ExtResource("1_j0j7t")
-region = Rect2(48, 32, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_44ici"]
+atlas = ExtResource("2_r87to")
+region = Rect2(128, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_6dwjm"]
-atlas = ExtResource("1_j0j7t")
-region = Rect2(32, 32, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_tgsw3"]
+atlas = ExtResource("2_r87to")
+region = Rect2(192, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1gk01"]
-atlas = ExtResource("1_j0j7t")
-region = Rect2(16, 32, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_3cw0b"]
+atlas = ExtResource("2_r87to")
+region = Rect2(256, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_jhr0x"]
-atlas = ExtResource("1_j0j7t")
-region = Rect2(0, 32, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_fxax0"]
+atlas = ExtResource("2_r87to")
+region = Rect2(320, 0, 64, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_c6xya"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_imq1r")
+"texture": SubResource("AtlasTexture_vmmmx")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_qujxq")
+"texture": SubResource("AtlasTexture_8wacn")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_i61qf")
+"texture": SubResource("AtlasTexture_44ici")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_6dwjm")
+"texture": SubResource("AtlasTexture_tgsw3")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_1gk01")
+"texture": SubResource("AtlasTexture_3cw0b")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_jhr0x")
+"texture": SubResource("AtlasTexture_fxax0")
 }],
 "loop": true,
 "name": &"default",
@@ -181,6 +181,18 @@ cache/0/spacing_bottom = 0
 cache/0/spacing_space = 0
 cache/0/spacing_glyph = 0
 cache/0/baseline_offset = 0.0
+cache/0/14/0/ascent = 11.0
+cache/0/14/0/descent = 4.0
+cache/0/14/0/underline_position = 2.09375
+cache/0/14/0/underline_thickness = 0.703125
+cache/0/14/0/scale = 1.0
+cache/0/14/0/textures/0/offsets = PackedInt32Array(11, 0, 245, 11)
+cache/0/14/0/textures/0/image = SubResource("Image_1gk28")
+cache/0/14/0/glyphs/68/advance = Vector2(8, 14)
+cache/0/14/0/glyphs/68/offset = Vector2(-1, -8)
+cache/0/14/0/glyphs/68/size = Vector2(9, 9)
+cache/0/14/0/glyphs/68/uv_rect = Rect2(1, 1, 9, 9)
+cache/0/14/0/glyphs/68/texture_idx = 0
 cache/0/16/0/ascent = 12.0
 cache/0/16/0/descent = 4.0
 cache/0/16/0/underline_position = 2.390625
@@ -562,18 +574,6 @@ cache/0/5/10/glyphs/68/offset = Vector2(-4, -7)
 cache/0/5/10/glyphs/68/size = Vector2(10, 11)
 cache/0/5/10/glyphs/68/uv_rect = Rect2(1, 1, 10, 11)
 cache/0/5/10/glyphs/68/texture_idx = 0
-cache/0/14/0/ascent = 11.0
-cache/0/14/0/descent = 4.0
-cache/0/14/0/underline_position = 2.09375
-cache/0/14/0/underline_thickness = 0.703125
-cache/0/14/0/scale = 1.0
-cache/0/14/0/textures/0/offsets = PackedInt32Array(11, 0, 245, 11)
-cache/0/14/0/textures/0/image = SubResource("Image_1gk28")
-cache/0/14/0/glyphs/68/advance = Vector2(8, 14)
-cache/0/14/0/glyphs/68/offset = Vector2(-1, -8)
-cache/0/14/0/glyphs/68/size = Vector2(9, 9)
-cache/0/14/0/glyphs/68/uv_rect = Rect2(1, 1, 9, 9)
-cache/0/14/0/glyphs/68/texture_idx = 0
 cache/0/14/10/textures/0/offsets = PackedInt32Array(17, 0, 239, 17)
 cache/0/14/10/textures/0/image = SubResource("Image_o335x")
 cache/0/14/10/glyphs/68/offset = Vector2(-4, -11)
@@ -583,12 +583,17 @@ cache/0/14/10/glyphs/68/texture_idx = 0
 
 [node name="planta" type="Area2D" unique_id=2032955067]
 scale = Vector2(2, 2)
+collision_layer = 2
 script = ExtResource("1_imq1r")
 
 [node name="animacao_tomate" type="AnimatedSprite2D" parent="." unique_id=1720908559]
+position = Vector2(0, -7.5)
+scale = Vector2(0.55, 0.55)
 sprite_frames = SubResource("SpriteFrames_c6xya")
+frame_progress = 0.6738398
 
 [node name="colisao_tomate" type="CollisionShape2D" parent="." unique_id=447315365]
+visible = false
 shape = SubResource("RectangleShape2D_f5she")
 
 [node name="planta_seca" type="Sprite2D" parent="." unique_id=1431798492]

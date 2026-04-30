@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://bpmywif85fdnw"]
 
-[ext_resource type="Script" uid="uid://c4an64ysecx10" path="res://cenas/area_2d.gd" id="1_52ux4"]
+[ext_resource type="Script" uid="uid://c4an64ysecx10" path="res://scripts/agua.gd" id="1_52ux4"]
 [ext_resource type="PackedScene" uid="uid://8eawdyy5pax" path="res://cenas/tomate.tscn" id="1_e51im"]
+[ext_resource type="Script" uid="uid://cdfonkg407c7" path="res://scripts/semente.gd" id="1_emmdm"]
+[ext_resource type="Script" uid="uid://cddnyfcnx6ldc" path="res://scripts/cofre.gd" id="3_c4phu"]
 [ext_resource type="PackedScene" uid="uid://dfvgt4oib3gqh" path="res://cenas/cenário.tscn" id="3_j3426"]
 [ext_resource type="PackedScene" uid="uid://b5k5tl31c4nuq" path="res://cenas/fazendeira.tscn" id="4_cnnf7"]
 [ext_resource type="PackedScene" uid="uid://bdb0me46lbnmp" path="res://cenas/interface.tscn" id="7_fbvrd"]
@@ -23,23 +25,28 @@ size = Vector2(61.405598, 84.42885)
 [node name="baldinhos" type="Node" parent="." unique_id=612115542]
 
 [node name="sementes" type="StaticBody2D" parent="baldinhos" unique_id=445015476]
+visible = false
 position = Vector2(3, -25)
 scale = Vector2(2, 2)
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/sementes" unique_id=570279042]
 position = Vector2(453, 145)
 shape = SubResource("RectangleShape2D_ksfu0")
 
 [node name="Area2D" type="Area2D" parent="baldinhos/sementes" unique_id=877916701]
-script = ExtResource("1_52ux4")
+collision_layer = 2
+script = ExtResource("1_emmdm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/sementes/Area2D" unique_id=112473978]
 position = Vector2(453, 146.5)
 shape = SubResource("CircleShape2D_52ux4")
 
 [node name="água" type="StaticBody2D" parent="baldinhos" unique_id=993080071]
+visible = false
 position = Vector2(0, -15)
 scale = Vector2(2, 2)
+collision_layer = 2
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="baldinhos/água" unique_id=299935772]
 position = Vector2(464.43457, 218.8581)
@@ -48,6 +55,7 @@ polygon = PackedVector2Array(-18.461517, -15.93058, -5.9076843, -17.40564, 7.384
 
 [node name="Area2D" type="Area2D" parent="baldinhos/água" unique_id=970835026]
 position = Vector2(-0.5, -7)
+collision_layer = 2
 script = ExtResource("1_52ux4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/água/Area2D" unique_id=715613856]
@@ -56,8 +64,10 @@ scale = Vector2(1.3999804, 1.2)
 shape = SubResource("CircleShape2D_emmdm")
 
 [node name="cofre" type="StaticBody2D" parent="baldinhos" unique_id=1147553213]
+visible = false
 position = Vector2(-1, -23)
 scale = Vector2(2, 2)
+collision_layer = 2
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="baldinhos/cofre" unique_id=598702136]
 position = Vector2(406.5, 68.00001)
@@ -65,6 +75,8 @@ scale = Vector2(1.3541666, 1.6948531)
 polygon = PackedVector2Array(-26.215393, 19.175701, -25.476929, 0.5900192, -30.646149, -6.1952286, -26.296173, -21.38145, 16.534607, -20.791428, 20.307678, -3.245121, 32.86154, -0.59002304, 32.123077, 7.0802574, 18.092316, 7.96529, 15.138458, 17.405636, -10.33847, 17.995655, -19.569244, 23.010841)
 
 [node name="Area2D" type="Area2D" parent="baldinhos/cofre" unique_id=473955802]
+collision_layer = 2
+script = ExtResource("3_c4phu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/cofre/Area2D" unique_id=445869824]
 position = Vector2(403.00003, 72.25)
@@ -73,7 +85,7 @@ shape = SubResource("RectangleShape2D_l2hx4")
 
 [node name="Fazendeira" parent="." unique_id=132874714 instance=ExtResource("4_cnnf7")]
 z_index = 1
-position = Vector2(846, 341)
+position = Vector2(808, 325)
 
 [node name="Cenário_grama2" parent="." unique_id=985514933 instance=ExtResource("3_j3426")]
 position = Vector2(1, -2)
@@ -141,3 +153,10 @@ position = Vector2(634, 460)
 position = Vector2(697, 461)
 
 [node name="HUD" parent="." unique_id=921128581 instance=ExtResource("7_fbvrd")]
+
+[connection signal="body_entered" from="baldinhos/sementes/Area2D" to="baldinhos/sementes/Area2D" method="_on_semente_entered"]
+[connection signal="body_exited" from="baldinhos/sementes/Area2D" to="baldinhos/sementes/Area2D" method="_on_semente_exited"]
+[connection signal="body_entered" from="baldinhos/água/Area2D" to="baldinhos/água/Area2D" method="_on_agua_entered"]
+[connection signal="body_exited" from="baldinhos/água/Area2D" to="baldinhos/água/Area2D" method="_on_agua_exited"]
+[connection signal="body_entered" from="baldinhos/cofre/Area2D" to="baldinhos/cofre/Area2D" method="_on_cofre_entered"]
+[connection signal="body_exited" from="baldinhos/cofre/Area2D" to="baldinhos/cofre/Area2D" method="_on_cofre_exited"]

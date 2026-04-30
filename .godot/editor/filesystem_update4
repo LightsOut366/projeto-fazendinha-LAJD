@@ -1,2 +1,4 @@
+res://scripts/agua.gd
 res://cenas/terras.tscn
-res://cenas/principal.tscn
+res://cenas/tomate.tscn
+res://cenas/fazendeira.tscn
