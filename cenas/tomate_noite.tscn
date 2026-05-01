@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cs8xfbi0we5tr"]
 
-[ext_resource type="Script" uid="uid://w38pr5fwrmf" path="res://cenas/tomate_noite.gd" id="1_s10wb"]
+[ext_resource type="Script" uid="uid://w38pr5fwrmf" path="res://scripts/tomate_noite.gd" id="1_s10wb"]
 [ext_resource type="Texture2D" uid="uid://cmlyu338s4hd0" path="res://Imagens/FarmingCrops16x16/Crop_Spritesheet.png" id="2_ixs02"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kxrrc"]
@@ -50,7 +50,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"default",
-"speed": 5.0
+"speed": 3.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f5she"]

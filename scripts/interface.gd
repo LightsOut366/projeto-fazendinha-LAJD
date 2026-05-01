@@ -9,8 +9,11 @@ func _process(delta: float) -> void:
 	$sementes.text = str(Dados.semente)
 	$colhido.text = str(Dados.colhido)
 	$agua.text = str(Dados.agua)
-	$tempo.text = str(Dados.tempo)
+	if Dados.tempo>=0:
+		$tempo.text = str(Dados.tempo)
+	else:
+		$tempo.hide()
 
 func _on_timer_timeout() -> void:
-	if Dados.tempo >0:
+	if Dados.tempo >=-1:
 		Dados.tempo -= 1

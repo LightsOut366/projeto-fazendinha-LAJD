@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://bpmywif85fdnw"]
 
 [ext_resource type="Script" uid="uid://cdfonkg407c7" path="res://scripts/semente.gd" id="1_ckude"]
-[ext_resource type="PackedScene" uid="uid://8eawdyy5pax" path="res://cenas/tomate.tscn" id="1_e51im"]
 [ext_resource type="Script" uid="uid://cddnyfcnx6ldc" path="res://scripts/cofre.gd" id="2_e51im"]
 [ext_resource type="Script" uid="uid://bvqm4a8df13ww" path="res://scripts/agua.gd" id="2_fbvrd"]
 [ext_resource type="PackedScene" uid="uid://dfvgt4oib3gqh" path="res://cenas/cenário.tscn" id="3_j3426"]
@@ -50,68 +49,6 @@ shape = SubResource("RectangleShape2D_fbvrd")
 [node name="Fazendeira" parent="." unique_id=132874714 instance=ExtResource("4_cnnf7")]
 z_index = 1
 position = Vector2(846, 341)
-
-[node name="plantas" type="Node" parent="." unique_id=758186968]
-
-[node name="planta" parent="plantas" unique_id=2032955067 instance=ExtResource("1_e51im")]
-position = Vector2(443, 276)
-
-[node name="planta2" parent="plantas" unique_id=542646725 instance=ExtResource("1_e51im")]
-position = Vector2(507, 277)
-
-[node name="planta3" parent="plantas" unique_id=1147308453 instance=ExtResource("1_e51im")]
-position = Vector2(571, 277)
-
-[node name="planta4" parent="plantas" unique_id=982962369 instance=ExtResource("1_e51im")]
-position = Vector2(635, 276)
-
-[node name="planta5" parent="plantas" unique_id=756635336 instance=ExtResource("1_e51im")]
-position = Vector2(698, 276)
-
-[node name="planta6" parent="plantas" unique_id=602467162 instance=ExtResource("1_e51im")]
-position = Vector2(442, 339)
-
-[node name="planta7" parent="plantas" unique_id=690824607 instance=ExtResource("1_e51im")]
-position = Vector2(508, 339)
-
-[node name="planta8" parent="plantas" unique_id=870645997 instance=ExtResource("1_e51im")]
-position = Vector2(570, 338)
-
-[node name="planta9" parent="plantas" unique_id=1987639539 instance=ExtResource("1_e51im")]
-position = Vector2(635, 338)
-
-[node name="planta10" parent="plantas" unique_id=820596456 instance=ExtResource("1_e51im")]
-position = Vector2(699, 338)
-
-[node name="planta11" parent="plantas" unique_id=1437494371 instance=ExtResource("1_e51im")]
-position = Vector2(443, 399)
-
-[node name="planta12" parent="plantas" unique_id=1471867134 instance=ExtResource("1_e51im")]
-position = Vector2(507, 399)
-
-[node name="planta13" parent="plantas" unique_id=1954318417 instance=ExtResource("1_e51im")]
-position = Vector2(571, 400)
-
-[node name="planta14" parent="plantas" unique_id=426110786 instance=ExtResource("1_e51im")]
-position = Vector2(635, 399)
-
-[node name="planta15" parent="plantas" unique_id=1136318481 instance=ExtResource("1_e51im")]
-position = Vector2(699, 400)
-
-[node name="planta16" parent="plantas" unique_id=2138605095 instance=ExtResource("1_e51im")]
-position = Vector2(442, 460)
-
-[node name="planta17" parent="plantas" unique_id=734642506 instance=ExtResource("1_e51im")]
-position = Vector2(506, 460)
-
-[node name="planta18" parent="plantas" unique_id=8632190 instance=ExtResource("1_e51im")]
-position = Vector2(571, 460)
-
-[node name="planta19" parent="plantas" unique_id=1452188745 instance=ExtResource("1_e51im")]
-position = Vector2(634, 460)
-
-[node name="planta20" parent="plantas" unique_id=365343204 instance=ExtResource("1_e51im")]
-position = Vector2(697, 461)
 
 [node name="HUD" parent="." unique_id=921128581 instance=ExtResource("7_fbvrd")]
 

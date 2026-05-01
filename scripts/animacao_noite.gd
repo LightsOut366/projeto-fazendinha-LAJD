@@ -9,7 +9,6 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	
-	if Dados.tempo==0:
-		autoplay = "noite"
+	if Dados.tempo==-1:
 		play("noite")
 	

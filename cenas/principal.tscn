@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://dfvgt4oib3gqh" path="res://cenas/cenário.tscn" id="1_tr6oq"]
 [ext_resource type="Script" uid="uid://da2ng3aoraf1d" path="res://scripts/animacao_noite.gd" id="3_0404l"]
 [ext_resource type="PackedScene" uid="uid://bpmywif85fdnw" path="res://cenas/terras.tscn" id="3_rrtif"]
+[ext_resource type="PackedScene" uid="uid://8eawdyy5pax" path="res://cenas/tomate.tscn" id="4_0404l"]
 
 [sub_resource type="Animation" id="Animation_42xuo"]
 resource_name = "dia"
@@ -54,3 +55,65 @@ z_index = 2
 offset_right = 1170.0
 offset_bottom = 690.0
 color = Color(0.05949999, 0, 0.21, 1)
+
+[node name="plantas" type="Node" parent="." unique_id=906704948]
+
+[node name="planta" parent="plantas" unique_id=2032955067 instance=ExtResource("4_0404l")]
+position = Vector2(443, 276)
+
+[node name="planta2" parent="plantas" unique_id=919710846 instance=ExtResource("4_0404l")]
+position = Vector2(507, 277)
+
+[node name="planta3" parent="plantas" unique_id=193765395 instance=ExtResource("4_0404l")]
+position = Vector2(571, 277)
+
+[node name="planta4" parent="plantas" unique_id=1598928828 instance=ExtResource("4_0404l")]
+position = Vector2(635, 276)
+
+[node name="planta5" parent="plantas" unique_id=160510231 instance=ExtResource("4_0404l")]
+position = Vector2(698, 276)
+
+[node name="planta6" parent="plantas" unique_id=1672847498 instance=ExtResource("4_0404l")]
+position = Vector2(442, 339)
+
+[node name="planta7" parent="plantas" unique_id=1290620418 instance=ExtResource("4_0404l")]
+position = Vector2(508, 339)
+
+[node name="planta8" parent="plantas" unique_id=1347755410 instance=ExtResource("4_0404l")]
+position = Vector2(570, 338)
+
+[node name="planta9" parent="plantas" unique_id=1992052274 instance=ExtResource("4_0404l")]
+position = Vector2(635, 338)
+
+[node name="planta10" parent="plantas" unique_id=296568831 instance=ExtResource("4_0404l")]
+position = Vector2(699, 338)
+
+[node name="planta11" parent="plantas" unique_id=564892096 instance=ExtResource("4_0404l")]
+position = Vector2(443, 399)
+
+[node name="planta12" parent="plantas" unique_id=1597525325 instance=ExtResource("4_0404l")]
+position = Vector2(507, 399)
+
+[node name="planta13" parent="plantas" unique_id=246481334 instance=ExtResource("4_0404l")]
+position = Vector2(571, 400)
+
+[node name="planta14" parent="plantas" unique_id=726736269 instance=ExtResource("4_0404l")]
+position = Vector2(635, 399)
+
+[node name="planta15" parent="plantas" unique_id=821272468 instance=ExtResource("4_0404l")]
+position = Vector2(699, 400)
+
+[node name="planta16" parent="plantas" unique_id=722866464 instance=ExtResource("4_0404l")]
+position = Vector2(442, 460)
+
+[node name="planta17" parent="plantas" unique_id=334939386 instance=ExtResource("4_0404l")]
+position = Vector2(506, 460)
+
+[node name="planta18" parent="plantas" unique_id=1553146404 instance=ExtResource("4_0404l")]
+position = Vector2(571, 460)
+
+[node name="planta19" parent="plantas" unique_id=634410949 instance=ExtResource("4_0404l")]
+position = Vector2(634, 460)
+
+[node name="planta20" parent="plantas" unique_id=1346480545 instance=ExtResource("4_0404l")]
+position = Vector2(697, 461)
