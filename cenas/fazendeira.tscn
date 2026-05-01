@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bqekgs56axy5d" path="res://scripts/fazendeira.gd" id="1_4r6ho"]
 [ext_resource type="Texture2D" uid="uid://bkvuelys7ckds" path="res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/main character/walk and idle.png" id="2_0xmux"]
+[ext_resource type="PackedScene" uid="uid://dujpbbeuaee0g" path="res://cenas/bala.tscn" id="2_ndxhp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_upgy8"]
 atlas = ExtResource("2_0xmux")
@@ -167,6 +168,7 @@ size = Vector2(14, 12)
 [node name="Fazendeira" type="CharacterBody2D" unique_id=132874714]
 scale = Vector2(3, 3)
 script = ExtResource("1_4r6ho")
+cena_bala = ExtResource("2_ndxhp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=921107600]
 sprite_frames = SubResource("SpriteFrames_26ehx")

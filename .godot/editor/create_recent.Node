@@ -1,6 +1,10 @@
+VisibleOnScreenNotifier2D
 Area2D
-ColorRect
 CollisionShape2D
+Sprite2D
+CharacterBody2D
+RigidBody2D
+ColorRect
 CanvasModulate
 AnimationPlayer
 AnimationTree
@@ -8,7 +12,4 @@ PointLight2D
 Timer
 Node
 Label
-Sprite2D
 AnimatedSprite2D
-CanvasLayer
-Node2D
