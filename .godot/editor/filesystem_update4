@@ -1,7 +1,3 @@
-res://cenas/fazendeira.tscn
-res://scripts/fazendeira.gd
-res://scripts/Dados.gd
-res://cenas/cenário.tscn
-res://cenas/interface.tscn
+res://cenas/principal.tscn
 res://cenas/terras.tscn
-res://cenas/tomate.tscn
+res://cenas/fazendeira.tscn

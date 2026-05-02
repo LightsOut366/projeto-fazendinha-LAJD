@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://durdqx3pjg1tv"]
 
 [ext_resource type="PackedScene" uid="uid://dfvgt4oib3gqh" path="res://cenas/cenário.tscn" id="1_tr6oq"]
-[ext_resource type="Script" path="res://scripts/animacao_noite.gd" id="3_0404l"]
+[ext_resource type="Script" uid="uid://da2ng3aoraf1d" path="res://scripts/animacao_noite.gd" id="3_0404l"]
 [ext_resource type="PackedScene" uid="uid://bpmywif85fdnw" path="res://cenas/terras.tscn" id="3_rrtif"]
 [ext_resource type="PackedScene" uid="uid://8eawdyy5pax" path="res://cenas/tomate.tscn" id="4_0404l"]
 
@@ -38,6 +38,14 @@ tile_map_data = PackedByteArray("AAAVAAAAAAADAAEAAAAVAAEAAAADAAEAAAAVAAIAAAADAAE
 [node name="Camera2D" type="Camera2D" parent="." unique_id=607525721]
 anchor_mode = 0
 zoom = Vector2(2, 2)
+
+[node name="casinha2" type="StaticBody2D" parent="." unique_id=409401400]
+position = Vector2(244, 150)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="casinha2" unique_id=1188907623]
+position = Vector2(-1, -5)
+scale = Vector2(10.519998, 9.88)
+polygon = PackedVector2Array(0.2851715, -9.7165985, 9.125479, -5.3643723, 9.220533, 3.7449398, 8.935366, 4.048582, 8.935366, 8.7044525, 9.315592, 8.906883, 9.315592, 9.817814, -9.600761, 9.919027, -9.600761, 9.109312, -9.030419, 8.7044525, -9.030419, 3.9473686, -9.600761, 3.7449398, -9.600761, -4.8582993)
 
 [node name="terras" parent="." unique_id=1466305864 instance=ExtResource("3_rrtif")]
 

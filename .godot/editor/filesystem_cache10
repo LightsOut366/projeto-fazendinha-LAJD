@@ -1,35 +1,35 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1777734296
+::res://::1777737965
 README.md::TextFile::-1::1777248580::0::1::::<><><>0<>0<><>::
-::res://cenas/::1777734340
-bala.tscn::PackedScene::8582530923923329672::1777734278::0::1::::<><><>0<>0<><>::uid://c2dp4lt67xh0t::::res://scripts/bala.gd<>uid://bcsw0rmvtdien::::res://Imagens/icon.svg
-bala_inimigo.tscn::PackedScene::955961836912889946::1777734278::0::1::::<><><>0<>0<><>::uid://lmssy1liu4nt::::res://scripts/bala_inimigo.gd<>uid://bcsw0rmvtdien::::res://Imagens/icon.svg
-cenário.tscn::PackedScene::7553957979315855919::1777734278::0::1::::<><><>0<>0<><>::uid://x5w6dlxq876h::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/summer tilemap.png<>uid://bqhouudj0jwxf::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/items&objects/summer and spring items.png<>uid://cbqnhkcj4hc0b::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/items&objects/autumn items.png<>uid://ohqu342661h2::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/autumn tilemap.png
-fazendeira.tscn::PackedScene::4514585832438381748::1777734340::0::1::::<><><>0<>0<><>::uid://bqekgs56axy5d::::res://scripts/fazendeira.gd<>uid://bkvuelys7ckds::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/main character/walk and idle.png
-interface.tscn::PackedScene::2600591203023259571::1777734278::0::1::::<><><>0<>0<><>::uid://cbp1xdv8dj7a::::res://scripts/interface.gd<>uid://dpua8ddxtg5hy::::res://Fontes/DigitalDisco.ttf
-principal.tscn::PackedScene::8598345321325146659::1777734278::0::1::::<><><>0<>0<><>::uid://dfvgt4oib3gqh::::res://cenas/cenário.tscn<>res://scripts/animacao_noite.gd<>uid://bpmywif85fdnw::::res://cenas/terras.tscn<>uid://8eawdyy5pax::::res://cenas/tomate.tscn
-terras.tscn::PackedScene::3465522796055089732::1777734278::0::1::::<><><>0<>0<><>::uid://cdfonkg407c7::::res://scripts/semente.gd<>uid://cddnyfcnx6ldc::::res://scripts/cofre.gd<>uid://bvqm4a8df13ww::::res://scripts/agua.gd<>uid://dfvgt4oib3gqh::::res://cenas/cenário.tscn<>uid://b5k5tl31c4nuq::::res://cenas/fazendeira.tscn<>uid://bdb0me46lbnmp::::res://cenas/interface.tscn
-tomate.tscn::PackedScene::68368495126873603::1777734278::0::1::::<><><>0<>0<><>::uid://cr0j3e582w6qh::::res://scripts/tomate.gd<>uid://cmlyu338s4hd0::::res://Imagens/FarmingCrops16x16/Crop_Spritesheet.png<>uid://bcsw0rmvtdien::::res://Imagens/icon.svg
-tomate_noite.tscn::PackedScene::6105770504605173807::1777734278::0::1::::<><><>0<>0<><>::uid://w38pr5fwrmf::::res://scripts/tomate_noite.gd<>uid://cmlyu338s4hd0::::res://Imagens/FarmingCrops16x16/Crop_Spritesheet.png
+::res://cenas/::1777737953
+bala.tscn::PackedScene::8582530923923329672::1777737953::0::1::::<><><>0<>0<><>::uid://c2dp4lt67xh0t::::res://scripts/bala.gd<>uid://bcsw0rmvtdien::::res://Imagens/icon.svg
+bala_inimigo.tscn::PackedScene::955961836912889946::1777737953::0::1::::<><><>0<>0<><>::uid://lmssy1liu4nt::::res://scripts/bala_inimigo.gd<>uid://bcsw0rmvtdien::::res://Imagens/icon.svg
+cenário.tscn::PackedScene::7553957979315855919::1777737953::0::1::::<><><>0<>0<><>::uid://x5w6dlxq876h::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/summer tilemap.png<>uid://bra4nvlc4t23n::::res://Imagens/fazenda/Carrinho de vendas com plantas.png<>uid://dmjgpm0e2pi5q::::res://Imagens/fazenda/Carrinho de vendas sem plantas.png<>uid://cegqa75amkecf::::res://Imagens/fazenda/Cesta de sementes_.png<>uid://ohqu342661h2::::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/autumn tilemap.png<>uid://c5ywalwb65yfd::::res://Imagens/fazenda/Poço_.png<>uid://dyd8wnc7g82qa::::res://Imagens/fazenda/Casa sem porta.png<>uid://caa8tkqe5f5no::::res://Imagens/fazenda/Porta aberta.png<>uid://dsb34e2vlbd0h::::res://Imagens/fazenda/Porta fechada.png
+fazendeira.tscn::PackedScene::4514585832438381748::1777737953::0::1::::<><><>0<>0<><>::uid://bqekgs56axy5d::::res://scripts/fazendeira.gd<>uid://cverdqkvhvdma::::res://Imagens/dona coelha/donacoelha.png
+interface.tscn::PackedScene::2600591203023259571::1777737953::0::1::::<><><>0<>0<><>::uid://cbp1xdv8dj7a::::res://scripts/interface.gd<>uid://dpua8ddxtg5hy::::res://Fontes/DigitalDisco.ttf
+principal.tscn::PackedScene::8598345321325146659::1777737953::0::1::::<><><>0<>0<><>::uid://dfvgt4oib3gqh::::res://cenas/cenário.tscn<>res://scripts/animacao_noite.gd<>uid://bpmywif85fdnw::::res://cenas/terras.tscn<>uid://8eawdyy5pax::::res://cenas/tomate.tscn
+terras.tscn::PackedScene::3465522796055089732::1777737953::0::1::::<><><>0<>0<><>::uid://cdfonkg407c7::::res://scripts/semente.gd<>uid://cddnyfcnx6ldc::::res://scripts/cofre.gd<>uid://c4an64ysecx10::::res://scripts/agua.gd<>uid://dfvgt4oib3gqh::::res://cenas/cenário.tscn<>uid://b5k5tl31c4nuq::::res://cenas/fazendeira.tscn<>uid://bdb0me46lbnmp::::res://cenas/interface.tscn
+tomate.tscn::PackedScene::68368495126873603::1777737953::0::1::::<><><>0<>0<><>::uid://cr0j3e582w6qh::::res://scripts/tomate.gd<>uid://crcvwos5ckpfy::::res://Imagens/plantas/planta_copas.png<>uid://bcsw0rmvtdien::::res://Imagens/icon.svg
+tomate_noite.tscn::PackedScene::6105770504605173807::1777737953::0::1::::<><><>0<>0<><>::uid://w38pr5fwrmf::::res://scripts/tomate_noite.gd<>uid://cmlyu338s4hd0::::res://Imagens/FarmingCrops16x16/Crop_Spritesheet.png
 ::res://Fontes/::1777251013
 creditos (incluir em algum lugar caso agt publique o jogo).txt::TextFile::-1::1777248687::0::1::::<><><>0<>0<><>::
 DigitalDisco.ttf::FontFile::8253441355204985598::1777248687::1777251013::1::::<><><>0<>0<>bcba03e67ad0356eda5e26b5de09cb02<>res://.godot/imported/DigitalDisco.ttf-13d6440e941e628eca25aadf904b2c9b.fontdata::
-::res://Imagens/::1777734385
+::res://Imagens/::1777737953
 icon.svg::CompressedTexture2D::2565338501644993437::1777248687::1777251014::1::::<><><>0<>0<>75508103cca06a6205d59f7c294d66ac<>res://.godot/imported/icon.svg-f18ef69a11610d75fda942ae5afe3de5.ctex::
-::res://Imagens/dona coelha/::1777734411
-donacoelha.png::CompressedTexture2D::6256102997845839836::1777734241::1777734461::1::::<><><>0<>0<>a91f57e447a1cb3ee6a0f040f747237d<>res://.godot/imported/donacoelha.png-bd5d50125cfc89478accdb2737a2918c.ctex::
+::res://Imagens/dona coelha/::1777737953
+donacoelha.png::CompressedTexture2D::6256102997845839836::1777737953::1777737965::1::::<><><>0<>0<>a91f57e447a1cb3ee6a0f040f747237d<>res://.godot/imported/donacoelha.png-bd5d50125cfc89478accdb2737a2918c.ctex::
 ::res://Imagens/FarmingCrops16x16/::1777251014
 Crop_Spritesheet.png::CompressedTexture2D::5639310085474640067::1777248580::1777251014::1::::<><><>0<>0<>df227858eeaf017c53e9c8dc75ed4f70<>res://.godot/imported/Crop_Spritesheet.png-be0d9c6adc289d78314f13ad918e2e67.ctex::
-::res://Imagens/fazenda/::1777734448
-Carrinho de vendas com plantas.png::CompressedTexture2D::3581416153764247833::1777734241::1777734461::1::::<><><>0<>0<>c21365f2b1b3aca24ad094ca3670c715<>res://.godot/imported/Carrinho de vendas com plantas.png-93a3376a0844636205598b8fe7df9b5b.ctex::
-Carrinho de vendas sem plantas.png::CompressedTexture2D::8020499332506136724::1777734241::1777734461::1::::<><><>0<>0<>d95ee195cc66b10fd57117525d86b37b<>res://.godot/imported/Carrinho de vendas sem plantas.png-c448934059093752aae2e9729d83c073.ctex::
-Casa sem porta.png::CompressedTexture2D::8852031067237901812::1777734241::1777734461::1::::<><><>0<>0<>ab5deeb46f1f927a6ade0b5f8cf6c6bc<>res://.godot/imported/Casa sem porta.png-1e801baa6cc3448bd08a280e58287a98.ctex::
-Cesta de sementes_.png::CompressedTexture2D::5066956207454724585::1777734241::1777734461::1::::<><><>0<>0<>4ff9040e8375a048c15d25adb519f91f<>res://.godot/imported/Cesta de sementes_.png-9d8e1f56021b1c77345abcdf3c5ae2d6.ctex::
-Porta aberta.png::CompressedTexture2D::4774879508404123976::1777734241::1777734461::1::::<><><>0<>0<>537f9b67bed1a90715ad8a6dc1169a49<>res://.godot/imported/Porta aberta.png-944ff3a834bad8d0e54961ec21d7d946.ctex::
-Porta fechada.png::CompressedTexture2D::8426477730910655869::1777734241::1777734461::1::::<><><>0<>0<>98b17310340604d510ae9d2ebc6afb94<>res://.godot/imported/Porta fechada.png-5f5a24c1ee91a2663ccb8c5bdf7560f7.ctex::
-Poço_.png::CompressedTexture2D::6929388128296088077::1777734241::1777734461::1::::<><><>0<>0<>33a857cc6f3e35f77ca6ba1c34b58734<>res://.godot/imported/Poço_.png-8f2a6c113898b062087a7894d5743385.ctex::
-::res://Imagens/plantas/::1777734434
-planta_copas.png::CompressedTexture2D::5971495573554403118::1777734241::1777734461::1::::<><><>0<>0<>d13043f66905f9abb32395112e4a25ea<>res://.godot/imported/planta_copas.png-5dfe85affc7414806b8c94d0c99cd3a2.ctex::
+::res://Imagens/fazenda/::1777737953
+Carrinho de vendas com plantas.png::CompressedTexture2D::3581416153764247833::1777737953::1777737965::1::::<><><>0<>0<>c21365f2b1b3aca24ad094ca3670c715<>res://.godot/imported/Carrinho de vendas com plantas.png-93a3376a0844636205598b8fe7df9b5b.ctex::
+Carrinho de vendas sem plantas.png::CompressedTexture2D::8020499332506136724::1777737953::1777737965::1::::<><><>0<>0<>d95ee195cc66b10fd57117525d86b37b<>res://.godot/imported/Carrinho de vendas sem plantas.png-c448934059093752aae2e9729d83c073.ctex::
+Casa sem porta.png::CompressedTexture2D::8852031067237901812::1777737953::1777737965::1::::<><><>0<>0<>ab5deeb46f1f927a6ade0b5f8cf6c6bc<>res://.godot/imported/Casa sem porta.png-1e801baa6cc3448bd08a280e58287a98.ctex::
+Cesta de sementes_.png::CompressedTexture2D::5066956207454724585::1777737953::1777737965::1::::<><><>0<>0<>4ff9040e8375a048c15d25adb519f91f<>res://.godot/imported/Cesta de sementes_.png-9d8e1f56021b1c77345abcdf3c5ae2d6.ctex::
+Porta aberta.png::CompressedTexture2D::4774879508404123976::1777737953::1777737965::1::::<><><>0<>0<>537f9b67bed1a90715ad8a6dc1169a49<>res://.godot/imported/Porta aberta.png-944ff3a834bad8d0e54961ec21d7d946.ctex::
+Porta fechada.png::CompressedTexture2D::8426477730910655869::1777737953::1777737965::1::::<><><>0<>0<>98b17310340604d510ae9d2ebc6afb94<>res://.godot/imported/Porta fechada.png-5f5a24c1ee91a2663ccb8c5bdf7560f7.ctex::
+Poço_.png::CompressedTexture2D::6929388128296088077::1777737953::1777737965::1::::<><><>0<>0<>33a857cc6f3e35f77ca6ba1c34b58734<>res://.godot/imported/Poço_.png-8f2a6c113898b062087a7894d5743385.ctex::
+::res://Imagens/plantas/::1777737953
+planta_copas.png::CompressedTexture2D::5971495573554403118::1777737953::1777737965::1::::<><><>0<>0<>d13043f66905f9abb32395112e4a25ea<>res://.godot/imported/planta_copas.png-5dfe85affc7414806b8c94d0c99cd3a2.ctex::
 ::res://Imagens/Tiny Wonder Forest 1.0/::1777248580
 ::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/::1777248580
 ::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/characters/::1777248687
@@ -43,17 +43,17 @@ autumn tilemap.png::CompressedTexture2D::998103159695796857::1777248580::1777251
 spring tilemap.png::CompressedTexture2D::5682326244782732002::1777248580::1777251014::1::::<><><>0<>0<>8a15ada194da26441f2848509e656ce5<>res://.godot/imported/spring tilemap.png-a5646341df12d4849aa411629238083b.ctex::
 summer tilemap.png::CompressedTexture2D::1677666045379082317::1777248580::1777251014::1::::<><><>0<>0<>ad6343f0d4f01bacb13a379bd83b2858<>res://.godot/imported/summer tilemap.png-e3f48bd185b872d0f7f472b6b61e6edc.ctex::
 ::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/animated tiles/::1777248580
-::res://scripts/::1777734340
-agua.gd::GDScript::6809164074481906297::1777734278::0::1::::<>Area2D<><>0<>0<><>::
-animacao_noite.gd::GDScript::7215801757420934875::1777734278::0::1::::<>AnimationPlayer<><>0<>0<><>::
-atirar_fazendeira.gd::GDScript::1348970030981866938::1777734278::0::1::::<>CharacterBody2D<><>0<>0<><>::
-bala.gd::GDScript::6675096430350304089::1777734278::0::1::::<>Area2D<><>0<>0<><>::
-bala_inimigo.gd::GDScript::797976164463776705::1777734278::0::1::::<>Area2D<><>0<>0<><>::
-cofre.gd::GDScript::4990433477851147164::1777734278::0::1::::<>Area2D<><>0<>0<><>::
-Dados.gd::GDScript::3681582330517951062::1777734278::0::1::::<>Node<><>0<>0<><>::
+::res://scripts/::1777737953
+agua.gd::GDScript::6809164074481906297::1777737953::0::1::::<>Area2D<><>0<>0<><>::
+animacao_noite.gd::GDScript::7215801757420934875::1777737953::0::1::::<>AnimationPlayer<><>0<>0<><>::
+atirar_fazendeira.gd::GDScript::1348970030981866938::1777737953::0::1::::<>CharacterBody2D<><>0<>0<><>::
+bala.gd::GDScript::6675096430350304089::1777737953::0::1::::<>Area2D<><>0<>0<><>::
+bala_inimigo.gd::GDScript::797976164463776705::1777737953::0::1::::<>Area2D<><>0<>0<><>::
+cofre.gd::GDScript::4990433477851147164::1777737953::0::1::::<>Area2D<><>0<>0<><>::
+Dados.gd::GDScript::3681582330517951062::1777737953::0::1::::<>Node<><>0<>0<><>::
 export_presets.cfg::TextFile::-1::1777248687::0::1::::<><><>0<>0<><>::
-fazendeira.gd::GDScript::3518318570782818295::1777734340::0::1::::<>CharacterBody2D<><>0<>0<><>::
-interface.gd::GDScript::143400464232987756::1777734278::0::1::::<>CanvasLayer<><>0<>0<><>::
-semente.gd::GDScript::146900105180726972::1777734278::0::1::::<>Area2D<><>0<>0<><>::
-tomate.gd::GDScript::6018257866222366499::1777734278::0::1::::<>Area2D<><>0<>0<><>::
-tomate_noite.gd::GDScript::47176133068194017::1777734278::0::1::::<>CharacterBody2D<><>0<>0<><>::
+fazendeira.gd::GDScript::3518318570782818295::1777737953::0::1::::<>CharacterBody2D<><>0<>0<><>::
+interface.gd::GDScript::143400464232987756::1777737953::0::1::::<>CanvasLayer<><>0<>0<><>::
+semente.gd::GDScript::146900105180726972::1777737953::0::1::::<>Area2D<><>0<>0<><>::
+tomate.gd::GDScript::6018257866222366499::1777737953::0::1::::<>Area2D<><>0<>0<><>::
+tomate_noite.gd::GDScript::47176133068194017::1777737953::0::1::::<>CharacterBody2D<><>0<>0<><>::
