@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://durdqx3pjg1tv"]
 
 [ext_resource type="PackedScene" uid="uid://dfvgt4oib3gqh" path="res://cenas/cenário.tscn" id="1_tr6oq"]
-[ext_resource type="Script" uid="uid://da2ng3aoraf1d" path="res://scripts/animacao_noite.gd" id="3_0404l"]
+[ext_resource type="Script" path="res://scripts/animacao_noite.gd" id="3_0404l"]
 [ext_resource type="PackedScene" uid="uid://bpmywif85fdnw" path="res://cenas/terras.tscn" id="3_rrtif"]
 [ext_resource type="PackedScene" uid="uid://8eawdyy5pax" path="res://cenas/tomate.tscn" id="4_0404l"]
 
@@ -50,7 +50,7 @@ autoplay = &"noite"
 script = ExtResource("3_0404l")
 
 [node name="ColorRect" type="ColorRect" parent="Area2D" unique_id=1086958256]
-self_modulate = Color(0.075, 0.075, 0.075, 0.06088233)
+self_modulate = Color(0.075, 0.075, 0.075, 0.056470573)
 z_index = 2
 offset_right = 1170.0
 offset_bottom = 690.0

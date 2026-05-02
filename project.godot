@@ -23,6 +23,11 @@ config/icon="res://Imagens/icon.svg"
 
 Dados="*uid://bspnegkh6ei3o"
 
+[global_group]
+
+inimigos=""
+fazendeira=""
+
 [input]
 
 Esquerda={

@@ -3,6 +3,10 @@
 [ext_resource type="Script" uid="uid://w38pr5fwrmf" path="res://scripts/tomate_noite.gd" id="1_s10wb"]
 [ext_resource type="Texture2D" uid="uid://cmlyu338s4hd0" path="res://Imagens/FarmingCrops16x16/Crop_Spritesheet.png" id="2_ixs02"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_s10wb"]
+atlas = ExtResource("2_ixs02")
+region = Rect2(96, 16, 16, 16)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_kxrrc"]
 atlas = ExtResource("2_ixs02")
 region = Rect2(176, 0, 16, 16)
@@ -31,6 +35,14 @@ region = Rect2(96, 0, 16, 16)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_s10wb")
+}],
+"loop": true,
+"name": &"machucado",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_kxrrc")
 }, {
 "duration": 1.0,
@@ -49,24 +61,20 @@ animations = [{
 "texture": SubResource("AtlasTexture_ccecy")
 }],
 "loop": false,
-"name": &"default",
+"name": &"padrao",
 "speed": 3.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f5she"]
 
-[node name="tomate_noite" type="Area2D" unique_id=2032955067]
+[node name="tomate_noite" type="CharacterBody2D" unique_id=314006619 groups=["inimigos"]]
 scale = Vector2(2, 2)
 script = ExtResource("1_s10wb")
 
 [node name="animacao_tomate_noite" type="AnimatedSprite2D" parent="." unique_id=1720908559]
 sprite_frames = SubResource("SpriteFrames_c6xya")
-autoplay = "default"
-frame = 5
-frame_progress = 1.0
+animation = &"padrao"
+autoplay = "padrao"
 
 [node name="colisao_tomate_noite" type="CollisionShape2D" parent="." unique_id=447315365]
 shape = SubResource("RectangleShape2D_f5she")
-
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
-[connection signal="body_exited" from="." to="." method="_on_body_exited"]

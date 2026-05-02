@@ -22,7 +22,21 @@ theme_override_font_sizes/font_size = 30
 text = "setinhas = movimento
 z = interagir / plantar"
 
-[node name="dinheiro" type="Label" parent="." unique_id=951781735]
+[node name="Timer" type="Timer" parent="." unique_id=780287095]
+process_callback = 0
+autostart = true
+
+[node name="Control" type="Control" parent="." unique_id=1952858025]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="dinheiro" type="Label" parent="Control" unique_id=951781735]
+layout_mode = 0
 offset_left = 672.0
 offset_top = 24.0
 offset_right = 920.0
@@ -35,10 +49,11 @@ theme_override_font_sizes/font_size = 48
 text = "aa"
 horizontal_alignment = 2
 
-[node name="sementes" type="Label" parent="." unique_id=1358325114]
-offset_left = 744.0
+[node name="sementes" type="Label" parent="Control" unique_id=1358325114]
+layout_mode = 0
+offset_left = 748.0
 offset_top = 72.0
-offset_right = 884.0
+offset_right = 888.0
 offset_bottom = 120.0
 theme = SubResource("Theme_rh14k")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -49,11 +64,12 @@ theme_override_font_sizes/font_size = 48
 text = "aa"
 horizontal_alignment = 2
 
-[node name="colhido" type="Label" parent="." unique_id=792762449]
-offset_left = 760.0
-offset_top = 592.0
-offset_right = 964.0
-offset_bottom = 640.0
+[node name="colhido" type="Label" parent="Control" unique_id=792762449]
+layout_mode = 0
+offset_left = 763.0
+offset_top = 541.0
+offset_right = 967.0
+offset_bottom = 589.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 10
@@ -62,11 +78,12 @@ theme_override_font_sizes/font_size = 48
 text = " aa"
 horizontal_alignment = 2
 
-[node name="agua" type="Label" parent="." unique_id=1263762226]
-offset_left = 843.0
-offset_top = 544.0
-offset_right = 983.0
-offset_bottom = 592.0
+[node name="agua" type="Label" parent="Control" unique_id=1263762226]
+layout_mode = 0
+offset_left = 417.0
+offset_top = 490.0
+offset_right = 992.0
+offset_bottom = 546.0
 theme = SubResource("Theme_rh14k")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
@@ -76,7 +93,8 @@ theme_override_font_sizes/font_size = 48
 text = "aa"
 horizontal_alignment = 2
 
-[node name="textos" type="Label" parent="." unique_id=1143991699]
+[node name="textos" type="Label" parent="Control" unique_id=1143991699]
+layout_mode = 0
 offset_left = 896.0
 offset_top = 24.0
 offset_right = 1145.0
@@ -96,19 +114,15 @@ text = " = Dinheiro
 
 
 
-
 = Água
 = Frutas"
 horizontal_alignment = 2
 
-[node name="Timer" type="Timer" parent="." unique_id=780287095]
-process_callback = 0
-autostart = true
-
-[node name="tempo" type="Label" parent="." unique_id=1150079204]
-offset_left = 56.0
+[node name="tempo" type="Label" parent="Control" unique_id=1150079204]
+layout_mode = 0
+offset_left = 8.0
 offset_top = 8.0
-offset_right = 304.0
+offset_right = 88.0
 offset_bottom = 56.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)

@@ -7,7 +7,7 @@ func _process(delta: float) -> void:
 		Dados.colhido-=1
 		Dados.dinheiro+=3
 	
-	if Dados.tempo <-1:
+	if Dados.tempo <0:
 		objeto_antigo.queue_free()
 	
 

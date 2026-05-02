@@ -15,7 +15,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	
-	if Dados.tempo <-1:
+	if Dados.tempo >-1:
 		$planta_seca_label.text = str(Dados.semente_secando)
 		
 		#plantar

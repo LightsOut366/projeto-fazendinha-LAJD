@@ -9,7 +9,7 @@ var novo_script = load("res://scripts/atirar_fazendeira.gd")
 
 func _ready():
 	tamanho_tela = get_viewport_rect().size
-	
+	Dados.jogador = self
 	
 
 func _physics_process(delta) -> void:
@@ -19,7 +19,7 @@ func _physics_process(delta) -> void:
 	var posicao_mouse = get_global_mouse_position()
 	if Input.is_action_pressed("Direita"):
 		direcao.x += 1
-		
+		$AnimatedSprite2D.play("andando_frente")
 	if Input.is_action_pressed("Esquerda"):
 		direcao.x -= 1
 		$AnimatedSprite2D.play("andando_tras")
@@ -29,8 +29,6 @@ func _physics_process(delta) -> void:
 	if Input.is_action_pressed("Cima"):
 		direcao.y -= 1
 		# $AnimatedSprite2d.play()
-	if posicao_mouse.x > global_position.x:
-		$AnimatedSprite2D.play("andando_frente")
 	
 	if direcao.length() == 0:
 		$AnimatedSprite2D.play("parado") # sem apertar botao, fica parado

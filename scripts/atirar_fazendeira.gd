@@ -5,12 +5,12 @@ extends CharacterBody2D
 var tamanho_tela
 var pode_atirar : bool = true
 
-
 func _ready():
 	tamanho_tela = get_viewport_rect().size
 	
 
 func _physics_process(delta) -> void:
+	
 	
 	var direcao_mouse = get_global_mouse_position()- global_position
 	var direcao = Vector2.ZERO # vetor de movimento do player
@@ -20,15 +20,18 @@ func _physics_process(delta) -> void:
 		
 	if Input.is_action_pressed("Esquerda"):
 		direcao.x -= 1
-		$AnimatedSprite2D.play("andando_tras")
+		
 	if Input.is_action_pressed("Baixo"):
 		direcao.y += 1
 		# $AnimatedSprite2d.play()
 	if Input.is_action_pressed("Cima"):
 		direcao.y -= 1
 		# $AnimatedSprite2d.play()
-	if posicao_mouse.x > global_position.x:
+		
+	if posicao_mouse.x > global_position.x: #faz com que a personagem vire pra direção do mouse
 		$AnimatedSprite2D.play("andando_frente")
+	if posicao_mouse.x < global_position.x:
+		$AnimatedSprite2D.play("andando_tras")
 	
 	if direcao.length() == 0:
 		$AnimatedSprite2D.play("parado") # sem apertar botao, fica parado
@@ -47,6 +50,7 @@ func _physics_process(delta) -> void:
 	if Input.is_action_pressed("interagir") and pode_atirar:
 		atirar(direcao_mouse)
 		
+	
 func atirar(direcao):
 	pode_atirar = false
 	
@@ -55,5 +59,10 @@ func atirar(direcao):
 	instanciar_bala.global_position = global_position
 	instanciar_bala.adicionar_direcao(direcao)
 	
-	await get_tree().create_timer(0.3).timeout
+	await get_tree().create_timer(0.5).timeout
 	pode_atirar= true
+	
+func dano(quantia):
+	Dados.vida -= quantia
+	if Dados.vida <=0:
+		queue_free()
