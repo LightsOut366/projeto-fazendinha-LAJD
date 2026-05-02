@@ -44,7 +44,7 @@ func _physics_process(delta) -> void:
 		pass
 		# botar aqui as animaçoes dela regando
 		
-	if Dados.tempo<=-1:
+	if Dados.tempo<=-1 and Dados.dinheiro<200:
 		atirar_fazendeira()
 
 func atirar_fazendeira():

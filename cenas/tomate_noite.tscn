@@ -62,7 +62,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"padrao",
-"speed": 3.0
+"speed": 2.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f5she"]
@@ -75,6 +75,8 @@ script = ExtResource("1_s10wb")
 sprite_frames = SubResource("SpriteFrames_c6xya")
 animation = &"padrao"
 autoplay = "padrao"
+frame = 5
+frame_progress = 1.0
 
 [node name="colisao_tomate_noite" type="CollisionShape2D" parent="." unique_id=447315365]
 shape = SubResource("RectangleShape2D_f5she")

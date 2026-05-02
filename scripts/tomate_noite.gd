@@ -12,7 +12,6 @@ var empurrar_diminuir: float = 1000.0
 var direcao : Vector2 = Vector2.ZERO
 var jogador = null
 
-var primeiro_movimento = true
 var pode_atirar= true
 
 func _ready() -> void:
@@ -34,13 +33,11 @@ func _physics_process(delta: float) -> void:
 		empurrar_velocidade = empurrar_velocidade.move_toward(Vector2.ZERO, empurrar_diminuir * delta)
 	
 	elif jogador and $animacao_tomate_noite.frame==5: #segue o jogador
-		if primeiro_movimento == false:
-			await get_tree().create_timer(2.0).timeout
+		await get_tree().create_timer(2.0).timeout
 		
 		if get_tree().has_group("fazendeira"):
 			direcao = global_position.direction_to(jogador.global_position)
 			velocity = velocidade * direcao
-			primeiro_movimento =false
 			if pode_atirar:
 				atirar(jogador.global_position - global_position)
 		

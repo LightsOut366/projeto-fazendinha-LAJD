@@ -173,5 +173,5 @@ animation = &"andando_baixo"
 autoplay = "parado"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2070106716]
-position = Vector2(1, 5)
+position = Vector2(-0.33333337, 5)
 shape = SubResource("RectangleShape2D_pyhwh")

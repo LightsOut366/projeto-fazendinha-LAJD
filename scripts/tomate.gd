@@ -79,13 +79,14 @@ func _process(delta: float) -> void:
 			Dados.colhido+=1
 			maduro=false
 		
-	if Dados.tempo <=-1 and Dados.dinheiro <=10 and ja_tem_planta== true:
+		
+	if Dados.tempo <=-1 and Dados.dinheiro <200 and ja_tem_planta== true:
 		while $animacao_tomate.frame>0:
 			await get_tree().create_timer(1.0).timeout
 			$animacao_tomate.frame-=1
 			
 			
-	if Dados.tempo<=-1 and ja_tem_planta== true and $animacao_tomate.frame==0:
+	if Dados.tempo<=-1 and ja_tem_planta== true and $animacao_tomate.frame==0 and Dados.dinheiro<200:
 		var tomate_noite = preload("res://cenas/tomate_noite.tscn").instantiate() #inicia o sprite
 		tomate_noite.global_position = objeto_antigo.global_position # Coloca o novo na mesma posição
 		
