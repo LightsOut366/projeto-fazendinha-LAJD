@@ -25,10 +25,10 @@ func _physics_process(delta) -> void:
 		$AnimatedSprite2D.play("andando_tras")
 	if Input.is_action_pressed("Baixo"):
 		direcao.y += 1
-		# $AnimatedSprite2d.play()
+		$AnimatedSprite2D.play("andando_baixo")
 	if Input.is_action_pressed("Cima"):
 		direcao.y -= 1
-		# $AnimatedSprite2d.play()
+		$AnimatedSprite2D.play("andando_cima")
 	
 	if direcao.length() == 0:
 		$AnimatedSprite2D.play("parado") # sem apertar botao, fica parado
