@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1777676665
+::res://::1777715577
 README.md::TextFile::-1::1776724142::0::1::::<><><>0<>0<><>::
 ::res://cenas/::1777676654
 bala.tscn::PackedScene::8582530923923329672::1777675019::0::1::::<><><>0<>0<><>::uid://c2dp4lt67xh0t::::res://scripts/bala.gd<>uid://bcsw0rmvtdien::::res://Imagens/icon.svg
@@ -32,7 +32,7 @@ autumn tilemap.png::CompressedTexture2D::998103159695796857::1776724142::1776724
 spring tilemap.png::CompressedTexture2D::5682326244782732002::1776505649::1776506635::1::::<><><>0<>0<>8a15ada194da26441f2848509e656ce5<>res://.godot/imported/spring tilemap.png-a5646341df12d4849aa411629238083b.ctex::
 summer tilemap.png::CompressedTexture2D::1677666045379082317::1776505649::1776506635::1::::<><><>0<>0<>ad6343f0d4f01bacb13a379bd83b2858<>res://.godot/imported/summer tilemap.png-e3f48bd185b872d0f7f472b6b61e6edc.ctex::
 ::res://Imagens/Tiny Wonder Forest 1.0/Tiny Wonder Forest 1.0/tilemaps/animated tiles/::1776505649
-::res://scripts/::1777676654
+::res://scripts/::1777715746
 agua.gd::GDScript::3894196887215765810::1777204022::0::1::::<>Area2D<><>0<>0<><>::
 animacao_noite.gd::GDScript::7215801757420934875::1777662091::0::1::::<>AnimationPlayer<><>0<>0<><>::
 bala.gd::GDScript::6675096430350304089::1777676329::0::1::::<>Area2D<><>0<>0<><>::
@@ -41,6 +41,7 @@ Dados.gd::GDScript::3681582330517951062::1777662568::0::1::::<>Node<><>0<>0<><>:
 export_presets.cfg::TextFile::-1::1777203390::0::1::::<><><>0<>0<><>::
 fazendeira.gd::GDScript::3518318570782818295::1777676654::0::1::::<>CharacterBody2D<><>0<>0<><>::
 interface.gd::GDScript::143400464232987756::1777662050::0::1::::<>CanvasLayer<><>0<>0<><>::
+fazendeira_atirar.gd::GDScript::1348970030981866938::1777715746::0::1::::<>CharacterBody2D<><>0<>0<><>::
 semente.gd::GDScript::146900105180726972::1777204022::0::1::::<>Area2D<><>0<>0<><>::
 tomate.gd::GDScript::6018257866222366499::1777676267::0::1::::<>Area2D<><>0<>0<><>::
 tomate_noite.gd::GDScript::47176133068194017::1777659793::0::1::::<>Area2D<><>0<>0<><>::

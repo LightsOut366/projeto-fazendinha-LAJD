@@ -1,15 +1,13 @@
 extends CharacterBody2D
 
 @export var jogador_velocidade = 200.0
+@export var cena_bala = preload("res://cenas/bala.tscn")
 var tamanho_tela
-		
-# Carrega o novo script
-var novo_script = load("res://scripts/atirar_fazendeira.gd")
+var pode_atirar : bool = true
 
 
 func _ready():
 	tamanho_tela = get_viewport_rect().size
-	
 	
 
 func _physics_process(delta) -> void:
@@ -46,11 +44,16 @@ func _physics_process(delta) -> void:
 		pass
 		# botar aqui as animaçoes dela regando
 		
-	if Dados.tempo<=-1:
-		atirar_fazendeira()
-
-func atirar_fazendeira():
-	self.set_script(novo_script)
+	if Input.is_action_pressed("interagir") and pode_atirar:
+		atirar(direcao_mouse)
+		
+func atirar(direcao):
+	pode_atirar = false
 	
-	# Chama _ready() novamente para iniciar o novo comportamento
-	self._ready() 
+	var instanciar_bala = cena_bala.instantiate()
+	get_tree().current_scene.add_child(instanciar_bala)
+	instanciar_bala.global_position = global_position
+	instanciar_bala.adicionar_direcao(direcao)
+	
+	await get_tree().create_timer(0.3).timeout
+	pode_atirar= true

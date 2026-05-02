@@ -1,11 +1,14 @@
 extends Area2D
 var entrou = false
-
+@onready var objeto_antigo = $"."
 
 func _process(delta: float) -> void:
 	if entrou == true and Input.is_action_just_pressed("interagir") and Dados.colhido>=1:
 		Dados.colhido-=1
 		Dados.dinheiro+=3
+	
+	if Dados.tempo <-1:
+		objeto_antigo.queue_free()
 	
 
 
