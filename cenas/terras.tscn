@@ -1,61 +1,90 @@
 [gd_scene format=3 uid="uid://bpmywif85fdnw"]
 
-[ext_resource type="Script" uid="uid://cdfonkg407c7" path="res://scripts/semente.gd" id="1_ckude"]
-[ext_resource type="Script" uid="uid://cddnyfcnx6ldc" path="res://scripts/cofre.gd" id="2_e51im"]
-[ext_resource type="Script" uid="uid://bvqm4a8df13ww" path="res://scripts/agua.gd" id="2_fbvrd"]
+[ext_resource type="Script" uid="uid://c8peu6c6im2bi" path="res://cenas/sementes_area.gd" id="1_l2hx4"]
+[ext_resource type="Script" uid="uid://br3ximetehkpg" path="res://cenas/agua_area.gd" id="2_g45jc"]
+[ext_resource type="Script" uid="uid://drb4ntpgf054k" path="res://cenas/cofre_area.gd" id="3_e0nx3"]
 [ext_resource type="PackedScene" uid="uid://dfvgt4oib3gqh" path="res://cenas/cenário.tscn" id="3_j3426"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g45jc"]
-radius = 17.0
+radius = 23.690716
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_e0nx3"]
+radius = 14.637281
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_52ux4"]
 radius = 29.5
 height = 89.0
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_emmdm"]
-radius = 40.5
-height = 86.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_l2hx4"]
+radius = 27.170755
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g45jc"]
+size = Vector2(106, 96.5)
 
 [node name="terras" type="Node2D" unique_id=1466305864]
 
 [node name="baldinhos" type="Node" parent="." unique_id=612115542]
 
-[node name="sementes_interagivel" type="Area2D" parent="baldinhos" unique_id=2010240149]
+[node name="sementes_interagivel" type="StaticBody2D" parent="baldinhos" unique_id=1772193953]
 position = Vector2(0, -12.3)
 scale = Vector2(2, 2)
-collision_layer = 2
-script = ExtResource("1_ckude")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/sementes_interagivel" unique_id=570279042]
+[node name="sementes_area" type="Area2D" parent="baldinhos/sementes_interagivel" unique_id=167413356]
+position = Vector2(0, 6.198883e-06)
+script = ExtResource("1_l2hx4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/sementes_interagivel/sementes_area" unique_id=570279042]
 position = Vector2(443, 140.15)
 shape = SubResource("CircleShape2D_g45jc")
 
-[node name="água_interagivel" type="Area2D" parent="baldinhos" unique_id=1825911967]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/sementes_interagivel" unique_id=1898932512]
+position = Vector2(442.5, 140.65)
+shape = SubResource("CircleShape2D_e0nx3")
+
+[node name="água_interagivel" type="StaticBody2D" parent="baldinhos" unique_id=1071835068]
 position = Vector2(0, -15)
 scale = Vector2(2, 2)
-collision_layer = 2
-script = ExtResource("2_fbvrd")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/água_interagivel" unique_id=76417031]
+[node name="agua_area" type="Area2D" parent="baldinhos/água_interagivel" unique_id=1701055630]
+script = ExtResource("2_g45jc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/água_interagivel/agua_area" unique_id=76417031]
 position = Vector2(446, 214.5)
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_52ux4")
 
-[node name="cofre_interagivel" type="Area2D" parent="baldinhos" unique_id=1440779917]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/água_interagivel" unique_id=271499615]
+position = Vector2(443.5, 216)
+shape = SubResource("CircleShape2D_l2hx4")
+
+[node name="cofre_interagivel" type="StaticBody2D" parent="baldinhos" unique_id=566849292]
 position = Vector2(-2, -4)
 scale = Vector2(2, 2)
-collision_layer = 2
-script = ExtResource("2_e51im")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/cofre_interagivel" unique_id=509423539]
-position = Vector2(359.5, 56.5)
-shape = SubResource("CapsuleShape2D_emmdm")
+[node name="cofre_area" type="Area2D" parent="baldinhos/cofre_interagivel" unique_id=1835332685]
+script = ExtResource("3_e0nx3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/cofre_interagivel/cofre_area" unique_id=1416733083]
+position = Vector2(365.5, 57.25)
+shape = SubResource("RectangleShape2D_g45jc")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="baldinhos/cofre_interagivel" unique_id=1867250509]
+position = Vector2(362, 87)
+polygon = PackedVector2Array(22, -0.5, -9.5, 0, -17.5, 8, -30, 8, -36, 0, -36.5, -6, -31.5, -7, -32.5, -36, -42.5, -42, -33, -71, 26, -71.5, 31.5, -61.5, 34.5, -43, 34, -37.5, 51.5, -39, 51, -33.5, 26, -34, 27, -25, 51, -24.5, 51, -19.5, 26.5, -21.5, 27, 6.5, 22.5, 6.5)
 
 [node name="Cenário_grama2" parent="." unique_id=985514933 instance=ExtResource("3_j3426")]
+position = Vector2(-1, 3)
 
-[connection signal="body_entered" from="baldinhos/sementes_interagivel" to="baldinhos/sementes_interagivel" method="_on_body_entered"]
-[connection signal="body_exited" from="baldinhos/sementes_interagivel" to="baldinhos/sementes_interagivel" method="_on_body_exited"]
-[connection signal="body_entered" from="baldinhos/água_interagivel" to="baldinhos/água_interagivel" method="_on_body_entered"]
-[connection signal="body_exited" from="baldinhos/água_interagivel" to="baldinhos/água_interagivel" method="_on_body_exited"]
-[connection signal="body_entered" from="baldinhos/cofre_interagivel" to="baldinhos/cofre_interagivel" method="_on_body_entered"]
-[connection signal="body_exited" from="baldinhos/cofre_interagivel" to="baldinhos/cofre_interagivel" method="_on_body_exited"]
+[node name="casinha2" type="StaticBody2D" parent="." unique_id=148616818]
+scale = Vector2(2, 1.9200001)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="casinha2" unique_id=2079792781]
+position = Vector2(0.5, 0.5208333)
+polygon = PackedVector2Array(75, 126.041664, 73.5, 94.27083, 71, 53.645832, 114, 29.687498, 133, 29.687498, 169.5, 50, 169.5, 97.916664, 169.5, 124.99999)
+
+[connection signal="body_entered" from="baldinhos/sementes_interagivel/sementes_area" to="baldinhos/sementes_interagivel/sementes_area" method="_on_body_entered"]
+[connection signal="body_exited" from="baldinhos/sementes_interagivel/sementes_area" to="baldinhos/sementes_interagivel/sementes_area" method="_on_body_exited"]
+[connection signal="body_entered" from="baldinhos/água_interagivel/agua_area" to="baldinhos/água_interagivel/agua_area" method="_on_body_entered"]
+[connection signal="body_exited" from="baldinhos/água_interagivel/agua_area" to="baldinhos/água_interagivel/agua_area" method="_on_body_exited"]
+[connection signal="body_entered" from="baldinhos/cofre_interagivel/cofre_area" to="baldinhos/cofre_interagivel/cofre_area" method="_on_body_entered"]
+[connection signal="body_exited" from="baldinhos/cofre_interagivel/cofre_area" to="baldinhos/cofre_interagivel/cofre_area" method="_on_body_exited"]

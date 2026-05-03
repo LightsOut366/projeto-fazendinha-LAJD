@@ -35,8 +35,9 @@ func _physics_process(delta) -> void:
 	
 	if direcao.length() > 0:
 		direcao = direcao.normalized() * jogador_velocidade
+		
 	
-	position += direcao * delta # move o personagem sem atrelar ao fps
+	move_and_collide(direcao * delta) # o personagem anda e checa se bateu em algo
 	position = position.clamp(Vector2.ZERO, tamanho_tela) # nao deixa ele sair da tela
 	
 	
