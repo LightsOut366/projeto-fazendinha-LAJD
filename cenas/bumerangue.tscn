@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://df40lg4dhdjom"]
+
+[ext_resource type="Script" uid="uid://554a4rah2fxx" path="res://scripts/boomerang.gd" id="1_k620w"]
+[ext_resource type="Texture2D" uid="uid://b4lojqg5o6oaj" path="res://Imagens/boomerang.png" id="2_qg7k0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_86bkv"]
+radius = 21.377558
+
+[sub_resource type="Animation" id="Animation_k620w"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_qg7k0"]
+resource_name = "bumerangue"
+length = 0.3
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.26666668, 0.26760414, 0.26854166, 0.26947916, 0.27041665, 0.27135414, 0.27229166, 0.27322915),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qg7k0"]
+_data = {
+&"RESET": SubResource("Animation_k620w"),
+&"bumerangue": SubResource("Animation_qg7k0")
+}
+
+[node name="bumerangue" type="Node2D" unique_id=1457907641]
+z_index = 1
+position = Vector2(0, -143)
+script = ExtResource("1_k620w")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2093646312 groups=["fazendeira", "jogador"]]
+z_index = 1
+position = Vector2(4, 58)
+scale = Vector2(1.173, 1.5)
+texture = ExtResource("2_qg7k0")
+hframes = 8
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1637928197]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=403654955]
+position = Vector2(-2, 51)
+shape = SubResource("CircleShape2D_86bkv")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1986665515]
+root_node = NodePath("../Area2D/CollisionShape2D")
+libraries/ = SubResource("AnimationLibrary_qg7k0")
+autoplay = &"bumerangue"

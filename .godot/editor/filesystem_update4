@@ -1,8 +1,5 @@
-res://cenas/terras.tscn
-res://cenas/area_2d.gd
-res://cenas/agua_area.gd
-res://cenas/sementes_area.gd
-res://cenas/cofre_area.gd
+res://cenas/bumerangue.tscn
+res://scripts/boomerang.gd
 res://cenas/principal.tscn
+res://scripts/habilidade.gd
 res://scripts/fazendeira.gd
-res://scripts/animacao_noite.gd

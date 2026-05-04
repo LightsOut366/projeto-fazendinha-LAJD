@@ -5,18 +5,23 @@ var tamanho_tela
 		
 # Carrega o novo script
 var novo_script = load("res://scripts/atirar_fazendeira.gd")
-
+var direcao = Vector2.ZERO
+var direcao_olhar = Vector2.DOWN
 
 func _ready():
+	
 	tamanho_tela = get_viewport_rect().size
 	Dados.jogador = self
 	
 
 func _physics_process(delta) -> void:
 	
-	var direcao_mouse = get_global_mouse_position()- global_position
-	var direcao = Vector2.ZERO # vetor de movimento do player
-	var posicao_mouse = get_global_mouse_position()
+	var _direcao_mouse = get_global_mouse_position()- global_position
+	direcao = Vector2.ZERO # vetor de movimento do player
+	var _posicao_mouse = get_global_mouse_position()
+	
+	
+	
 	if Input.is_action_pressed("Direita"):
 		direcao.x += 1
 		$AnimatedSprite2D.play("andando_frente")
@@ -36,6 +41,8 @@ func _physics_process(delta) -> void:
 	if direcao.length() > 0:
 		direcao = direcao.normalized() * jogador_velocidade
 		
+	if direcao != Vector2.ZERO:
+		direcao_olhar = direcao
 	
 	move_and_collide(direcao * delta) # o personagem anda e checa se bateu em algo
 	position = position.clamp(Vector2.ZERO, tamanho_tela) # nao deixa ele sair da tela
