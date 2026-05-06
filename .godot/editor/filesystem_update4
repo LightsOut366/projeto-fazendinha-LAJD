@@ -1,5 +1,3 @@
-res://cenas/bumerangue.tscn
-res://scripts/boomerang.gd
-res://cenas/principal.tscn
-res://scripts/habilidade.gd
-res://scripts/fazendeira.gd
+res://cenas/tomate_noite.tscn
+res://cenas/tomate.tscn
+res://scripts/Dados.gd
