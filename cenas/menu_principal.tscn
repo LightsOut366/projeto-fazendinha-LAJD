@@ -124,7 +124,7 @@ theme_override_colors/font_shadow_color = Color(0.06444767, 0.07032841, 0.060525
 theme_override_fonts/font = ExtResource("2_405qn")
 theme_override_font_sizes/font_size = 109
 text = "ANOITECER
- NA COLHEITA"
+NA COLHEITA"
 horizontal_alignment = 1
 vertical_alignment = 1
 

@@ -4,6 +4,7 @@ extends CharacterBody2D
 @export var cena_bala = preload("res://cenas/bala.tscn")
 var tamanho_tela
 var pode_atirar : bool = true
+var direcao = Vector2.DOWN
 
 func _ready():
 	tamanho_tela = get_viewport_rect().size

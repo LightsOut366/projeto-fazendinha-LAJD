@@ -36,7 +36,7 @@ func boomerang_ability() -> void:
 	
 	get_tree().get_current_scene().add_child(_b)
 	
-	var _dir = jogador.direcao_olhar
+	var _dir = jogador.direcao
 	if _dir == Vector2.ZERO:
 		_dir = Vector2.DOWN
 		
