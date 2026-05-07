@@ -1,3 +1,2 @@
-res://cenas/tomate_noite.tscn
-res://cenas/tomate.tscn
-res://scripts/Dados.gd
+res://cenas/menu_principal.tscn
+res://cenas/menu_principal.gd

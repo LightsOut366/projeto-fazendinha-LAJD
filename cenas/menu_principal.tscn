@@ -1,0 +1,132 @@
+[gd_scene format=3 uid="uid://btcsuu7lho10e"]
+
+[ext_resource type="Script" uid="uid://bnbpwrgmnufdt" path="res://cenas/menu_principal.gd" id="1_0w2hc"]
+[ext_resource type="Texture2D" uid="uid://dneyqaqk2v5um" path="res://Imagens/Menu/cenariofazendinha1.jpg" id="1_bllnq"]
+[ext_resource type="FontFile" uid="uid://bie8tfx0xrbk0" path="res://Imagens/Menu/GrapeSoda.ttf" id="2_405qn"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_405qn"]
+texture = ExtResource("1_bllnq")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sljxu"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_color = Color(0, 0, 0, 0.36078432)
+shadow_size = 3
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_405qn"]
+bg_color = Color(0.47866166, 0.47866172, 0.47866166, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_color = Color(0, 0, 0, 0.36078432)
+shadow_size = 3
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0w2hc"]
+bg_color = Color(0.6190818, 0.6190819, 0.6190818, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_color = Color(0, 0, 0, 0.36078432)
+shadow_size = 3
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_roq6h"]
+
+[node name="MenuPrincipal" type="Control" unique_id=345255628]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 3.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0w2hc")
+
+[node name="Panel" type="Panel" parent="." unique_id=1616642126]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_405qn")
+
+[node name="exit" type="Button" parent="." unique_id=1148259278]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -112.0
+offset_top = 132.0
+offset_right = 86.0
+offset_bottom = 172.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.5595833, 0.79, 0.395, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_405qn")
+theme_override_font_sizes/font_size = 38
+theme_override_styles/normal = SubResource("StyleBoxFlat_sljxu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_405qn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0w2hc")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_roq6h")
+text = "Exit"
+
+[node name="iniciar" type="Button" parent="." unique_id=513858360]
+layout_mode = 0
+offset_left = 466.0
+offset_top = 394.0
+offset_right = 658.0
+offset_bottom = 439.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.54276663, 0.76, 0.38759997, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_405qn")
+theme_override_font_sizes/font_size = 41
+theme_override_styles/normal = SubResource("StyleBoxFlat_sljxu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_405qn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0w2hc")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_roq6h")
+text = "Iniciar"
+
+[node name="Label" type="Label" parent="." unique_id=1172625387]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -871.0
+offset_top = -183.0
+offset_right = 871.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.4281199, 0.77, 0.20019999, 1)
+theme_override_colors/font_shadow_color = Color(0.06444767, 0.07032841, 0.060525276, 0.28627452)
+theme_override_fonts/font = ExtResource("2_405qn")
+theme_override_font_sizes/font_size = 109
+text = "ANOITECER
+ NA COLHEITA"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="iniciar" to="." method="_on_iniciar_pressed"]

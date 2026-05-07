@@ -1,3 +1,8 @@
+Label
+TextureRect
+Panel
+VBoxContainer
+Button
 Node
 AnimationPlayer
 CollisionShape2D
@@ -8,8 +13,3 @@ StaticBody2D
 CharacterBody2D
 PanelContainer
 Container
-Control
-AspectRatioContainer
-GridContainer
-MarginContainer
-VisibleOnScreenNotifier2D

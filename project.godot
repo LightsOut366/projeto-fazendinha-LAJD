@@ -15,7 +15,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="Fazendinha (4.6)"
-run/main_scene="res://cenas/principal.tscn"
+run/main_scene="uid://btcsuu7lho10e"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://Imagens/icon.svg"
 
