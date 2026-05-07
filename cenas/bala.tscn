@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dujpbbeuaee0g"]
 
 [ext_resource type="Script" uid="uid://c2dp4lt67xh0t" path="res://scripts/bala.gd" id="1_selws"]
-[ext_resource type="Texture2D" uid="uid://bcsw0rmvtdien" path="res://Imagens/icon.svg" id="2_ujw1x"]
+[ext_resource type="Texture2D" uid="uid://bvpv854ph3o5d" path="res://Imagens/dona coelha/bala_player.png" id="2_selws"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jk513"]
 size = Vector2(26, 7)
@@ -11,8 +11,7 @@ script = ExtResource("1_selws")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=830061176]
 position = Vector2(8.940697e-07, 0.5)
-scale = Vector2(0.203125, 0.0546875)
-texture = ExtResource("2_ujw1x")
+texture = ExtResource("2_selws")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1121072676]
 position = Vector2(0, 0.5)
