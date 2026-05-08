@@ -6,6 +6,7 @@ extends CanvasLayer
 @onready var textos: Label = $Control/textos
 @onready var tempo: Label = $Control/tempo
 @onready var sementes: Label = $Control/sementes
+@onready var cota: Label = $Control/cota
 
 
 func _ready() -> void:
@@ -30,6 +31,7 @@ func _process(delta: float) -> void:
 		colhido.hide()
 		agua.hide()
 		textos.hide()
+		cota.hide()
 	
 
 func _on_timer_timeout() -> void:

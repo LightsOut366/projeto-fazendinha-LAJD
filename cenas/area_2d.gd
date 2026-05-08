@@ -9,6 +9,7 @@ func _process(delta: float) -> void:
 		
 	if Dados.tempo <0:
 		objeto_antigo.queue_free()
+	
 
 
 func _on_body_entered(body: Node2D) -> void:

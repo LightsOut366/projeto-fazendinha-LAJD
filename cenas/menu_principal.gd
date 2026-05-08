@@ -12,10 +12,17 @@ func _process(delta: float) -> void:
 
 
 func _on_iniciar_pressed() -> void:
+	$Audioiniciar.play()
 	get_tree().change_scene_to_file("res://cenas/principal.tscn")
 
 
 func _on_exit_pressed() -> void:
 	get_tree().quit()
-	
-	
+
+
+func _on_iniciar_mouse_entered() -> void:
+	$Audiomenu.play()
+
+
+func _on_exit_mouse_entered() -> void:
+	$Audiomenu.play()

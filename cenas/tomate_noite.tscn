@@ -1,7 +1,10 @@
 [gd_scene format=3 uid="uid://cs8xfbi0we5tr"]
 
 [ext_resource type="Script" uid="uid://w38pr5fwrmf" path="res://scripts/tomate_noite.gd" id="1_s10wb"]
+[ext_resource type="AudioStream" uid="uid://d4fwry8dlqwdi" path="res://Sons/monstro_morrer.wav" id="2_7nqhh"]
 [ext_resource type="Texture2D" uid="uid://ca24xhn51y3b2" path="res://Imagens/plantas/monstro_copas.png" id="2_s10wb"]
+[ext_resource type="AudioStream" uid="uid://we3m7diljlpw" path="res://Sons/atirar_agua.wav" id="2_tsere"]
+[ext_resource type="AudioStream" uid="uid://by6gw3bwmfw1t" path="res://Sons/monstro_dano2.wav" id="3_tsere"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kxrrc"]
 atlas = ExtResource("2_s10wb")
@@ -71,6 +74,22 @@ size = Vector2(22, 18)
 [node name="tomate_noite" type="CharacterBody2D" unique_id=314006619 groups=["inimigos"]]
 scale = Vector2(2, 2)
 script = ExtResource("1_s10wb")
+
+[node name="Audioatirar" type="AudioStreamPlayer2D" parent="." unique_id=773439433]
+position = Vector2(2, -18)
+stream = ExtResource("2_tsere")
+volume_db = -6.559
+pitch_scale = 0.2
+attenuation = 2.0000005
+
+[node name="Audiomorre" type="AudioStreamPlayer2D" parent="." unique_id=970713175]
+position = Vector2(2, -18)
+stream = ExtResource("2_7nqhh")
+volume_db = -1.874
+
+[node name="Audiodano" type="AudioStreamPlayer2D" parent="." unique_id=793571489]
+position = Vector2(2, -18)
+stream = ExtResource("3_tsere")
 
 [node name="animacao_tomate_noite" type="AnimatedSprite2D" parent="." unique_id=1720908559]
 position = Vector2(0, -13.5)

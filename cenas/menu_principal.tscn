@@ -3,6 +3,9 @@
 [ext_resource type="Script" uid="uid://bnbpwrgmnufdt" path="res://cenas/menu_principal.gd" id="1_0w2hc"]
 [ext_resource type="Texture2D" uid="uid://dneyqaqk2v5um" path="res://Imagens/Menu/cenariofazendinha1.jpg" id="1_bllnq"]
 [ext_resource type="FontFile" uid="uid://bie8tfx0xrbk0" path="res://Imagens/Menu/GrapeSoda.ttf" id="2_405qn"]
+[ext_resource type="FontFile" uid="uid://dpua8ddxtg5hy" path="res://Fontes/DigitalDisco.ttf" id="4_6ro21"]
+[ext_resource type="AudioStream" uid="uid://dgds3bh26s2ao" path="res://Sons/menu.wav" id="4_roq6h"]
+[ext_resource type="AudioStream" uid="uid://cc5kkyw7pvmsn" path="res://Sons/vender.wav" id="5_eyjon"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_405qn"]
 texture = ExtResource("1_bllnq")
@@ -119,7 +122,7 @@ offset_right = 871.0
 offset_bottom = 40.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(0.4281199, 0.77, 0.20019999, 1)
+theme_override_colors/font_color = Color(0.33401093, 0.58512133, 0.19921067, 1)
 theme_override_colors/font_shadow_color = Color(0.06444767, 0.07032841, 0.060525276, 0.28627452)
 theme_override_fonts/font = ExtResource("2_405qn")
 theme_override_font_sizes/font_size = 109
@@ -128,5 +131,63 @@ NA COLHEITA"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Label2" type="Label" parent="." unique_id=1756229141]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -871.0
+offset_top = -183.0
+offset_right = 871.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.12547418, 0.24496508, 0.047912814, 1)
+theme_override_colors/font_shadow_color = Color(0.06444767, 0.07032841, 0.060525276, 0.28627452)
+theme_override_fonts/font = ExtResource("2_405qn")
+theme_override_font_sizes/font_size = 109
+text = "ANOITECER
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=1845179298]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 161.0
+offset_top = 154.0
+offset_right = 572.0
+offset_bottom = 377.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.06444767, 0.07032841, 0.060525276, 0.28627452)
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("4_6ro21")
+theme_override_font_sizes/font_size = 32
+text = "wasd - movimento
+mouse1 - interagir
+esc - sair"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Audiomenu" type="AudioStreamPlayer2D" parent="." unique_id=911637639]
+stream = ExtResource("4_roq6h")
+volume_db = -13.117
+
+[node name="Audioiniciar" type="AudioStreamPlayer2D" parent="." unique_id=1715712221]
+stream = ExtResource("5_eyjon")
+volume_db = -5.622
+autoplay = true
+
+[connection signal="mouse_entered" from="exit" to="." method="_on_exit_mouse_entered"]
 [connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
+[connection signal="mouse_entered" from="iniciar" to="." method="_on_iniciar_mouse_entered"]
 [connection signal="pressed" from="iniciar" to="." method="_on_iniciar_pressed"]

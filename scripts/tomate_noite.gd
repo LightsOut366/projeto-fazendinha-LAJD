@@ -19,7 +19,6 @@ func _ready() -> void:
 	
 func animacao():
 	$animacao_tomate_noite.play("machucado")
-	
 	await get_tree().create_timer(0.5).timeout
 	$animacao_tomate_noite.play("padrao")
 	$animacao_tomate_noite.frame = 5
@@ -52,12 +51,14 @@ func dano(quantia: int, posicao:Vector2):
 	var empurrar_direcao = (global_position - posicao).normalized()
 	empurrar(empurrar_direcao*200)
 	vida -= quantia
+	$Audiodano.play()
 	if vida <=0:
+		$Audiomorre.play()
 		queue_free()
 		
 func atirar(direcao):
 	pode_atirar = false
-	
+	$Audioatirar.play()
 	var instanciar_bala = cena_bala.instantiate()
 	get_tree().current_scene.add_child(instanciar_bala)
 	instanciar_bala.global_position = global_position

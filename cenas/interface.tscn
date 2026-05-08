@@ -22,6 +22,31 @@ theme_override_font_sizes/font_size = 30
 text = "setinhas = movimento
 z = interagir / plantar"
 
+[node name="textos2" type="Label" parent="." unique_id=2129706200]
+visible = false
+offset_left = 896.0
+offset_top = 24.0
+offset_right = 1145.0
+offset_bottom = 644.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = 4
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_fh05e")
+theme_override_font_sizes/font_size = 48
+text = " = Dinheiro
+= Sementes
+
+
+
+
+
+
+
+= Água
+= Frutas"
+horizontal_alignment = 2
+
 [node name="Timer" type="Timer" parent="." unique_id=780287095]
 process_callback = 0
 autostart = true
@@ -131,5 +156,17 @@ theme_override_fonts/font = ExtResource("2_fh05e")
 theme_override_font_sizes/font_size = 48
 text = "aa"
 horizontal_alignment = 2
+
+[node name="cota" type="Label" parent="Control" unique_id=1888964825]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 56.0
+offset_right = 230.0
+offset_bottom = 104.0
+theme_override_colors/font_color = Color(0.8534221, 0.11659641, 0.17386937, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_fh05e")
+theme_override_font_sizes/font_size = 32
+text = "cota = 200"
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

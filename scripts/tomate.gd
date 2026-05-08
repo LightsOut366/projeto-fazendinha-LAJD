@@ -28,14 +28,16 @@ func _process(delta: float) -> void:
 			Dados.semente -=1
 			show() 
 			ja_tem_planta = true
+			$Audioplantar.play()
 			$animacao_tomate.frame=0
 			await get_tree().create_timer(3.0).timeout
 			$animacao_tomate.frame=1
-			await get_tree().create_timer(5.0).timeout
+			await get_tree().create_timer(4.0).timeout
 			$animacao_tomate.frame=2
-			await get_tree().create_timer(6.0).timeout
+			await get_tree().create_timer(5.0).timeout
 			precisa_regar = true
 			$planta_seca.show()
+			$Audioprecisaaguar.play()
 			await get_tree().create_timer(2.0).timeout
 			if precisa_regar == true:
 				$planta_seca_label.show()
@@ -51,8 +53,10 @@ func _process(delta: float) -> void:
 			Dados.semente_secando=0
 			await get_tree().create_timer(1.0).timeout
 			if precisa_regar == true:
+				$Audiomorreu.play()
 				hide()
 				$planta_seca.hide()
+				
 				$planta_seca_label.hide()
 				precisa_regar = false
 				ja_tem_planta = false
@@ -60,20 +64,22 @@ func _process(delta: float) -> void:
 		#regar
 		if precisa_regar == true and entrou == true and Input.is_action_just_pressed("interagir") and Dados.agua >= 1:
 			precisa_regar = false
+			$Audioregou.play()
 			Dados.agua -= 1
 			$planta_seca.hide()
 			$planta_seca_label.hide()
-			await get_tree().create_timer(7.0).timeout
+			await get_tree().create_timer(6.0).timeout
 			$animacao_tomate.frame=3
-			await get_tree().create_timer(10.0).timeout
+			await get_tree().create_timer(6.0).timeout
 			$animacao_tomate.frame=4
-			await get_tree().create_timer(10.0).timeout
+			await get_tree().create_timer(7.0).timeout
 			$animacao_tomate.frame=5
 			maduro=true
 			
 			
 		#colher
 		if maduro==true and entrou==true and Input.is_action_just_pressed("interagir"):
+			$Audiocolher.play()
 			hide()
 			ja_tem_planta= false
 			Dados.colhido+=1
@@ -96,6 +102,7 @@ func _process(delta: float) -> void:
 		
 func _on_body_entered(body: Node2D) -> void:
 	entrou = true
+	
 
 
 func _on_body_exited(body: Node2D) -> void:

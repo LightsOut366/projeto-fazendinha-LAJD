@@ -5,11 +5,12 @@ var entrou = false
 func _process(delta: float) -> void:
 	if entrou == true and Input.is_action_just_pressed("interagir") and Dados.colhido>=1:
 		Dados.colhido-=1
-		Dados.dinheiro+=3
+		Dados.dinheiro+=4
+		$Audiovender.play()
 	
 	if Dados.tempo <0:
 		objeto_antigo.queue_free()
-	
+
 
 
 func _on_body_entered(body: Node2D) -> void:

@@ -40,6 +40,7 @@ func _physics_process(delta) -> void:
 	
 	if direcao.length() > 0:
 		direcao = direcao.normalized() * jogador_velocidade
+		
 	if direcao != Vector2.ZERO:
 		direcao_olhar = direcao
 	
@@ -53,6 +54,12 @@ func _physics_process(delta) -> void:
 		
 	if Dados.tempo<=-1 and Dados.dinheiro<200:
 		atirar_fazendeira()
+		
+	
+	if Input.is_action_pressed("ui_cancel"):
+		get_tree().quit()
+
+	
 
 func atirar_fazendeira():
 	self.set_script(novo_script)

@@ -56,6 +56,9 @@ func _physics_process(delta) -> void:
 		atirar(direcao_mouse)
 		
 	
+	if Input.is_action_pressed("ui_cancel"):
+		get_tree().quit()
+	
 func atirar(direcao):
 	pode_atirar = false
 	
@@ -63,11 +66,13 @@ func atirar(direcao):
 	get_tree().current_scene.add_child(instanciar_bala)
 	instanciar_bala.global_position = global_position
 	instanciar_bala.adicionar_direcao(direcao)
+	$Audiobala.play()
 	
 	await get_tree().create_timer(0.5).timeout
 	pode_atirar= true
 	
 func dano(quantia):
 	Dados.vida -= quantia
+	$Audiodano.play()
 	if Dados.vida <=0:
 		queue_free()
