@@ -11,4 +11,5 @@ func _process(delta: float) -> void:
 	
 	if Dados.tempo==-1 and current_animation != "noite":
 		play("noite")
+		
 	

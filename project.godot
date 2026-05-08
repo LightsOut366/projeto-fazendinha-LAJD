@@ -23,6 +23,10 @@ config/icon="res://Imagens/icon.svg"
 
 Dados="*uid://bspnegkh6ei3o"
 
+[editor]
+
+import/reimport_missing_imported_files=false
+
 [global_group]
 
 inimigos=""

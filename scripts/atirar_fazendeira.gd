@@ -33,10 +33,10 @@ func _physics_process(delta) -> void:
 		$AnimatedSprite2D.play("andando_frente")
 	if posicao_mouse.x < global_position.x:
 		$AnimatedSprite2D.play("andando_tras")
-	if posicao_mouse.y > global_position.y: #faz com que a personagem vire pra direção do mouse
-		$AnimatedSprite2D.play("andando_cima")
-	if posicao_mouse.y < global_position.y:
-		$AnimatedSprite2D.play("andando_baixo")
+	#if posicao_mouse.y > global_position.y: #faz com que a personagem vire pra direção do mouse
+	#	$AnimatedSprite2D.play("andando_cima")
+	#if posicao_mouse.y < global_position.y:
+	#	$AnimatedSprite2D.play("andando_baixo")
 	
 	if direcao.length() == 0:
 		$AnimatedSprite2D.play("parado") # sem apertar botao, fica parado

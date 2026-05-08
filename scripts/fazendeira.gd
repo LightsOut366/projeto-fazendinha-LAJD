@@ -40,7 +40,6 @@ func _physics_process(delta) -> void:
 	
 	if direcao.length() > 0:
 		direcao = direcao.normalized() * jogador_velocidade
-		
 	if direcao != Vector2.ZERO:
 		direcao_olhar = direcao
 	

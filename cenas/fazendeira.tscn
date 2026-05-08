@@ -175,3 +175,6 @@ autoplay = "parado"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2070106716]
 position = Vector2(-0.33333337, 5)
 shape = SubResource("RectangleShape2D_pyhwh")
+
+[node name="Passo" type="AudioStreamPlayer2D" parent="." unique_id=1689060367]
+volume_db = -10.562
