@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://bpmywif85fdnw"]
+
+[ext_resource type="Script" uid="uid://cdfonkg407c7" path="res://scripts/semente.gd" id="1_ckude"]
+[ext_resource type="Script" uid="uid://cddnyfcnx6ldc" path="res://scripts/cofre.gd" id="2_e51im"]
+[ext_resource type="Script" uid="uid://bvqm4a8df13ww" path="res://scripts/agua.gd" id="2_fbvrd"]
+[ext_resource type="PackedScene" uid="uid://dfvgt4oib3gqh" path="res://cenas/cenário.tscn" id="3_j3426"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g45jc"]
+radius = 17.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_52ux4"]
+radius = 29.5
+height = 89.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_emmdm"]
+radius = 40.5
+height = 86.0
+
+[node name="terras" type="Node2D" unique_id=1466305864]
+
+[node name="baldinhos" type="Node" parent="." unique_id=612115542]
+
+[node name="sementes_interagivel" type="Area2D" parent="baldinhos" unique_id=2010240149]
+position = Vector2(0, -12.3)
+scale = Vector2(2, 2)
+collision_layer = 2
+script = ExtResource("1_ckude")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/sementes_interagivel" unique_id=570279042]
+position = Vector2(443, 140.15)
+shape = SubResource("CircleShape2D_g45jc")
+
+[node name="água_interagivel" type="Area2D" parent="baldinhos" unique_id=1825911967]
+position = Vector2(0, -15)
+scale = Vector2(2, 2)
+collision_layer = 2
+script = ExtResource("2_fbvrd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/água_interagivel" unique_id=76417031]
+position = Vector2(446, 214.5)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_52ux4")
+
+[node name="cofre_interagivel" type="Area2D" parent="baldinhos" unique_id=1440779917]
+position = Vector2(-2, -4)
+scale = Vector2(2, 2)
+collision_layer = 2
+script = ExtResource("2_e51im")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="baldinhos/cofre_interagivel" unique_id=509423539]
+position = Vector2(359.5, 56.5)
+shape = SubResource("CapsuleShape2D_emmdm")
+
+[node name="Cenário_grama2" parent="." unique_id=985514933 instance=ExtResource("3_j3426")]
+
+[connection signal="body_entered" from="baldinhos/sementes_interagivel" to="baldinhos/sementes_interagivel" method="_on_body_entered"]
+[connection signal="body_exited" from="baldinhos/sementes_interagivel" to="baldinhos/sementes_interagivel" method="_on_body_exited"]
+[connection signal="body_entered" from="baldinhos/água_interagivel" to="baldinhos/água_interagivel" method="_on_body_entered"]
+[connection signal="body_exited" from="baldinhos/água_interagivel" to="baldinhos/água_interagivel" method="_on_body_exited"]
+[connection signal="body_entered" from="baldinhos/cofre_interagivel" to="baldinhos/cofre_interagivel" method="_on_body_entered"]
+[connection signal="body_exited" from="baldinhos/cofre_interagivel" to="baldinhos/cofre_interagivel" method="_on_body_exited"]

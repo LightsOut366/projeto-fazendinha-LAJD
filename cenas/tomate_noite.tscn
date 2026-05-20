@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://cs8xfbi0we5tr"]
+
+[ext_resource type="Script" uid="uid://w38pr5fwrmf" path="res://scripts/tomate_noite.gd" id="1_s10wb"]
+[ext_resource type="Texture2D" uid="uid://cmlyu338s4hd0" path="res://Imagens/FarmingCrops16x16/Crop_Spritesheet.png" id="2_ixs02"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s10wb"]
+atlas = ExtResource("2_ixs02")
+region = Rect2(96, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kxrrc"]
+atlas = ExtResource("2_ixs02")
+region = Rect2(176, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7nqhh"]
+atlas = ExtResource("2_ixs02")
+region = Rect2(160, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tsere"]
+atlas = ExtResource("2_ixs02")
+region = Rect2(144, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b54qx"]
+atlas = ExtResource("2_ixs02")
+region = Rect2(128, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pq0hn"]
+atlas = ExtResource("2_ixs02")
+region = Rect2(112, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ccecy"]
+atlas = ExtResource("2_ixs02")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c6xya"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s10wb")
+}],
+"loop": true,
+"name": &"machucado",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kxrrc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7nqhh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tsere")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b54qx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pq0hn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ccecy")
+}],
+"loop": false,
+"name": &"padrao",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f5she"]
+
+[node name="tomate_noite" type="CharacterBody2D" unique_id=314006619 groups=["inimigos"]]
+scale = Vector2(2, 2)
+script = ExtResource("1_s10wb")
+
+[node name="animacao_tomate_noite" type="AnimatedSprite2D" parent="." unique_id=1720908559]
+sprite_frames = SubResource("SpriteFrames_c6xya")
+animation = &"padrao"
+autoplay = "padrao"
+frame = 5
+frame_progress = 1.0
+
+[node name="colisao_tomate_noite" type="CollisionShape2D" parent="." unique_id=447315365]
+shape = SubResource("RectangleShape2D_f5she")

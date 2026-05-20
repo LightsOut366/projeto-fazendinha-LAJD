@@ -1,0 +1,135 @@
+[gd_scene format=3 uid="uid://bdb0me46lbnmp"]
+
+[ext_resource type="Script" uid="uid://cbp1xdv8dj7a" path="res://scripts/interface.gd" id="1_psy7u"]
+[ext_resource type="FontFile" uid="uid://dpua8ddxtg5hy" path="res://Fontes/DigitalDisco.ttf" id="2_fh05e"]
+
+[sub_resource type="Theme" id="Theme_rh14k"]
+/fonts/fonte_principal = ExtResource("2_fh05e")
+CheckBox/fonts/font = ExtResource("2_fh05e")
+Label/fonts/font = ExtResource("2_fh05e")
+
+[node name="HUD" type="CanvasLayer" unique_id=921128581]
+script = ExtResource("1_psy7u")
+
+[node name="Label" type="Label" parent="." unique_id=1399553048]
+visible = false
+offset_left = 16.0
+offset_top = 464.0
+offset_right = 312.0
+offset_bottom = 631.0
+theme_override_fonts/font = ExtResource("2_fh05e")
+theme_override_font_sizes/font_size = 30
+text = "setinhas = movimento
+z = interagir / plantar"
+
+[node name="Timer" type="Timer" parent="." unique_id=780287095]
+process_callback = 0
+autostart = true
+
+[node name="Control" type="Control" parent="." unique_id=1952858025]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="dinheiro" type="Label" parent="Control" unique_id=951781735]
+layout_mode = 0
+offset_left = 672.0
+offset_top = 24.0
+offset_right = 920.0
+offset_bottom = 72.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_fh05e")
+theme_override_font_sizes/font_size = 48
+text = "aa"
+horizontal_alignment = 2
+
+[node name="sementes" type="Label" parent="Control" unique_id=1358325114]
+layout_mode = 0
+offset_left = 748.0
+offset_top = 72.0
+offset_right = 888.0
+offset_bottom = 120.0
+theme = SubResource("Theme_rh14k")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_fh05e")
+theme_override_font_sizes/font_size = 48
+text = "aa"
+horizontal_alignment = 2
+
+[node name="colhido" type="Label" parent="Control" unique_id=792762449]
+layout_mode = 0
+offset_left = 763.0
+offset_top = 541.0
+offset_right = 967.0
+offset_bottom = 589.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_fh05e")
+theme_override_font_sizes/font_size = 48
+text = " aa"
+horizontal_alignment = 2
+
+[node name="agua" type="Label" parent="Control" unique_id=1263762226]
+layout_mode = 0
+offset_left = 417.0
+offset_top = 490.0
+offset_right = 992.0
+offset_bottom = 546.0
+theme = SubResource("Theme_rh14k")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_fh05e")
+theme_override_font_sizes/font_size = 48
+text = "aa"
+horizontal_alignment = 2
+
+[node name="textos" type="Label" parent="Control" unique_id=1143991699]
+layout_mode = 0
+offset_left = 896.0
+offset_top = 24.0
+offset_right = 1145.0
+offset_bottom = 644.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = 4
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_fh05e")
+theme_override_font_sizes/font_size = 48
+text = " = Dinheiro
+= Sementes
+
+
+
+
+
+
+
+= Água
+= Frutas"
+horizontal_alignment = 2
+
+[node name="tempo" type="Label" parent="Control" unique_id=1150079204]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 88.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_fh05e")
+theme_override_font_sizes/font_size = 48
+text = "aa"
+horizontal_alignment = 2
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
